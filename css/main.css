@@ -98,19 +98,24 @@ textarea {
   width: 100%; }
 
 .hero-image-container {
-  background-image: url("http://i.imgur.com/PbV1Grl.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%; }
+  background-image: url("../img/temp.jpg");
+  width: 100%;
+  height: 0;
+  color: #fff;
+  padding-bottom: 55%; }
+  .hero-image-container button {
+    border: solid 2px white;
+    border-radius: 5px;
+    height: 32px;
+    width: 140px;
+    font-size: 14px; }
 
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0; }
 
-
-
-
+/*# sourceMappingURL=style.css.map */
 
 
 
