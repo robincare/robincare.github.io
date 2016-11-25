@@ -1,0 +1,30 @@
+$darkgreen: #2d404f;
+$midgreen: #297373;
+$lightgreen: #21cccc;
+$altgreen: #287d7d;
+$white: #fff;
+$offwhite: #f9fcff;
+$footergrey: #f6f7f8;
+$textgrey: #a8b1bd;
+$textgreyalt: #949ca8;
+$bordergrey: #dddddd;
+$bordergreyalt: #cdd1d5;
+$footertext: #bebebe;
+$footeractive: #999999;
+
+.main-container {
+  width: 100%;
+}
+
+.hero-image-container {
+  background-image: url("http://i.imgur.com/PbV1Grl.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  margin: 0;
+}
