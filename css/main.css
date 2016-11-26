@@ -94,11 +94,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.clearfix:before, .introduction-container:before, .fact-container:before, .clearfix:after, .introduction-container:after, .fact-container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+.clearfix:after, .introduction-container:after, .fact-container:after {
+  clear: both; }
+
 .main-container {
   width: 100%; }
 
 .hero-image-container {
   background-image: url("../img/temp.jpg");
+  background-size: cover;
   width: 100%;
   height: 0;
   color: #fff;
@@ -108,25 +117,123 @@ textarea {
   padding-bottom: 50%;
   position: relative; }
   .hero-image-container button {
+    width: 90px;
+    font-size: 12px;
     border: solid 2px white;
     border-radius: 5px;
     height: 32px;
-    width: 140px;
-    font-size: 14px;
     float: right;
     background-color: transparent; }
+    @media (min-width: 600px) {
+      .hero-image-container button {
+        width: 140px;
+        font-size: 14px; } }
 
 .logo {
   float: left;
-  font-size: 36px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px; }
+  @media (min-width: 600px) {
+    .logo {
+      font-size: 36px;
+      line-height: 36px; } }
 
 .hero-description {
+  margin: 0;
   position: absolute;
   bottom: 20%;
-  width: 50%;
-  font-size: 36px;
+  width: 75%;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 300; }
+  @media (min-width: 600px) {
+    .hero-description {
+      width: 60%;
+      font-size: 24px;
+      line-height: 30px; } }
+  @media (min-width: 768px) {
+    .hero-description {
+      font-size: 28px;
+      line-height: 36px; } }
+  @media (min-width: 1024px) {
+    .hero-description {
+      width: 50%;
+      font-size: 32px;
+      line-height: 42px; } }
+  @media (min-width: 1440px) {
+    .hero-description {
+      width: 50%;
+      font-size: 36px;
+      line-height: 48px; } }
+
+.introduction-container {
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: #2d404f; }
+
+.intro-description {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .intro-description {
+      width: 70%; } }
+  @media (min-width: 768px) {
+    .intro-description {
+      width: 65%;
+      padding-top: 70px;
+      padding-bottom: 30px;
+      font-size: 15px; } }
+  @media (min-width: 1024px) {
+    .intro-description {
+      width: 600px;
+      font-size: 18px;
+      padding-top: 85px;
+      padding-bottom: 40px; } }
+  @media (min-width: 1440px) {
+    .intro-description {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      width: 820px;
+      font-size: 20px; } }
+
+.fact-container {
+  width: 100%;
+  background-color: #2d404f; }
+  @media (min-width: 1024px) {
+    .fact-container {
+      background-color: #fff;
+      margin: 0 auto;
+      width: 920px; } }
+
+.intro-fact-container {
+  width: 90%; }
+  @media (min-width: 600px) {
+    .intro-fact-container {
+      width: 400px; } }
+  @media (min-width: 768px) {
+    .intro-fact-container {
+      width: 30%;
+      float: left;
+      margin-right: 10px;
+      box-shadow: 0 0 1em rgba(0, 0, 0, 0.4); }
+      .intro-fact-container:last-child {
+        margin-right: 0; } }
+  @media (min-width: 1024px) {
+    .intro-fact-container {
+      width: 300px; } }
+  @media (min-width: 1440px) {
+    .intro-fact-container {
+      width: 400px;
+      margin-right: 20px; }
+      .intro-fact-container:last-child {
+        margin-right: 0; } }
 
 * {
   -moz-box-sizing: border-box;
@@ -134,8 +241,6 @@ textarea {
   margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
-
-
 
 
 
@@ -225,9 +330,6 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

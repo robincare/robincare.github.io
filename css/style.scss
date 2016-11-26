@@ -12,12 +12,31 @@ $bordergreyalt: #cdd1d5;
 $footertext: #bebebe;
 $footeractive: #999999;
 
+.clearfix {
+  &:before, &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+@mixin media($queryString){
+    @media #{$queryString} {
+      @content;
+    }
+}
+
 .main-container {
   width: 100%;
 }
 
 .hero-image-container {
   background-image: url("../img/temp.jpg");
+  background-size: cover;
   width: 100%;
   height: 0;
   color: $white;
@@ -27,28 +46,131 @@ $footeractive: #999999;
   padding-bottom: 50%;
   position: relative;
   button {
+    width: 90px;
+    font-size: 12px;
     border: solid 2px white;
     border-radius: 5px;
     height: 32px;
-    width: 140px;
-    font-size: 14px;
     float: right;
     background-color: transparent;
+    @include media("(min-width: 600px)"){
+      width: 140px;
+      font-size: 14px;
+    }
+
   }
 }
 .logo {
   float:left;
-  font-size: 36px;
   font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  @include media("(min-width: 600px)"){
+    font-size: 36px;
+    line-height:36px;
+    }
 }
 .hero-description {
+  margin: 0;
   position: absolute;
   bottom: 20%;
-  width: 50%;
-  font-size: 36px;
+  width: 75%;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 300;
+  @include media("(min-width: 600px)"){
+    width: 60%;
+    font-size: 24px;
+    line-height:30px;
+  }
+  @include media("(min-width: 768px)"){
+    font-size: 28px;
+    line-height:36px;
+  }
+  @include media("(min-width: 1024px)"){
+    width: 50%;
+    font-size: 32px;
+    line-height:42px;
+  }
+  @include media("(min-width: 1440px)"){
+    width: 50%;
+    font-size: 36px;
+    line-height:48px;
+  }
+}
+.introduction-container {
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: $darkgreen;
+  @extend .clearfix;
+}
+.intro-description {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: $white;
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+  text-align:center;
+  @include media("(min-width: 600px)"){
+    width: 70%;
+  }
+  @include media("(min-width: 768px)"){
+    width: 65%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 15px;
+  }
+  @include media("(min-width: 1024px)"){
+    width: 600px;
+    font-size:18px;
+    padding-top: 85px;
+    padding-bottom: 40px;
+  }
+  @include media("(min-width: 1440px)"){
+    padding-top: 100px;
+    padding-bottom: 80px;
+    width: 820px;
+    font-size: 20px;
+  }
+}
+.fact-container {
+  width: 100%;
+  background-color: $darkgreen;
+  @extend .clearfix;
+  @include media("(min-width: 1024px)"){
+    background-color: $white;
+    margin: 0 auto;
+    width: 920px;
+  }
 }
 
+.intro-fact-container {
+  width: 90%;
+  @include media("(min-width: 600px)"){
+    width: 400px;
+  }
+  @include media("(min-width: 768px)"){
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include media("(min-width: 1024px)"){
+    width: 300px;
+  }
+  @include media("(min-width: 1440px)"){
+    width: 400px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 * {
   -moz-box-sizing: border-box;
