@@ -11,8 +11,13 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -21,28 +26,34 @@
 
         <div class="main-container">
             <div class="hero-image-container">
-                <nav class="main-nav">
-                    <div class="logo">Robin</div><!-- ADD LOGO -->
-                    <button class="contact-btn">CONTACT</button>
-                </nav>
-                <h1 class="hero-description">We give cancer patients and their loved ones the help they need</h1>
+                <div class="hero-overlay">
+                    <nav class="main-nav">
+                        <div class="logo">Robin</div><!-- ADD LOGO -->
+                        <button class="contact-btn">CONTACT</button>
+                    </nav>
+                    <h1 class="hero-description">We give cancer patients and their loved ones the help they need</h1>
+                </div>
             </div>
             <div class="introduction-container">
                 <p class="intro-description">Uplift offers patients and caregivers comprehensive cancer care support. Each patient has 24-7 access to a team of coaches and nurses to help them navigate the journey. Our web and mobile apps provide eduation, tools, and resources to empower patients every step of the way.</p>
-                <div class="intro-fact-container">
-                    <img src="#" class="intro-fact-icon"/>
-                    <h3 class="intro-fact-header"> BUILT BY EXPERTS</h3>
-                    <p class="intro-fact-description"> Designed by oncologists, social workers, and health care industry veterans, Robin provides round-the-clock support to cancer patients.</p>
-                </div>
-                <div class="intro-fact-container">
-                    <img src="#" class="intro-fact-icon"/>
-                    <h3 class="intro-fact-header">DIAGNOSIS TO SURVIVORSHIP</h3>
-                    <p class="intro-fact-description">Robin uses proven pathways and protocols to support patients. We bring clarity to the complex cancer journey.</p>
-                </div>
-                <div class="intro-fact-container">
-                    <img src="#" class="intro-fact-icon"/>
-                    <h3 class="intro-fact-header">PERSONALIZED TO EACH PATIENT</h3>
-                    <p class="intro-fact-description">The cancer experience is different for every patient. We tailor information, resources, and advice for each unique journey.</p>
+            </div>
+            <div class="fact-container">
+                <div class="intro-facts">
+                    <div class="intro-fact-container">
+                        <img src="img/intro-icon-1.png" class="intro-fact-icon"/>
+                        <h3 class="intro-fact-header"> BUILT BY EXPERTS</h3>
+                        <p class="intro-fact-description"> Designed by oncologists, social workers, and health care industry veterans, Robin provides round-the-clock support to cancer patients.</p>
+                    </div>
+                    <div class="intro-fact-container">
+                        <img src="img/intro-icon-2.png" class="intro-fact-icon"/>
+                        <h3 class="intro-fact-header">DIAGNOSIS TO SURVIVORSHIP</h3>
+                        <p class="intro-fact-description">Robin uses proven pathways and protocols to support patients. We bring clarity to the complex cancer journey.</p>
+                    </div>
+                    <div class="intro-fact-container">
+                        <img src="img/intro-icon-3.png" class="intro-fact-icon"/>
+                        <h3 class="intro-fact-header">PERSONALIZED TO EACH PATIENT</h3>
+                        <p class="intro-fact-description">The cancer experience is different for every patient. We tailor information, resources, and advice for each unique journey.</p>
+                    </div>
                 </div>
             </div>
             <div class="quick-facts-container">
@@ -53,53 +64,65 @@
                         <hr>
                         <p class="fact-description">Each person has a more than 40% chance of developing cancer in their lifetime</p>
                     </div>
-                    <img src="#" class="quick-fact-image" />
+                    <img src="img/fact-img-1.png" class="quick-fact-image" />
                 </div>
                 <div class="quick-fact-container">
                     <div class="fact-box">
-                        <h3 class="fact-header">LIFETIME RISK</h3>
+                        <h3 class="fact-header">ECONOMIC BURDEN</h3>
                         <hr>
                         <p class="fact-description">Each person has a more than 40% chance of developing cancer in their lifetime</p>
                     </div>
-                    <img src="#" class="quick-fact-image" />
+                    <img src="img/fact-img-2.png" class="quick-fact-image" />
                 </div>
                 <div class="quick-fact-container">
                     <div class="fact-box">
-                        <h3 class="fact-header">LIFETIME RISK</h3>
+                        <h3 class="fact-header">INEFFICIENT USE</h3>
                         <hr>
                         <p class="fact-description">Each person has a more than 40% chance of developing cancer in their lifetime</p>
                     </div>
-                    <img src="#" class="quick-fact-image" />
+                    <img src="img/fact-img-3.png" class="quick-fact-image" />
                 </div>
             </div>
             <div class="motto-container">
                 <h1 class="motto-header">We partner with employers and providers so that all patients can access the support they need</h1>
             </div>
             <div class="slider-container">
-                <h2 class="slider-header">WE LOWER HEALTHCARE COST BY IMPROVING THE QUALITY OF LIFE OF CANCER PATIENTS AND THEIR CAREGIVIERS</h2>
-                <hr>
-                <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
+                <div class="slider-head">
+                    <h2 class="slider-header">WE LOWER HEALTHCARE COST BY IMPROVING THE QUALITY OF LIFE OF CANCER PATIENTS AND THEIR CAREGIVIERS</h2>
+                    <hr>
+                    <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
+                </div>
                 <h4 class="size-slider-header">SIZE OF ORGANIZATION:</h4>
                 <!-- SLIDER ORG # GOES HERE -->
-                <!-- SLIDER GOES HERE -->
-                <div class="slider-num-container slider-costs-container">
-                    <h2 class="number-header">
-                        <span class="dollar-icon">$</span>
-                        <span id="cost-num-icon" class="number-icon">68M</span> <!--  Placeholder for slider -->
-                    </h2>
-                    <p>ESTIMATED CANCER COSTS</p>
-                </div>
-                <div class="slider-num-container slider-savings-container">
-                    <h2 class="number-header">
-                        <span class="dollar-icon">$</span>
-                        <span id="savings-num-icon" class="number-icon">11.9M</span> <!--  Placeholder for slider -->
-                    </h2>
-                    <p>ESTIMATED SAVINGS</p>
+                <div class="slider-main-container">
+                    <div class="ui-widget-content" style="border:0;">
+                        <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+                            <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
+                                Simple Colorpicker
+                        </p>
+                        <div id="progress-bar"></div>
+                        <div id="progress-beginning" class="ui-widget-content ui-corner-all"></div>
+                    </div>
+                    <div class="slider-num-container slider-costs-container">
+                        <h2 class="number-header">
+                            <span class="dollar-icon">$</span>
+                            <span id="cost-num-icon" class="number-icon">68M</span> <!--  Placeholder for slider -->
+                        </h2>
+                        <p>ESTIMATED CANCER COSTS</p>
+                    </div>
+                    <div class="slider-num-container slider-savings-container">
+                        <h2 class="number-header">
+                            <span class="dollar-icon">$</span>
+                            <span id="savings-num-icon" class="number-icon">11.9M</span> <!--  Placeholder for slider -->
+                        </h2>
+                        <p>ESTIMATED SAVINGS</p>
+                    </div>
                 </div>
             </div>
             <div class="image-swipe-container">
                 <!-- SWIPER GOES HERE -->
                 <div class="more-info-container slide-1">
+                    <img src="img/swiper-img-1.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
                         <h3 class="more-info-subheader">EARLY ENGAGEMENT</h3>
@@ -108,6 +131,7 @@
                     </div>
                 </div>
                 <div class="more-info-container slide-2">
+                    <img src="img/swiper-img-2.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
                         <h3 class="more-info-subheader">CONTINUOUS SUPPORT</h3>
@@ -116,6 +140,7 @@
                     </div>
                 </div>
                 <div class="more-info-container slide-3">
+                    <img src="img/swiper-img-3.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
                         <h3 class="more-info-subheader">SCALIING RESOURCES</h3>
@@ -124,6 +149,7 @@
                     </div>
                 </div>
                 <div class="more-info-container slide-4">
+                    <img src="img/swiper-img-4.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
                         <h3 class="more-info-subheader">ACTIONABLE CONTENT</h3>
@@ -174,6 +200,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
