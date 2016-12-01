@@ -93,16 +93,9 @@
                     <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
                 </div>
                 <h4 class="size-slider-header">SIZE OF ORGANIZATION:</h4>
-                <!-- SLIDER ORG # GOES HERE -->
+                <div id="swatch"></div>
                 <div class="slider-main-container">
-                    <div class="ui-widget-content" style="border:0;">
-                        <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
-                            <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
-                                Simple Colorpicker
-                        </p>
                         <div id="progress-bar"></div>
-                        <div id="progress-beginning" class="ui-widget-content ui-corner-all"></div>
-                    </div>
                     <div class="slider-num-container slider-costs-container">
                         <h2 class="number-header">
                             <span class="dollar-icon">$</span>
@@ -159,8 +152,10 @@
                 </div>
             </div>
             <div class="contact-container">
-                <h2 class="contact-header">CONTACT US</h2>
-                <hr>
+                <div class="contact-header">
+                    <h2>CONTACT US</h2>
+                    <hr>
+                </div>
                 <div class="form-container">
                     <div class="contact-info">
                         <p class="contact-description">We are taking new clients on a limited basis. If you are interested in working with us, please use the form. We would love to speak with you.</p>
@@ -169,23 +164,22 @@
                         <h4 class="contact-subhead">PHONE NUMBER</h4>
                         <p class="contact-subhead-info">(650) 800-3195</p>
                         <h4 class="contact-subhead">WE'RE ON</h4>
-                        <span class="social-icon twitter-icon">
-                            <img src="#">
-                        </span>
-                        <span class="social-icon linked-in-icon">
-                            <img src="#">
-                        </span>
+                        <div class="social-icons">
+                            <a class="social-icon twitter-icon" href="www.twitter.com"></a>
+                            <a class="social-icon linked-in-icon" href="www.linkedin.com"></a>
+                        </div>
                     </div>
                     <form action="#" method="post">
-                        <label>YOUR NAME</label><!-- PUT STAR SYMBOL -->
+                        <label>YOUR NAME&#42;</label>
                         <input type="text">
-                        <label>EMAIL ADDRESS</label><!-- PUT STAR SYMBOL -->
+                        <label>EMAIL ADDRESS&#42;</label>
                         <input type="text">
-                        <label>MESSAGE</label><!-- PUT STAR SYMBOL -->
-                        <textarea></textarea>
-                        <hr>
-                        <button type="submit">></button>
-                        <input type="checkbox">
+                        <label>MESSAGE&#42;</label>
+                        <div class="form-button-container">
+                            <textarea></textarea>
+                            <button type="submit"><img src="img/contact-btn.png"></button>
+                        </div>
+                        <input type="checkbox" class="update-checkbox">
                         <span class="update-description">Get updates about Robin Care</span>
                     </form>
                 </div>
@@ -193,9 +187,9 @@
         </div>
         <footer>
             <span>Robin</span>
-            <a href="#">All Rights Reserved</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms Conditions</a><!-- Put and symbol here -->
+            <span>All Rights Reserved</span>
+            <a href="privatepolicy.html">Privacy Policy</a>
+            <a href="terms.html">Terms &amp; Conditions</a>
         </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

@@ -1,30 +1,32 @@
-  $( function() {
-    function hexFromRGB(r, g, b) {
-      var hex = [
-        r.toString( 16 ),
-        g.toString( 16 ),
-        b.toString( 16 )
-      ];
-      $.each( hex, function( nr, val ) {
-        if ( val.length === 1 ) {
-          hex[ nr ] = "0" + val;
+$(function() {
+    var values = [5000, 10000, 20000, 50000, 100000];
+    var slider = $("#progress-bar").slider({
+        value: 50000,
+        range: "min",
+        min: 0,
+        max: 100000,
+        slide: function(event, ui) {
+            var includeLeft = event.keyCode != $.ui.keyCode.RIGHT;
+            var includeRight = event.keyCode != $.ui.keyCode.LEFT;
+            slider.slider('option', 'value', findNearest(includeLeft, includeRight, ui.value));
+            return false;
+        },
+        change: function(event, ui) {
+          $("#swatch").text(ui.value);
         }
-      });
-      return hex.join( "" ).toUpperCase();
-    }
-    function refreshSwatch() {
-      var red = $( "#progress-bar" ).slider( "value" ),
-        hex = hexFromRGB( red, green, blue );
-      $( "#swatch" ).css( "background-color", "#" + hex );
-    }
-
-    $( "#progress-bar").slider({
-      orientation: "horizontal",
-      range: "min",
-      max: 255,
-      value: 127,
-      slide: refreshSwatch,
-      change: refreshSwatch
     });
-    $( "#progress-bar" ).slider( "value", 255 );
-  } );
+    function findNearest(includeLeft, includeRight, value) {
+        var nearest = null;
+        var diff = null;
+        for (var i = 0; i < values.length; i++) {
+            if ((includeLeft && values[i] <= value) || (includeRight && values[i] >= value)) {
+                var newDiff = Math.abs(value - values[i]);
+                if (diff == null || newDiff < diff) {
+                    nearest = values[i];
+                    diff = newDiff;
+                }
+            }
+        }
+        return nearest;
+    }
+});
