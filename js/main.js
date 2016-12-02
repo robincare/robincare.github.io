@@ -30,3 +30,16 @@ $(function() {
         return nearest;
     }
 });
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    pagination: '.swiper-pagination',
+    effect: 'fade',
+    autoplay: 3000,
+    paginationClickable: true,
+  });
+});

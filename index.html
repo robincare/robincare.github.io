@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/jquery-ui.min.css">
         <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
         <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+         <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -93,7 +94,7 @@
                     <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
                 </div>
                 <h4 class="size-slider-header">SIZE OF ORGANIZATION:</h4>
-                <div id="swatch"></div>
+                <div id="swatch">50000</div>
                 <div class="slider-main-container">
                         <div id="progress-bar"></div>
                     <div class="slider-num-container slider-costs-container">
@@ -112,9 +113,9 @@
                     </div>
                 </div>
             </div>
-            <div class="image-swipe-container">
-                <!-- SWIPER GOES HERE -->
-                <div class="more-info-container slide-1">
+            <div class="image-swipe-container swiper-container">
+                <div class="swiper-wrapper">
+                <div class="more-info-container slide-1 swiper-slide">
                     <img src="img/swiper-img-1.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
@@ -123,7 +124,7 @@
                         <p class="more-info-description">We onboard patients at diagnosis and create a tailored plan of attack that complements their clinical care plan.</p>
                     </div>
                 </div>
-                <div class="more-info-container slide-2">
+                <div class="more-info-container slide-2 swiper-slide">
                     <img src="img/swiper-img-2.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
@@ -132,7 +133,7 @@
                         <p class="more-info-description">We are there for patients when they need us. We offer 24-7 access to our network of clinicians, coaches, and peer mentors.</p>
                     </div>
                 </div>
-                <div class="more-info-container slide-3">
+                <div class="more-info-container slide-3 swiper-slide">
                     <img src="img/swiper-img-3.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
@@ -141,7 +142,7 @@
                         <p class="more-info-description">We use technology to extend the impact of our care team</p>
                     </div>
                 </div>
-                <div class="more-info-container slide-4">
+                <div class="more-info-container slide-4 swiper-slide">
                     <img src="img/swiper-img-4.png">
                     <div class="more-info-subcontainer">
                         <h2 class="more-info-header">Human touch amplified by technology</h2>
@@ -151,6 +152,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+        </div>
             <div class="contact-container">
                 <div class="contact-header">
                     <h2>CONTACT US</h2>
@@ -196,6 +203,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/plugins.js"></script>
+         <script src="js/vendor/swiper.jquery.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

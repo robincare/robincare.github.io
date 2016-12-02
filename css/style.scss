@@ -54,8 +54,17 @@ $desktopLarge: 1440px;
   }
 }
 
+@font-face {
+  font-family: 'Campton-Black';
+  src: url('../Campton/Campton_Black.otf'); /* IE9 Compat Modes */
+
+}
+
 .main-container {
   width: 100%;
+  body {
+  font-family: 'Campton-Black', "Open-Sans", sans-serif;
+}
 }
 .hero-overlay {
   background-color: rgba(0,0,0, 0.8);
@@ -370,26 +379,35 @@ $desktopLarge: 1440px;
 }
 
 #progress-bar {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  height: 20px;
+  background: $textgrey;
+  border-radius: 10px;
   }
-  #progress-bar .ui-slider-range { background: $lightgreen; }
-  #progress-bar .ui-slider-handle { border-color: #lightgreen; }
+#progress-bar .ui-slider-range {
+  background: $lightgreen;
+  border-radius: 10px;
+}
+#progress-bar .ui-slider-handle {
+  background: $lightgreen;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  margin-top: -12.5px;
+}
 
-  .slider-main-container {
-    padding: 20px;
-    margin: 0 auto;
-    @include mobileLarge {
-      padding: 40px;
-    }
+.slider-main-container {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+  @include mobileLarge {
+    padding: 40px 0;
+  }
   @include tablet {
-    padding: 60px;
-  }
-  @include desktopSmall {
-    max-width: 800px;
-  }
-  @include desktopLarge {
-    max-width: 1024px;
+    padding: 60px 0;
   }
 }
 
@@ -485,12 +503,13 @@ $desktopLarge: 1440px;
 }
 .more-info-description {
   font-size: 12px;
-  padding: 0 10px 10px 0px;
+  padding: 0 50px 10px 0px;
   letter-spacing: 0px;
   line-height: 1.6em;
   @include mobileLarge {
     font-size: 12px;
     padding-left: 0;
+    padding-right: 10px;
   }
   @include desktopSmall {
     font-size: 14px;
@@ -499,6 +518,35 @@ $desktopLarge: 1440px;
   @include desktopLarge {
     padding-right: 60px;
     letter-spacing: 2px;
+  }
+}
+
+/* Swiper Styles */
+.swiper-container {
+  .swiper-pagination {
+    &.swiper-pagination-bullets {
+      transform: rotate(90deg);
+      right: 0px;
+      width: initial;
+      left: inherit;
+      bottom: 50%;
+      @include desktopSmall {
+        right: 25px;
+      }
+      @include desktopLarge {
+        right: 50px;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #a8b1bd;
+      opacity: .5;
+    }
+    .swiper-pagination-bullet-active {
+      background: #a8b1bd;
+      opacity: 1;
+    }
   }
 }
 .contact-container {
