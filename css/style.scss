@@ -484,9 +484,26 @@ $desktopLarge: 1440px;
 .org-size-container {
   width: 250px;
   margin: 0 auto;
+  position: relative;
+  padding-left: 45px;
+  height: 44px;
+  @include tablet {
+    height: 47px;
+  }
+  @include desktopSmall {
+    padding-left: 86px;
+    height: 61px;
+  }
+  @include desktopLarge {
+    padding-left: 70px;
+    height: 70px;
+  }
 }
 .people-icon {
   margin-right: 10px;
+  left: 50px;
+  top: 15%;
+  position: absolute;
   img {
     vertical-align: sub;
     width: 25px;
@@ -495,6 +512,10 @@ $desktopLarge: 1440px;
       width: 30px;
       height: 30px;
     }
+  }
+  @include desktopSmall {
+    left: 48px;
+    top: 20%;
   }
 }
 
@@ -594,6 +615,14 @@ $desktopLarge: 1440px;
 .number-header, #swatch {
   color: $lightgreen;
   font-family: 'Campton-SemiBold', "Open-Sans", sans-serif;
+}
+
+#swatch {
+  position: absolute;
+  left: 86px;
+  @include desktopSmall {
+    left: 86px;
+  }
 }
 .number-icon {
   margin-left: -2px;

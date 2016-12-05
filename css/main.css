@@ -499,10 +499,27 @@ textarea {
 
 .org-size-container {
   width: 250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  padding-left: 45px;
+  height: 44px; }
+  @media (min-width: 768px) {
+    .org-size-container {
+      height: 47px; } }
+  @media (min-width: 1024px) {
+    .org-size-container {
+      padding-left: 86px;
+      height: 61px; } }
+  @media (min-width: 1440px) {
+    .org-size-container {
+      padding-left: 70px;
+      height: 70px; } }
 
 .people-icon {
-  margin-right: 10px; }
+  margin-right: 10px;
+  left: 50px;
+  top: 15%;
+  position: absolute; }
   .people-icon img {
     vertical-align: sub;
     width: 25px;
@@ -511,6 +528,10 @@ textarea {
       .people-icon img {
         width: 30px;
         height: 30px; } }
+  @media (min-width: 1024px) {
+    .people-icon {
+      left: 48px;
+      top: 20%; } }
 
 #progress-bar {
   width: 100%;
@@ -604,6 +625,13 @@ textarea {
 .number-header, #swatch {
   color: #21cccc;
   font-family: 'Campton-SemiBold', "Open-Sans", sans-serif; }
+
+#swatch {
+  position: absolute;
+  left: 86px; }
+  @media (min-width: 1024px) {
+    #swatch {
+      left: 86px; } }
 
 .number-icon {
   margin-left: -2px; }
