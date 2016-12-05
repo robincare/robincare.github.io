@@ -11,6 +11,8 @@ $bordergrey: #dddddd;
 $bordergreyalt: #cdd1d5;
 $footertext: #bebebe;
 $footeractive: #999999;
+$shadow-opacity: 0.2;
+$shadow-opacity-hover: 0.4;
 
 .clearfix {
   &:before, &:after {
@@ -84,7 +86,7 @@ $desktopLarge: 1440px;
   width: 100%;
 }
 .hero-overlay {
-  background-color: rgba(0,0,0, 0.25);
+  background-color: rgba(0,0,0, 0.1);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -108,7 +110,7 @@ $desktopLarge: 1440px;
     border-radius: 5px;
     height: 30px;
     float: right;
-    line-height: 30px;
+    line-height: 28px;
     letter-spacing: 1.3px;
     padding: 0;
     font-family: 'Campton-Book', "Open-Sans", sans-serif;
@@ -116,7 +118,7 @@ $desktopLarge: 1440px;
     @include desktopSmall {
       width: 150px;
       font-size: 14px;
-      line-height: 50px;
+      line-height: 48px;
       height: 50px;
       letter-spacing: 1.5px;
       &:hover {
@@ -135,6 +137,7 @@ $desktopLarge: 1440px;
   float:left;
   z-index: 2;
   width: 90px;
+  cursor: pointer;
   @include desktopSmall {
     width: 150px;
   }
@@ -247,7 +250,7 @@ $desktopLarge: 1440px;
   margin: 20px auto;
   height: 400px;
   text-align: center;
-  box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 1em rgba(0, 0, 0, $shadow-opacity);
   background-color: $white;
   @include mobileLarge {
     width: 400px;
@@ -258,7 +261,7 @@ $desktopLarge: 1440px;
     display: inline-block;
     margin-right: 2.499%;
     margin-top: -200px;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1em rgba(0, 0, 0, $shadow-opacity);
     &:first-child {
       margin-left: 2.499%;
     }
@@ -460,6 +463,9 @@ $desktopLarge: 1440px;
   margin: 0 auto;
   padding-bottom: 10px;
   font-family: 'Campton-SemiBold', "Open-Sans", sans-serif;
+  @include desktopSmall {
+    padding-bottom: 15px;
+  }
 }
 .slider-description {
   font-size: 14px;
@@ -467,31 +473,70 @@ $desktopLarge: 1440px;
   max-width:600px;
   margin: 0 auto;
   padding: 10px 10px 30px;
+  @include desktopSmall {
+    padding-top: 15px;
+  }
 }
 .size-slider-header {
   font-size: 12px;
   font-family: 'Campton-Book', "Open-Sans", sans-serif;
 }
+.org-size-container {
+  width: 250px;
+  margin: 0 auto;
+}
+.people-icon {
+  margin-right: 10px;
+  img {
+    vertical-align: sub;
+    width: 25px;
+    height: 25px;
+    @include desktopSmall {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
 
 #progress-bar {
   width: 100%;
   margin: 0 auto 40px;
-  height: 20px;
+  height: 10px;
   background: $textgrey;
   border-radius: 10px;
+  border: none;
+  @include tablet {
+    height: 20px;
+  }
   }
 #progress-bar .ui-slider-range {
   background: $lightgreen;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-size: 6px 6px !important;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSI0NiUiIHN0b3AtY29sb3I9IiMyMWNjY2MiLz48c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiMyMWNjY2MiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(135deg, $lightgreen 46%, $white 49%, $white 51%, $lightgreen 55%);
+  background-image: -webkit-linear-gradient(135deg, $lightgreen 46%, $white 49%, $white 51%, $lightgreen 55%);
+  background-image: linear-gradient(-45deg, $lightgreen 46%, $white 49%, $white 51%, $lightgreen 55%);
+  @include tablet {
+    border-radius: 10px;
+  }
 }
 #progress-bar .ui-slider-handle {
   background: $lightgreen;
   border: none;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
-  margin-top: -12.5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, $shadow-opacity);
+  margin-top: -3px;
+  @include tablet {
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, $shadow-opacity);
+    margin-top: -10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
 }
 
 .slider-main-container {
@@ -564,10 +609,7 @@ $desktopLarge: 1440px;
 }
 
 .number-icon, #swatch {
-  font-size: 18px;
-  @include mobileLarge {
-    font-size: 28px;
-  }
+  font-size: 32px;
   @include tablet {
     font-size: 34px;
   }
@@ -766,20 +808,21 @@ $desktopLarge: 1440px;
 .form-container {
   width: 100%;
   background-color: $white;
-  box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 1em rgba(0, 0, 0, $shadow-opacity);
   margin: 0 auto;
   max-width: 400px;
   @include tablet {
     margin-top: -200px;
     max-width: 620px;
     padding: 25px;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1em rgba(0, 0, 0, $shadow-opacity);
   }
   @include desktopSmall {
     margin-top: -200px;
     max-width: 768px;
     height: 525px;
     padding: 50px;
+    font-size: 14px;
   }
   @include desktopLarge {
     margin-top: -300px;
@@ -789,29 +832,39 @@ $desktopLarge: 1440px;
   }
 }
 .contact-description {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
   font-family: 'Campton-Medium', "Open-Sans", sans-serif;
   @include desktopSmall {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
 }
 .contact-subhead {
   font-size: 13px;
   font-family: 'Campton-SemiBold', "Open-Sans", sans-serif;
+  color: $textgrey;
 }
 .contact-subhead-info {
-  font-size: 12px;
   margin-bottom: 10px;
   font-family: 'Campton-Medium', "Open-Sans", sans-serif;
+  @include desktopSmall {
+    margin-bottom: 20px;
+  }
 }
 .contact-info, form {
-  vertical-align: top;
-  padding: 10px;
+  vertical-align: middle;
+  padding: 30px;
   max-width: 400px;
   @include tablet {
     width: 280px;
     display: inline-block;
+    padding: 10px;
+  }
+  @include desktopSmall {
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
   @include desktopLarge {
     width: 400px;
@@ -820,6 +873,8 @@ $desktopLarge: 1440px;
 label, input, textarea {
   display: block;
   width: 100%;
+  margin-bottom: 20px;
+  line-height: 20px;
 }
 input, textarea {
   border-bottom: 2px solid $bordergrey;
@@ -827,27 +882,70 @@ input, textarea {
   border-right: 0;
   border-top: 0;
   font-family: 'Campton-Light', "Open-Sans", sans-serif;
-  font-size: 12px;
 }
 textarea {
   height:100px;
 }
-input[type="checkbox"]:not(:checked),
-input[type="checkbox"]:checked {
-  width: 17px; height: 17px;
-  border: 3px solid $bordergrey;
-  background: $white;
-  box-shadow: none;
-  display: inline-block;
-}
+
 input:focus, textarea:focus {
   outline: none;
   border-bottom: 2px solid $bordergreyalt;
 }
 
 span:focus {
-    outline:none;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.8) !important;
+  outline: none;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, $shadow-opacity-hover) !important;
+  @include tablet {
+    box-shadow: 0 0 1em rgba(0, 0, 0, $shadow-opacity-hover) !important;
+  }
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.checkbox-container {
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+.checkbox-container label {
+  position: relative;
+}
+
+/* Base styles for spans */
+.checkbox-container span::before,
+.checkbox-container span::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Check-boxes */
+.checkbox-container span.checkbox::before {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  left: -35px;
+  box-sizing: border-box;
+  border: 3px solid $bordergrey;
+  transition: border-color .2s;
+}
+@include desktopSmall {
+  .checkbox-container span.checkbox:hover::before {
+    border: 3px solid $bordergreyalt;
+  }
+}
+
+.checkbox-container span.checkbox::after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  left: -31px;
+  top: -2px;
+  color: transparent;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+  color: $darkgreen;
 }
 
 .social-icon {
@@ -870,11 +968,18 @@ span:focus {
 }
 .linked-in-icon {
   background-position: 24px 0;
+  @include desktopSmall {
+    margin-left: 12px;
+  }
 }
 form {
   label {
     font-size: 13px;
     font-family: 'Campton-SemiBold', "Open-Sans", sans-serif;
+    color: $textgrey;
+  }
+  @include desktopSmall {
+    margin-left: 60px;
   }
 }
 
@@ -883,8 +988,8 @@ form {
   margin-bottom: 20px;
   button {
     position: absolute;
-    right: -6px;
-    bottom: -20px;
+    right: -25px;
+    bottom: -28px;
     height: 60px;
     width: 60px;
     border: none;
@@ -909,6 +1014,12 @@ form {
 }
 .update-checkbox {
   display: inline;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.update-description {
+  font-family: 'Campton-Light', "Open-Sans", sans-serif;
+  font-size: 13px;
 }
 
 * {
@@ -920,7 +1031,7 @@ form {
 footer {
   width: 100%;
   display: block;
-  padding: 10px 20px;
+  padding: 10px 7%;
   border-top: 2px solid $bordergrey;
   background-color: $footergrey;
   color: $footertext;
@@ -928,11 +1039,14 @@ footer {
   font-size: 10px;
   text-align: center;
   @include mobileLarge {
-    padding: 20px 30px;
+    padding: 20px 7%;
     text-align: left;
   }
   @include desktopSmall {
-    padding: 50px 100px;
+    padding: 50px 7%;
+  }
+  a:hover {
+    color: $bordergrey;
   }
   span, a {
   display:block;
@@ -960,6 +1074,8 @@ footer {
 }
   #footer-logo {
     margin-left: 0;
-    font-family: 'Campton-Medium', "Open-Sans", sans-serif;
+}
+.active {
+  font-family: 'Campton-Medium', "Open-Sans", sans-serif;
 }
 }

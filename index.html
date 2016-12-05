@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
         <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
          <link rel="stylesheet" href="css/swiper.min.css">
+         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -94,7 +96,7 @@
                     <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
                 </div>
                 <h4 class="size-slider-header">SIZE OF ORGANIZATION:</h4>
-                <div id="swatch">50000</div>
+                <div class="org-size-container"><span class="people-icon"><img src="img/people-icon.png"></span><span id="swatch">50,000</span></div>
                 <div class="slider-main-container">
                         <div id="progress-bar"></div>
                     <div class="slider-num-container slider-costs-container">
@@ -186,24 +188,26 @@
                     </div>
                     <form action="#" method="post">
                         <label>YOUR NAME&#42;</label>
-                        <input type="text">
+                        <input type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
                         <label>EMAIL ADDRESS&#42;</label>
-                        <input type="text">
+                        <input type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
                         <label>MESSAGE&#42;</label>
                         <div class="form-button-container">
-                            <textarea></textarea>
+                            <textarea placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
                             <button type="submit"><img src="img/contact-btn.png"></button>
                         </div>
-                        <input type="checkbox" class="update-checkbox">
-                        <span class="update-description">Get updates about Robin Care</span>
+                        <div class="checkbox-container">
+                            <input id="checkbox" type="checkbox" class="update-checkbox">
+                            <label for="checkbox"><span class="checkbox update-description">Get updates about Robin Care</span></label>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
         <footer>
-            <span id="footer-logo">Robin</span>
+            <a href="index.html" id="footer-logo" class="active">Robin</a>
             <span>All Rights Reserved</span>
-            <a href="privatepolicy.html">Privacy Policy</a>
+            <a href="privacypolicy.html">Privacy Policy</a>
             <a href="terms.html">Terms &amp; Conditions</a>
         </footer>
 

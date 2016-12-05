@@ -12,7 +12,44 @@ $(function() {
             return false;
         },
         change: function(event, ui) {
-          $("#swatch").text(ui.value);
+          var cost = "68M"
+          var savings = "11.9M"
+          var swatch = "50,000"
+          switch (ui.value) {
+            case 0:
+              cost = "0M"
+              savings = "0M"
+              swatch = "0"
+            break;
+            case 5000:
+              cost = "6.8M"
+              savings = "1.19M"
+              swatch = "5,000"
+            break;
+            case 10000:
+              cost = "12.6M"
+              savings = "2.38M"
+              swatch = "10,000"
+            break;
+            case 20000:
+              cost = "27.2M"
+              savings = "4.76M"
+              swatch = "20,000"
+            break;
+            case 50000:
+              cost = "68M"
+              savings = "11.9M"
+              swatch = "50,000"
+            break;
+            case 100000:
+              cost = "136M"
+              savings = "23.8M"
+              swatch = "100,000"
+            break;
+          }
+          $("#cost-num-icon").text(cost);
+          $("#savings-num-icon").text(savings);
+          $("#swatch").text(swatch);
         }
     });
     function findNearest(includeLeft, includeRight, value) {
@@ -42,4 +79,8 @@ $(document).ready(function () {
     autoplay: 3000,
     paginationClickable: true,
   });
+
+  $('.logo-container').on('click', function(){
+    window.location.href = "index.html";
+  })
 });

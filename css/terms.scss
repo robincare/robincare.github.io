@@ -1,0 +1,185 @@
+$darkgreen: #2d404f;
+$midgreen: #297373;
+$lightgreen: #21cccc;
+$altgreen: #287d7d;
+$white: #fff;
+$offwhite: #f9fcff;
+$footergrey: #f6f7f8;
+$textgrey: #a8b1bd;
+$textgreyalt: #949ca8;
+$bordergrey: #dddddd;
+$bordergreyalt: #cdd1d5;
+$footertext: #bebebe;
+$footeractive: #999999;
+$shadow-opacity: 0.2;
+$shadow-opacity-hover: 0.4;
+
+.clearfix {
+  &:before, &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.smallgreenline {
+  width: 45px;
+  border-top: 3px solid $lightgreen;
+}
+
+$mobileLarge: 600px;
+$tablet: 768px;
+$desktopSmall: 1024px;
+$desktopLarge: 1440px;
+
+@mixin mobileLarge {
+@media (min-width: #{$mobileLarge}) {
+  @content;
+  }
+}
+@mixin tablet {
+@media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin desktopSmall {
+@media (min-width: #{$desktopSmall}) {
+    @content;
+  }
+}
+
+@mixin desktopLarge {
+@media (min-width: #{$desktopLarge}) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: 'Campton-Bold';
+  src: url('../Campton/Campton_Bold.woff2') format('woff2'),
+       url('../Campton/Campton_Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Campton-Book';
+  src: url('../Campton/Campton_Book.woff2'), format('woff2'),
+       url('../Campton/Campton_Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Campton-Light';
+  src: url('../Campton/Campton_Light.woff2') format('woff2'),
+       url('../Campton/Campton_Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Campton-Medium';
+  src: url('../Campton/Campton_Medium.woff2') format('woff2'),
+       url('../Campton/Campton_Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Campton-SemiBold';
+  src: url('../Campton/Campton_SemiBold.woff2') format('woff2'),
+       url('../Campton/Campton_SemiBold.woff') format('woff');
+}
+
+.terms-container {
+  width: 100%;
+}
+.subpage-container {
+  clear: both;
+  padding: 7%;
+}
+
+button {
+    width: 90px;
+    font-size: 12px;
+    border: solid 2px $darkgreen;
+    border-radius: 5px;
+    height: 30px;
+    float: right;
+    line-height: 28px;
+    letter-spacing: 1.3px;
+    padding: 0;
+    font-family: 'Campton-Book', "Open-Sans", sans-serif;
+    background-color: $white;
+    @include desktopSmall {
+      width: 150px;
+      font-size: 14px;
+      line-height: 48px;
+      height: 50px;
+      letter-spacing: 1.5px;
+      &:hover {
+        color: $white;
+        background-color: $darkgreen;
+      }
+    }
+  }
+  button, .logo-container {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%;
+  }
+.logo-container {
+  float:left;
+  z-index: 2;
+  width: 90px;
+  cursor: pointer;
+  @include desktopSmall {
+    width: 150px;
+  }
+}
+.logo {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  display: block;
+  padding: 10px 7%;
+  border-top: 2px solid $bordergrey;
+  background-color: $footergrey;
+  color: $footertext;
+  font-family: 'Campton-Light', "Open-Sans", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  @include mobileLarge {
+    padding: 20px 7%;
+    text-align: left;
+  }
+  @include desktopSmall {
+    padding: 50px 7%;
+  }
+  a:hover {
+    color: $bordergrey;
+  }
+  span, a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+  color: $footertext;
+  font-family: 'Campton-Light', "Open-Sans", sans-serif;
+  font-size: 10px;
+  @include mobileLarge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+  }
+  @include tablet {
+    margin-left: 20px;
+  }
+  @include desktopSmall {
+    font-size: 12px;
+    margin-left:45px;
+  }
+  @include desktopLarge {
+    font-size: 14px;
+    margin-left:60px;
+  }
+}
+  #footer-logo {
+    margin-left: 0;
+}
+}
+.active {
+  font-family: 'Campton-Medium', "Open-Sans", sans-serif;
+}
