@@ -90,7 +90,8 @@ $desktopLarge: 1440px;
   padding: 7%;
 }
 
-a {
+.main-nav {
+  a {
     width: 90px;
     font-size: 12px;
     border: solid 2px $darkgreen;
@@ -122,17 +123,18 @@ a {
     margin-right: 7%;
     margin-top: 5%;
   }
-.logo-container {
-  float:left;
-  z-index: 2;
-  width: 90px;
-  cursor: pointer;
-  @include desktopSmall {
-    width: 150px;
+  .logo-container {
+    float:left;
+    z-index: 2;
+    width: 90px;
+    cursor: pointer;
+    @include desktopSmall {
+      width: 150px;
+    }
   }
-}
-.logo {
-  width: 100%;
+  .logo {
+    width: 100%;
+  }
 }
 
 footer {
@@ -156,32 +158,32 @@ footer {
     color: $bordergrey;
   }
   span, a {
-  display:block;
-  padding: 10px;
-  text-decoration: none;
-  color: $footertext;
-  font-family: 'Campton-Light', "Open-Sans", sans-serif;
-  font-size: 10px;
-  @include mobileLarge {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 0;
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    color: $footertext;
+    font-family: 'Campton-Light', "Open-Sans", sans-serif;
+    font-size: 10px;
+    @include mobileLarge {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 0;
+    }
+    @include tablet {
+      margin-left: 20px;
+    }
+    @include desktopSmall {
+      font-size: 12px;
+      margin-left:45px;
+    }
+    @include desktopLarge {
+      font-size: 14px;
+      margin-left:60px;
+    }
   }
-  @include tablet {
-    margin-left: 20px;
-  }
-  @include desktopSmall {
-    font-size: 12px;
-    margin-left:45px;
-  }
-  @include desktopLarge {
-    font-size: 14px;
-    margin-left:60px;
-  }
-}
   #footer-logo {
     margin-left: 0;
-}
+  }
 }
 .active {
   font-family: 'Campton-Medium', "Open-Sans", sans-serif;
