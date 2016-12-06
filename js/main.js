@@ -68,16 +68,6 @@ $(function() {
     }
 });
 
-function contactSubmitForm(form) {
-  console.log(form);
-  // $.ajax({
-  //   url: "https://formspree.io/samuel.f.purcell@gmail.com",
-  //   method: "POST",
-  //   data: {message: "hello!"},
-  //   dataType: "json"
-  // });
-}
-
 $(document).ready(function () {
   if(window.location.hash == "#form-complete") {
     $('.form-submit-msg-container').slideDown();
@@ -131,13 +121,6 @@ $(document).ready(function () {
         email: "Please enter a valid email address."
       },
       Message: "Please enter a message"
-    },
-    submitHandler: function(form) {
-      contactFormSubmit(form);
-      return false;
     }
-  });
-  $('#contact-form').on("submit", function(e){
-    e.preventDefault();
   });
 });
