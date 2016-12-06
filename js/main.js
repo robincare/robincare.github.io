@@ -122,10 +122,22 @@ $(document).ready(function () {
   );
 
   $("#contact-form").validate({
-      submitHandler: function(form) {
-          contactFormSubmit(form);
-          return false;
-      }
+    rules: {
+      "Full Name": "required",
+      "Email": "required email"
+        },
+    messages: {
+      "Full Name": "Enter your Full Name",
+      "Email": {
+        required: "Enter your Email",
+        email: "Please enter a valid email address."
+      },
+      "Message": "Please enter a message"
+    },
+    submitHandler: function(form) {
+      contactFormSubmit(form);
+      return false;
+    }
   });
   $('form button').on("click", function(e){
     e.preventDefault();
