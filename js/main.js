@@ -108,8 +108,6 @@ $(document).ready(function () {
         $("#checkbox").val(false);
       }
   })
-  //override default jquery require validator message
-  $.extend($.validator.messages, { required: "This field is required." });
 
   //Overriding default jquery email validator to catch tld
   $.validator.addMethod(
@@ -122,17 +120,17 @@ $(document).ready(function () {
 
   $("#contact-form").validate({
     rules: {
-      "Name": "required",
-      "Email": "required email",
-      "Message": "required"
+      $('#name').attr('name'): "required",
+      $("#email").attr('name'): "required email",
+      $("#message").attr('name'): "required"
         },
     messages: {
-      "Name": "Enter your Full Name",
-      "Email": {
+      $('#name').attr('name'): "Enter your Full Name",
+      $("#email").attr('name') {
         required: "Enter your Email",
         email: "Please enter a valid email address."
       },
-      "Message": "Please enter a message"
+      $("#message").attr('name'): "Please enter a message"
     },
     submitHandler: function(form) {
       contactFormSubmit(form);
