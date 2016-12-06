@@ -129,30 +129,33 @@ textarea {
   clear: both;
   padding: 7%; }
 
-button {
+a {
   width: 90px;
   font-size: 12px;
   border: solid 2px #2d404f;
   border-radius: 5px;
   height: 30px;
   float: right;
-  line-height: 28px;
+  line-height: 30px;
   letter-spacing: 1.3px;
   padding: 0;
   font-family: 'Campton-Book', "Open-Sans", sans-serif;
-  background-color: #fff; }
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  color: #2d404f; }
   @media (min-width: 1024px) {
-    button {
+    a {
       width: 150px;
       font-size: 14px;
-      line-height: 48px;
+      line-height: 50px;
       height: 50px;
       letter-spacing: 1.5px; }
-      button:hover {
+      a:hover {
         color: #fff;
         background-color: #2d404f; } }
 
-button, .logo-container {
+a, .logo-container {
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 5%; }
