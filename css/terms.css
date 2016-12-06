@@ -127,7 +127,18 @@ textarea {
 
 .subpage-container {
   clear: both;
-  padding: 7%; }
+  padding: 7%;
+  font-size: 16px; }
+  .subpage-container span {
+    font-family: 'Campton-Medium', "Open-Sans", sans-serif; }
+  @media (min-width: 768px) {
+    .subpage-container {
+      width: 65%; } }
+
+.subpage-header {
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  font-family: 'Campton-SemiBold', "Open-Sans", sans-serif; }
 
 .main-nav a {
   width: 90px;
@@ -218,6 +229,9 @@ footer {
   font-family: 'Campton-Medium', "Open-Sans", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
 
 
 

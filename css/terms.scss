@@ -88,6 +88,18 @@ $desktopLarge: 1440px;
 .subpage-container {
   clear: both;
   padding: 7%;
+  font-size: 16px;
+  span {
+    font-family: 'Campton-Medium', "Open-Sans", sans-serif;
+  }
+  @include tablet {
+    width: 65%;
+  }
+}
+.subpage-header {
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  font-family: 'Campton-SemiBold', "Open-Sans", sans-serif;
 }
 
 .main-nav {
