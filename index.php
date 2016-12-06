@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    header('Location: index.html');
+    header('Location: index.php');
     }
 ?>
 
@@ -223,7 +223,7 @@ if(isset($_POST['submit'])){
             </div>
         </div>
         <footer>
-            <div class="footer-link-container"><a href="index.html" id="footer-logo" class="active">Robin</a></div>
+            <div class="footer-link-container"><a href="index.php" id="footer-logo" class="active">Robin</a></div>
             <div class="footer-link-container"><span>All Rights Reserved</span></div>
             <div class="footer-link-container"><a href="privacypolicy.html">Privacy Policy</a></div>
             <div class="footer-link-container"><a href="terms.html">Terms &amp; Conditions</a></div>
