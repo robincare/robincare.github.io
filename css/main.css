@@ -949,6 +949,16 @@ input[type="checkbox"] {
 .checkbox-container label {
   position: relative; }
 
+.error {
+  border: 2px solid red; }
+
+#name-error, #email-error, #message-error {
+  position: absolute;
+  top: 74px;
+  color: red; }
+  #name-error.error, #email-error.error, #message-error.error {
+    border: none !important; }
+
 /* Base styles for spans */
 .checkbox-container span::before,
 .checkbox-container span::after {
