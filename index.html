@@ -2,19 +2,17 @@
 if(isset($_POST['submit'])){
     $to = "samuel.f.purcell@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
+    $full_name = $_POST['full_name'];
+    $subject = "Form Submission from " . $_POST['full_name'];
     $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+    $message = $full_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $full_name . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    header('Location: index.html');
     }
 ?>
 
@@ -206,18 +204,18 @@ if(isset($_POST['submit'])){
                             <a class="social-icon linked-in-icon" href="www.linkedin.com"></a>
                         </div>
                     </div>
-                    <form action="#" method="post">
+                    <form action="" method="post">
                         <label>YOUR NAME&#42;</label>
-                        <input type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
+                        <input name="full_name"type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
                         <label>EMAIL ADDRESS&#42;</label>
-                        <input type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
+                        <input name="email" type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
                         <label>MESSAGE&#42;</label>
                         <div class="form-button-container">
-                            <textarea placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
+                            <textarea name="message" placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
                             <button type="submit"><img src="img/contact-btn.png"></button>
                         </div>
                         <div class="checkbox-container">
-                            <input id="checkbox" type="checkbox" class="update-checkbox">
+                            <input name="wants_updates" id="checkbox" type="checkbox" class="update-checkbox">
                             <label for="checkbox"><span class="checkbox update-description">Get updates about Robin Care</span></label>
                         </div>
                     </form>
