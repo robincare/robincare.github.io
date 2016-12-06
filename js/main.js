@@ -127,4 +127,7 @@ $(document).ready(function () {
           return false;
       }
   });
+  $('form button').on("click", function(e){
+    e.preventDefault();
+  });
 });
