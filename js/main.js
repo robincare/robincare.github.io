@@ -69,8 +69,8 @@ $(function() {
 });
 
 $(document).ready(function () {
-  if(window.location.hash == "form-complete") {
-    console.log("Thank you for submitting the form");
+  if(window.location.hash) {
+    console.log(window.location.hash);
   }
 
   //initialize swiper when document ready
