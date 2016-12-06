@@ -82,5 +82,13 @@ $(document).ready(function () {
 
   $('.logo-container').on('click', function(){
     window.location.href = "index.html";
-  })
+  });
+
+$("#checkbox").change(function() {
+    if(this.checked) {
+      $("#checkbox").val(true);
+    } else {
+      $("#checkbox").val(false);
+    }
+})
 });
