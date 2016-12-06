@@ -848,7 +848,8 @@ textarea {
   background-color: #fff;
   box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  max-width: 400px; }
+  max-width: 400px;
+  font-size: 14px; }
   @media (min-width: 768px) {
     .form-container {
       margin-top: -200px;
@@ -860,8 +861,7 @@ textarea {
       margin-top: -200px;
       max-width: 768px;
       height: 525px;
-      padding: 50px;
-      font-size: 14px; } }
+      padding: 50px; } }
   @media (min-width: 1440px) {
     .form-container {
       margin-top: -300px;
@@ -915,6 +915,7 @@ label, input, textarea {
   line-height: 20px; }
 
 input, textarea {
+  font-size: 14px;
   border-bottom: 2px solid #dddddd;
   border-left: 0;
   border-right: 0;
