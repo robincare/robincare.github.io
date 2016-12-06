@@ -70,7 +70,10 @@ $(function() {
 
 $(document).ready(function () {
   if(window.location.hash == "#form-complete") {
-    console.log("Hello");
+    $('.form-submit-msg-container').slideDown();
+    setTimeout(function(){
+      $('.form-submit-msg-container').slideUp();
+    }, 3000);
   }
 
   //initialize swiper when document ready
