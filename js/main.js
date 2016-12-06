@@ -137,7 +137,7 @@ $(document).ready(function () {
       return false;
     }
   });
-  $('form button').on("click", function(e){
+  $('#form-submit-btn').on("click", function(e){
     e.preventDefault();
   });
 });
