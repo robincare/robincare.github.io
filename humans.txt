@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Sam Purcell - Developer - @iamsampurcell
 
 # THANKS
 
-    <name>
+    Steve Komae
 
 # TECHNOLOGY COLOPHON
 
