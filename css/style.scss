@@ -922,7 +922,7 @@ label, input, textarea {
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  line-height: 20px;
+  line-height: 18px;
 }
 input, textarea {
   font-size: 14px;
@@ -930,8 +930,9 @@ input, textarea {
   border-right: 2px solid transparent;
   border-top: 2px solid transparent;
   border-bottom: 2px solid $bordergrey;
-
   font-family: 'Campton-Light', "Open-Sans", sans-serif;
+  padding-top: 4px;
+  padding-left: 4px;
 }
 textarea {
   height:100px;
@@ -971,11 +972,14 @@ input[type="checkbox"]{
 }
 #name-error, #email-error, #message-error {
   position: absolute;
-  top: 74px;
+  top: 66px;
   color: red;
   &.error {
     border: none !important;
   }
+}
+#message-error {
+  top: 99px;
 }
 
 /* Base styles for spans */
@@ -1008,7 +1012,7 @@ input[type="checkbox"]{
   content: '\f00c';
   font-family: 'FontAwesome';
   left: -32px;
-  top: -2px;
+  top: -1px;
   color: transparent;
 }
 input[type="checkbox"]:checked + label span.checkbox::after {
