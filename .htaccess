@@ -340,6 +340,8 @@ AddDefaultCharset utf-8
 
     # (1)
     RewriteEngine On
+     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
     # (2)
     Options +FollowSymlinks
@@ -352,8 +354,7 @@ AddDefaultCharset utf-8
 
     # (5)
     # RewriteOptions <options>
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
 
 </IfModule>
 
