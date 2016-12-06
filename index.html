@@ -191,14 +191,20 @@
                         <input type="hidden" name="_next" value="/#form-complete"/>
                         <input type="hidden" name="_subject" value="New form submission on Robin!" />
                         <input type="text" name="_gotcha" style="display:none" />
-                        <label>YOUR NAME&#42;</label>
-                        <input id="name" name="Name"type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
+                        <div class="input-container">
+                            <label>YOUR NAME&#42;</label>
+                            <input id="name" name="Name"type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
+                        </div>
+                        <div class="input-container">
                         <label>EMAIL ADDRESS&#42;</label>
-                        <input id="email" name="Email" type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
-                        <label>MESSAGE&#42;</label>
-                        <div class="form-button-container">
-                            <textarea id="message" name="Message" placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
-                            <button id="form-submit-btn" type="submit"><img src="img/contact-btn.png"></button>
+                            <input id="email" name="Email" type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
+                        </div>
+                            <div class="input-container">
+                                <label>MESSAGE&#42;</label>
+                                <div class="form-button-container">
+                                <textarea id="message" name="Message" placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
+                                <button id="form-submit-btn" type="submit"><img src="img/contact-btn.png"></button>
+                            </div>
                         </div>
                         <div class="checkbox-container">
                             <input name="Wants Updates" id="checkbox" type="checkbox" class="update-checkbox" value="false">

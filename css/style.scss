@@ -963,6 +963,10 @@ input[type="checkbox"]{
 }
 .error {
   border: 2px solid red;
+  border-bottom: 2px solid red !important;
+}
+.input-container {
+  position: relative;
 }
 #name-error, #email-error, #message-error {
   position: absolute;

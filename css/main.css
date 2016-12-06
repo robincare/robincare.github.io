@@ -950,7 +950,11 @@ input[type="checkbox"] {
   position: relative; }
 
 .error {
-  border: 2px solid red; }
+  border: 2px solid red;
+  border-bottom: 2px solid red !important; }
+
+.input-container {
+  position: relative; }
 
 #name-error, #email-error, #message-error {
   position: absolute;
