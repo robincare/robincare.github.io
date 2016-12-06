@@ -76,7 +76,6 @@ function contactSubmitForm(form) {
   //   data: {message: "hello!"},
   //   dataType: "json"
   // });
-
 }
 
 $(document).ready(function () {
@@ -123,11 +122,12 @@ $(document).ready(function () {
 
   $("#contact-form").validate({
     rules: {
-      "Full Name": "required",
-      "Email": "required email"
+      "Name": "required",
+      "Email": "required email",
+      "Message": "required"
         },
     messages: {
-      "Full Name": "Enter your Full Name",
+      "Name": "Enter your Full Name",
       "Email": {
         required: "Enter your Email",
         email: "Please enter a valid email address."
