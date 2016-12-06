@@ -120,24 +120,24 @@ $(document).ready(function () {
 
   $("#contact-form").validate({
     rules: {
-      $('#name').attr('name'): "required",
-      $("#email").attr('name'): "required email",
-      $("#message").attr('name'): "required"
+      Name: "required",
+      Email: "required email",
+      Message: "required"
         },
     messages: {
-      $('#name').attr('name'): "Enter your Full Name",
-      $("#email").attr('name') {
+      Name: "Enter your Full Name",
+      Email: {
         required: "Enter your Email",
         email: "Please enter a valid email address."
       },
-      $("#message").attr('name'): "Please enter a message"
+      Message: "Please enter a message"
     },
     submitHandler: function(form) {
       contactFormSubmit(form);
       return false;
     }
   });
-  $('#form-submit-btn').on("click", function(e){
+  $('#contact-form').on("submit", function(e){
     e.preventDefault();
   });
 });
