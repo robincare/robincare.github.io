@@ -73,7 +73,7 @@ $(document).ready(function () {
     $('.form-submit-msg-container').slideDown();
     setTimeout(function(){
       $('.form-submit-msg-container').slideUp();
-    }, 3000);
+    }, 5000);
   }
 
   //initialize swiper when document ready
