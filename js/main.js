@@ -68,6 +68,17 @@ $(function() {
     }
 });
 
+function contactSubmitForm(form) {
+  console.log(form);
+  // $.ajax({
+  //   url: "https://formspree.io/samuel.f.purcell@gmail.com",
+  //   method: "POST",
+  //   data: {message: "hello!"},
+  //   dataType: "json"
+  // });
+
+}
+
 $(document).ready(function () {
   if(window.location.hash == "#form-complete") {
     $('.form-submit-msg-container').slideDown();
@@ -91,11 +102,29 @@ $(document).ready(function () {
     window.location.href = "index.html";
   });
 
-$("#checkbox").change(function() {
-    if(this.checked) {
-      $("#checkbox").val(true);
-    } else {
-      $("#checkbox").val(false);
-    }
-})
+  $("#checkbox").change(function() {
+      if(this.checked) {
+        $("#checkbox").val(true);
+      } else {
+        $("#checkbox").val(false);
+      }
+  })
+  //override default jquery require validator message
+  $.extend($.validator.messages, { required: "This field is required." });
+
+  //Overriding default jquery email validator to catch tld
+  $.validator.addMethod(
+      'email',
+      function(value, element){
+          return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/.test(value);
+  },
+      'Please enter a valid email address.'
+  );
+
+  $("#contact-form").validate({
+      submitHandler: function(form) {
+          contactFormSubmit(form);
+          return false;
+      }
+  });
 });

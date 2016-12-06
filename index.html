@@ -187,17 +187,17 @@
                             <a class="social-icon linked-in-icon" href="https://www.linkedin.com/company/robin-care"></a>
                         </div>
                     </div>
-                    <form action="https://formspree.io/samuel.f.purcell@gmail.com" method="post">
+                    <form id="contact-form" action="https://formspree.io/samuel.f.purcell@gmail.com" method="post">
                         <input type="hidden" name="_next" value="/#form-complete"/>
                         <input type="hidden" name="_subject" value="New form submission on Robin!" />
                         <input type="text" name="_gotcha" style="display:none" />
                         <label>YOUR NAME&#42;</label>
-                        <input name="Name"type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'">
+                        <input name="Name"type="text" placeholder="John Smith" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Smith'" required>
                         <label>EMAIL ADDRESS&#42;</label>
-                        <input name="Email" type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'">
+                        <input name="Email" type="text" placeholder="johnsmith@gmail.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'johnsmith@gmail.com'" required>
                         <label>MESSAGE&#42;</label>
                         <div class="form-button-container">
-                            <textarea name="Message" placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'"></textarea>
+                            <textarea name="Message" placeholder="Hi, do you have a moment to talk about..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hi, do you have a moment to talk about...'" required></textarea>
                             <button type="submit"><img src="img/contact-btn.png"></button>
                         </div>
                         <div class="checkbox-container">
