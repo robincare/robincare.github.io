@@ -819,10 +819,10 @@ label, input, textarea {
 
 input, textarea {
   font-size: 14px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
   border-bottom: 2px solid #dddddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
   font-family: 'Campton-Light', "Open-Sans", sans-serif; }
 
 textarea {
@@ -882,16 +882,16 @@ input[type="checkbox"] {
   background-color: #fff;
   left: -35px;
   box-sizing: border-box;
-  border: 3px solid #dddddd;
+  border: 2px solid #dddddd;
   transition: border-color .2s; }
 
 @media (min-width: 1024px) {
   .checkbox-container span.checkbox:hover::before {
-    border: 3px solid #cdd1d5; } }
+    border: 2px solid #cdd1d5; } }
 .checkbox-container span.checkbox::after {
   content: '\f00c';
   font-family: 'FontAwesome';
-  left: -31px;
+  left: -32px;
   top: -2px;
   color: transparent; }
 
