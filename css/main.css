@@ -11,6 +11,7 @@
    ========================================================================== */
 
 html {
+    display: none;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Campton-Light', "Open-Sans", sans-serif;
