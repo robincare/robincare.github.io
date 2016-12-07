@@ -147,7 +147,7 @@ textarea {
   position: absolute; }
 
 .hero-image-container {
-  background-image: url("../img/hero-img-large.png");
+  background-image: url("../img/hero-img-large.jpg");
   background-size: cover;
   width: 100%;
   color: #fff;
