@@ -125,7 +125,7 @@ $desktopLarge: 1440px;
     border-radius: 5px;
     height: 30px;
     float: right;
-    line-height: 28px;
+    line-height: 30px;
     letter-spacing: 1.3px;
     padding: 0;
     font-family: 'Campton-Book', "Open-Sans", sans-serif;
@@ -136,7 +136,7 @@ $desktopLarge: 1440px;
     @include desktopSmall {
       width: 150px;
       font-size: 14px;
-      line-height: 48px;
+      line-height: 50px;
       height: 50px;
       letter-spacing: 1.5px;
       &:hover {
