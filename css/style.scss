@@ -1001,6 +1001,7 @@ input[type="checkbox"]{
   box-sizing: border-box;
   border: 2px solid $bordergrey;
   transition: border-color .2s;
+  cursor: pointer;
 }
 @include desktopSmall {
   .checkbox-container span.checkbox:hover::before {
