@@ -899,7 +899,8 @@ input[type="checkbox"] {
   font-family: 'FontAwesome';
   left: -32px;
   top: -1px;
-  color: transparent; }
+  color: transparent;
+  cursor: pointer; }
 
 input[type="checkbox"]:checked + label span.checkbox::after {
   color: #2d404f; }
