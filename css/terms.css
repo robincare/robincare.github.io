@@ -96,140 +96,139 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .clearfix:before, .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
 .clearfix:after {
-  clear: both; }
+    clear: both; }
 
 .smallgreenline {
-  width: 45px;
-  border-top: 3px solid #21cccc; }
+    width: 45px;
+    border-top: 3px solid #21cccc; }
 
 @font-face {
-  font-family: 'Campton-Bold';
-  src: url("../Campton/Campton_Bold.woff2") format("woff2"), url("../Campton/Campton_Bold.woff") format("woff"); }
+    font-family: 'Campton-Bold';
+    src: url("../Campton/Campton_Bold.woff2") format("woff2"), url("../Campton/Campton_Bold.woff") format("woff"); }
 @font-face {
-  font-family: 'Campton-Book';
-  src: url("../Campton/Campton_Book.woff2"), format("woff2"), url("../Campton/Campton_Book.woff") format("woff"); }
+    font-family: 'Campton-Book';
+    src: url("../Campton/Campton_Book.woff2"), format("woff2"), url("../Campton/Campton_Book.woff") format("woff"); }
 @font-face {
-  font-family: 'Campton-Light';
-  src: url("../Campton/Campton_Light.woff2") format("woff2"), url("../Campton/Campton_Light.woff") format("woff"); }
+    font-family: 'Campton-Light';
+    src: url("../Campton/Campton_Light.woff2") format("woff2"), url("../Campton/Campton_Light.woff") format("woff"); }
 @font-face {
-  font-family: 'Campton-Medium';
-  src: url("../Campton/Campton_Medium.woff2") format("woff2"), url("../Campton/Campton_Medium.woff") format("woff"); }
+    font-family: 'Campton-Medium';
+    src: url("../Campton/Campton_Medium.woff2") format("woff2"), url("../Campton/Campton_Medium.woff") format("woff"); }
 @font-face {
-  font-family: 'Campton-SemiBold';
-  src: url("../Campton/Campton_SemiBold.woff2") format("woff2"), url("../Campton/Campton_SemiBold.woff") format("woff"); }
+    font-family: 'Campton-SemiBold';
+    src: url("../Campton/Campton_SemiBold.woff2") format("woff2"), url("../Campton/Campton_SemiBold.woff") format("woff"); }
 .terms-container {
-  width: 100%; }
+    width: 100%; }
 
 .subpage-container {
-  clear: both;
-  padding: 7%;
-  font-size: 16px; }
-  .subpage-container span {
+    clear: both;
+    padding: 7%;
+    font-size: 16px; }
+.subpage-container span {
     font-family: 'Campton-Medium', "Open-Sans", sans-serif; }
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .subpage-container {
-      width: 65%; } }
+        width: 65%; } }
 
 .subpage-header {
-  font-size: 22px;
-  letter-spacing: 0.4px;
-  font-family: 'Campton-SemiBold', "Open-Sans", sans-serif; }
+    font-size: 22px;
+    letter-spacing: 0.4px;
+    font-family: 'Campton-SemiBold', "Open-Sans", sans-serif; }
 
 .main-nav a {
-  width: 90px;
-  font-size: 12px;
-  border: solid 2px #2d404f;
-  border-radius: 5px;
-  height: 30px;
-  float: right;
-  line-height: 28px;
-  letter-spacing: 1.3px;
-  padding: 0;
-  font-family: 'Campton-Book', "Open-Sans", sans-serif;
-  background-color: #fff;
-  text-decoration: none;
-  text-align: center;
-  color: #2d404f; }
-  @media (min-width: 1024px) {
+    width: 90px;
+    font-size: 12px;
+    border: solid 2px #2d404f;
+    border-radius: 5px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    letter-spacing: 1.3px;
+    padding: 0;
+    font-family: 'Campton-Book', "Open-Sans", sans-serif;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    color: #2d404f; }
+@media (min-width: 1024px) {
     .main-nav a {
-      width: 150px;
-      font-size: 14px;
-      line-height: 48px;
-      height: 50px;
-      letter-spacing: 1.5px; }
-      .main-nav a:hover {
+        width: 150px;
+        font-size: 14px;
+        line-height: 50px;
+        height: 50px;
+        letter-spacing: 1.5px; }
+    .main-nav a:hover {
         color: #fff;
         background-color: #2d404f; } }
 .main-nav a, .main-nav .logo-container {
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: 5%; }
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%; }
 .main-nav .logo-container {
-  float: left;
-  z-index: 2;
-  width: 90px;
-  cursor: pointer; }
-  @media (min-width: 1024px) {
+    float: left;
+    z-index: 2;
+    width: 90px;
+    cursor: pointer; }
+@media (min-width: 1024px) {
     .main-nav .logo-container {
-      width: 150px; } }
+        width: 150px; } }
 .main-nav .logo {
-  width: 100%; }
+    width: 100%; }
 
 footer {
-  width: 100%;
-  display: block;
-  padding: 10px 7%;
-  border-top: 2px solid #dddddd;
-  background-color: #f6f7f8;
-  color: #bebebe;
-  font-family: 'Campton-Light', "Open-Sans", sans-serif;
-  font-size: 10px;
-  text-align: center; }
-  @media (min-width: 600px) {
+    width: 100%;
+    display: block;
+    padding: 10px 7%;
+    border-top: 2px solid #dddddd;
+    background-color: #f6f7f8;
+    color: #bebebe;
+    font-family: 'Campton-Light', "Open-Sans", sans-serif;
+    font-size: 10px;
+    text-align: center; }
+@media (min-width: 600px) {
     footer {
-      padding: 20px 7%;
-      text-align: left; } }
-  @media (min-width: 1024px) {
+        padding: 20px 7%;
+        text-align: left; } }
+@media (min-width: 1024px) {
     footer {
-      padding: 50px 7%; } }
-  footer a:hover {
+        padding: 50px 7%; } }
+footer a:hover {
     color: #dddddd; }
-  footer span, footer a {
+footer span, footer a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #bebebe;
     font-family: 'Campton-Light', "Open-Sans", sans-serif;
     font-size: 10px; }
-    @media (min-width: 600px) {
-      footer span, footer a {
+@media (min-width: 600px) {
+    footer span, footer a {
         display: inline-block;
         margin-left: 10px;
         padding: 0; } }
-    @media (min-width: 768px) {
-      footer span, footer a {
+@media (min-width: 768px) {
+    footer span, footer a {
         margin-left: 20px; } }
-    @media (min-width: 1024px) {
-      footer span, footer a {
+@media (min-width: 1024px) {
+    footer span, footer a {
         font-size: 12px;
         margin-left: 45px; } }
-    @media (min-width: 1440px) {
-      footer span, footer a {
+@media (min-width: 1440px) {
+    footer span, footer a {
         font-size: 14px;
         margin-left: 60px; } }
-  footer #footer-logo {
+footer #footer-logo {
     margin-left: 0; }
 
 .active {
-  font-family: 'Campton-Medium', "Open-Sans", sans-serif; }
+    font-family: 'Campton-Medium', "Open-Sans", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
-
 
 
 
