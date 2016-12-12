@@ -322,7 +322,7 @@
       width: 290px; } }
 
 .quick-fact-image {
-  width: 100%;
+  width: 95%;
   max-width: 385px; }
   @media (min-width: 600px) {
     .quick-fact-image {
