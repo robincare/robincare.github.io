@@ -255,9 +255,11 @@
     .intro-fact-description {
       width: 260px; } }
 
-@media (min-width: 600px) {
-  .quick-facts-container {
-    margin-bottom: 50px; } }
+.quick-facts-container {
+  margin-bottom: 30px; }
+  @media (min-width: 600px) {
+    .quick-facts-container {
+      margin-bottom: 50px; } }
 
 .quick-fact-container {
   text-align: center; }

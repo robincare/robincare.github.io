@@ -325,6 +325,7 @@ $desktopLarge: 1440px;
   }
 }
 .quick-facts-container {
+  margin-bottom: 30px;
   @include mobileLarge {
     margin-bottom: 50px;
   }
