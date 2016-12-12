@@ -325,13 +325,13 @@ $desktopLarge: 1440px;
   }
 }
 .quick-facts-container {
-  margin-bottom: 30px;
   @include mobileLarge {
     margin-bottom: 50px;
   }
 }
 .quick-fact-container {
   text-align: center;
+  margin-bottom: 30px;
   hr {
     @extend .smallgreenline;
     margin: 1em auto;
