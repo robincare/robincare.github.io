@@ -417,7 +417,7 @@
               <a class="header-link" href="">EMPLOYERS</a>
           </div>
           <div class="menu-space">
-              <a class="header-link-btn" href="http://www.getrobincare.com/activisionblizzard#footer-mobile">DOWNLOAD</a>
+              <a class="header-link-btn" onclick="goto_bottom();">DOWNLOAD</a>
           </div>
       </div>
   </div>
@@ -440,6 +440,11 @@ $(document).ready(function() {
     });
 
 });
+    
+//function to redirect to download section on mobile
+function goto_bottom() {
+    window.location.href = "http://www.getrobincare.com/activisionblizzard#footer-mobile";
+}
 
 //function to activate a slide
 function slider_fn(slide) {
