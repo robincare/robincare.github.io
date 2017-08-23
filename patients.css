@@ -1,0 +1,656 @@
+body {
+    background-color: #2e3f50;
+    font-family: Campton;
+}
+@font-face {
+    font-family: Campton;
+    src: url('fonts/Campton Light.otf');
+}
+@font-face {
+    font-family: CamptonBook;
+    src: url('fonts/Campton Book.otf');
+}
+.form-control:focus {
+    border: 1px solid #000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 10px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 10px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 10px;
+}
+
+/* header */
+header {
+    background-color: #57d1d2;
+    margin-bottom: 100px;
+}
+#header-content {
+    padding: 25px 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#logo-img {
+    max-width: 35px;
+}
+a.header-link {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link:focus,
+a.header-link:active,
+a.header-link:hover {
+    font-size: 12px;
+    color: #000;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.hl-active {
+    color: #000;
+}
+a.header-link-btn {
+    background-color: #2e3f50;
+    padding: 12px 25px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link-btn:focus,
+a.header-link-btn:active,
+a.header-link-btn:hover {
+    font-size: 12px;
+    color: #fff;
+    background-color: #495a6a;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.menu-space {
+    display: inline-block;
+    padding-left: 25px;
+}
+#menu-mobile {
+    display: none;
+}
+/* end header */
+
+/*section-1*/
+#section-1 {
+    font-family: Campton;
+    background-image: url(img/patients-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    padding-bottom: 200px;
+}
+#section-1-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#section-1-1 {
+    font-size: 40px;
+    font-family: CamptonBook; 
+    color: #2e3f50;
+}
+#section-1-2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+#section-1-3 {
+    border-top: 1px solid #000;
+    width: 80px;
+    padding-bottom: 40px;
+}
+#section-1-4 {
+    display: flex;
+}
+#section-1-5 {
+    padding-right: 25px;
+}
+#section-1-6 {
+    font-size: 18px;
+    text-align: left;
+    max-width: 300px;
+}
+.sign-up-btn {
+    text-transform: uppercase;
+    background-color: #35CDCD;
+    color: #fff;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+.sign-up-btn:hover,
+.sign-up-btn:focus {
+    background-color: #30b8b8;
+    color: #fff;
+    cursor: pointer;
+}
+.sign-up-input {
+    border: 1px solid #000;
+    border-radius: 3px;
+    opacity: 0.7;
+    padding: 10px 20px;
+    max-width: 300px;
+
+}
+/* end section-1 */
+
+/* section-2 */
+#section-2-mobile {
+    display: none;
+}
+#section-2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: flex;
+}
+#section-2-1 {
+    display: flex;
+    width: 500px;
+}
+#section-2-2 {
+    width: 500px;
+    float: right;
+}
+.slider-circle {
+    font-size: 15px;
+    color: #626f7b;
+}
+.slider-circle:hover {
+    color: #caced3;
+    cursor: pointer;
+}
+.circle-active {
+    color: #caced3;
+}
+.slider-controllers {
+    padding-bottom: 3px;
+}
+.slider-title {
+    font-size: 22px;
+    font-family: CamptonBook;
+    padding-bottom: 10px;
+    color: #999999;
+}
+.slider-text {
+    font-size: 15px;
+    max-width: 330px;
+    color: #999999;
+}
+.slider-title-active {
+    font-size: 22px;
+    font-family: CamptonBook;
+    padding-bottom: 10px;
+    color: #35cdcd;
+}
+.slider-text-active {
+    font-size: 15px;
+    max-width: 330px;
+    color: #fff;
+}
+.hidden-pic {
+    display: none;
+}
+.sl-space {
+    padding-bottom: 50px;
+}
+/* end section-2 */
+
+/* section-3 */
+#section-3 {
+    display: flex;
+}
+#section-3-1 {
+    background-color: #fff;
+    width: 50%;
+}
+#section-3-1-1 {
+    max-width: 500px;
+    float: right;
+    padding-right: 30px;
+    padding-top: 90px;
+}
+#section-3-1-a {
+    font-family: CamptonBook;
+    font-size: 30px;
+    color: #2e3f50;
+    padding-bottom: 15px;
+}
+#section-3-photo {
+    background-image: url(img/patients-img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px ;
+    width: 50%;
+    background-color: #fff;
+}
+
+
+/* end section-3 */
+
+/* section-4 */
+#section-4 {
+    font-family: Campton;
+    background-image: url(img/patients-img-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section-4-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#section-4-1 {
+    padding-left: 500px;
+    padding-bottom: 60px;
+    padding-top: 70px;
+}
+#section-4-a {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+#section-4-b {
+    background-color: rgba(46,63,80,0.6);
+    padding: 25px;
+    border-radius: 3px;
+}
+#section-4-b-1 {
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+#section-4-b-2 {
+    display: flex;
+}
+#section-4-b-2-1 {
+    padding-right: 25px;
+}
+#section-4-3 {
+    color: #fff;
+    font-size: 18px;
+}
+.call-me-btn {
+    text-transform: uppercase;
+    background-color: #35cdcd;
+    color: #fff;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    opacity: 1;
+}
+.call-me-btn:hover,
+.call-me-btn:focus {
+    background-color: #30b8b8;
+    color: #fff;
+    cursor: pointer;
+}
+.call-me-input {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px 20px;
+    max-width: 300px;
+
+}
+#section-4-mobile {
+    display: none;
+}
+/* end section-4 */
+
+/*  footer  */
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+a.a-link,
+a.a-link:focus,
+a.a-link:active,
+a.a-link:hover {
+    font-size: 11px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+#footer-mobile {
+    display: none;
+}
+/*  end footer  */
+
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  #section-1-content {
+      padding-left: 30px;
+      padding-right: 30px; 
+  }
+  #section-1 {
+      background-position: top center;
+  }
+  #section-2 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 100px 30px;
+      display: initial;
+  }
+  #section-2-1 {
+      display: none;
+      width: 100%;
+  }
+  #section-2-2 {
+      width: 100%;
+      float: none;
+      padding: 0px 30px;
+  }
+  #section-3-1 {
+      padding-left: 30px;
+  }
+  #section-3-photo {
+      background-position: top center;
+  }
+
+  #section-4-1 {
+      padding-right: 30px;
+      padding-left: 50%;
+  }
+  #section-4-b {
+      padding-bottom: 30px;
+  }
+
+  footer {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  #section-4-1 {
+      padding-right: 30px;
+      padding-left: 30px;
+  }
+  #section-3-photo {
+      background-position: top center;
+  }
+  #section-3-1-1 {
+      padding-top: 30px;
+  }
+
+
+}
+@media screen and (max-width: 500px) {
+  #menu-id {
+      display: none;
+  }
+  #header-content {
+      padding: 10px 0px;
+  }
+  #logo-img {
+      max-width: 30px;
+  }
+  #menu-mobile {
+      display: initial;
+  }
+  #section-1 {
+      background-size: cover;
+      background-position: bottom center;
+      padding: 0px;
+      padding-bottom: 0px;
+  }
+  #section-1-content {
+      padding-bottom: 150px;
+  }
+  #section-1-1 {
+      font-size: 25px;
+      text-align: center;
+  }
+  #section-1-2 {
+      font-size: 16px;
+      padding-bottom: 20px;
+      text-align: center;
+  }
+  #section-1-3 {
+      border-top: 1px solid #000;
+      width: 80px;
+      padding-bottom: 25px;
+      margin: auto;
+  }
+  #section-1-4 {
+      display: initial;
+      text-align: center;
+  }
+  #section-1-5 {
+      margin:0 auto;
+      max-width: 300px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+  }
+  #section-1-6 {
+      font-size: 18px;
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+  }
+
+  .sign-up-btn {
+      text-transform: uppercase;
+      background-color: #35CDCD;
+      color: #fff;
+      border-width: 0px;
+      font-size: 14px;
+      padding: 12px 30px;
+      border-radius: 3px;
+      width: 300px;
+  }
+  .sign-up-btn:hover,
+  .sign-up-btn:focus {
+      background-color: #30b8b8;
+      color: #fff;
+      cursor: pointer;
+  }
+  .sign-up-input {
+      border: 1px solid #000;
+      border-radius: 3px;
+      opacity: 0.7;
+      padding: 14px 20px;
+      font-size: 16px;
+      width: 300px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+    text-align: center;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+    text-align: center;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+    text-align: center;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+    text-align: center;
+  }
+  #section-2 {
+      display: none;
+  }
+  #section-2-mobile {
+      display: initial;
+      padding-bottom: 50px;
+  }
+  #section-3 {
+    display: initial;
+  }
+  #section-3-1 {
+      background-color: #fff;
+      width: 100%;
+  }
+  #section-3-1-1 {
+    float: none;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #section-3-1-a {
+      font-family: CamptonBook;
+      font-size: 25px;
+      color: #2e3f50;
+      padding-bottom: 15px;
+  }
+  #section-3-photo {
+      background-image: url(img/patients-img-2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 150px 0px ;
+      width: 100%;
+      background-color: #fff;
+  }
+
+  #section-4 {
+      display: none;
+  }
+  #section-4-mobile {
+      display: initial;
+      background-color: #fff;
+      width: 100%;
+  }
+  #section-4-mobile-content {
+      padding: 40px 0px;
+      color: #000;
+      background-color: #fff;
+  }
+  #section-4-mc-1 {
+      max-width: 300px;
+      text-align: center;
+      margin: 0 auto;
+  }
+  #section-4-mobile-2 {
+      background-image: url(img/patients-img-3.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 100px 0px;
+      background-color: #35cdcd;
+  }
+  #section-4-mobile-3 {
+      background-color: #35cdcd;
+      padding: 50px 0px;
+  }
+  #section-4-mobile-5 {
+      font-size: 24px;
+      max-width: 250px;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      padding: 40px 0px;
+  }
+  .call-me-btn {
+      text-transform: uppercase;
+      background-color: #2e3f50;
+      color: #fff;
+      border-width: 0px;
+      font-size: 14px;
+      padding: 10px 30px;
+      border-radius: 3px;
+      opacity: 1;
+  }
+  .call-me-btn:hover,
+  .call-me-btn:focus {
+      background-color: #2e3f50;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  footer {
+    display: none;
+  }
+  #footer-mobile {
+      display: initial;
+      background-color: #2e3f50;
+      padding: 40px 0px;
+  }
+  a.a-link,
+  a.a-link:focus,
+  a.a-link:active,
+  a.a-link:hover {
+      font-size: 13px;
+
+  }
+  #mobile-menu-content {
+      min-width: 100%;
+      min-height: 100%;
+      background-color: #35cdcd;
+  }
+  a.header-link {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  a.header-link:focus,
+  a.header-link:active,
+  a.header-link:hover {
+      font-size: 14px;
+      color: #000;
+      padding-top: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  a.hl-active {
+      color: #000;
+  }
+  a.header-link-btn {
+      background-color: #2e3f50;
+      padding: 15px 30px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  a.header-link-btn:focus,
+  a.header-link-btn:active,
+  a.header-link-btn:hover {
+      font-size: 14px;
+      color: #fff;
+      background-color: #495a6a;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  .menu-space {
+      display: block;
+      padding-left: 0px;
+      text-align: center;
+      padding-bottom: 50px;
+  }
+
+  
+
+}
+
+
+
+
+
