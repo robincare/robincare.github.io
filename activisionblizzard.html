@@ -59,7 +59,7 @@
                               <input type=hidden name='captcha_settings' value='{"keyname":"AB","fallback":"true","orgId":"00Df40000002Q23","ts":""}'>
                               <input type=hidden name="oid" value="00Df40000002Q23">
                               <input type=hidden name="retURL" value="http://www.getrobincare.com">
-                              <input  id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Enter your email address"/>
+                              <input  id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-iontrol sign-up-input" placeholder="Enter your email addressnput" placeholder="Enter your email address"/>
                               <input type="hidden" name="debug" value=1>                              
                               <input type="hidden" name="debugEmail" value="office@getrobincare.com">  
                               <div style="padding-top: 15px;" class="g-recaptcha" data-sitekey="6LcymiwUAAAAAM6_cJYrbvYX7cYi3c-lzJj45Vrl"></div>                                 
@@ -505,9 +505,11 @@ $("#form-1,#form-2,#form-3").submit(function(e){
 });
 
 function submit_form(id) {
+    console.log(id);
     if(id==1) {
         var thefield = $('#email').val();
         if(thefield.length>0) {
+            console.log(thefield);
             $('#form-1').submit();
             $('#section-1-4').css("display", "none");
             $('#section-1-6').removeClass('hidden-pic');
