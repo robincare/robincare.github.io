@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Robin Care</title>
-    <meta name="description" content="Robin Care gives cancer patients and their loved ones the help they need.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="patients.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
@@ -62,7 +60,7 @@
                               <input  id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Enter your email address"/>
                               <input type="hidden" name="debug" value=1>                              
                               <input type="hidden" name="debugEmail" value="office@getrobincare.com">  
-                              <div style="padding-top: 15px;" class="g-recaptcha" data-sitekey="6LcymiwUAAAAAM6_cJYrbvYX7cYi3c-lzJj45Vrl"></div>                                 
+                              <div class="g-recaptcha" data-sitekey="6LcymiwUAAAAAM6_cJYrbvYX7cYi3c-lzJj45Vrl"></div>                                 
 
                           </div>
                           <div>
@@ -419,7 +417,7 @@
               <a class="header-link" href="">EMPLOYERS</a>
           </div>
           <div class="menu-space">
-              <a class="header-link-btn" href="#footer-mobile" onclick="goto_bottom();">DOWNLOAD</a>
+              <a class="header-link-btn" href="http://www.getrobincare.com/patients#footer-mobile">DOWNLOAD</a>
           </div>
       </div>
   </div>
@@ -428,6 +426,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   </body>
 </html>
 <script type="text/javascript">
@@ -442,12 +441,6 @@ $(document).ready(function() {
     });
 
 });
-    
-//function to redirect to download section on mobile
-function goto_bottom() {
-    close_menu_mobile();
-    location.href = "#footer-mobile";
-}
 
 //function to activate a slide
 function slider_fn(slide) {
