@@ -424,7 +424,6 @@
 <script type="text/javascript">
 new WOW().init();
 var slide_index = 3; //index of active slide
-
 //function to activate a slide
 function slider_fn(slide) {
     var slide_number;
@@ -433,7 +432,6 @@ function slider_fn(slide) {
         else { slide_number = slide_index+1; }
     }
     else { slide_number = slide; } //if the user click on controllers to change the slide
-
     if(slide_number==1 && slide_index!=1) {
         $('#slider-phone-2,#slider-phone-3').addClass('hidden-pic');
         $('#slider-phone-1').removeClass('hidden-pic');
@@ -456,13 +454,11 @@ function slider_fn(slide) {
     $('#slider-circle-1,#slider-circle-2,#slider-circle-3').removeClass('circle-active');
     $('#slider-circle-'+slide_number).addClass('circle-active');
 }
-
 function call_slider_fn() {
     slider_fn(0);
 }
 setInterval(call_slider_fn, 7000);
 slider_fn(1);
-
 function menu_mobile() {
   $('body').css("background-color","#35cdcd");
     $('#page-content').addClass('hidden-pic');
@@ -473,32 +469,18 @@ function close_menu_mobile() {
     $('#page-content').removeClass('hidden-pic');
     $('#mobile-menu-content').addClass('hidden-pic');
 }
-
 //forms
 //prevent submit by clicking the button
 $("#form-1,#form-2,#form-3").submit(function(e){
     e.preventDefault(e);
 });
-
 function submit_form(id) {
     if(id==1) {
         var thefield = $('#email').val();
         if(thefield.length>0) {
-            var theForm = $('#form-1');
-            $.ajax( {	//This part is using XMLHttpRequest, this cannot work Cross-domain
-                url: theForm.attr( 'action' ) ,
-                type: "POST",
-                data: theForm,
-                success: function() {
-                    $('#section-1-4').css("display", "none");
-                    $('#section-1-6').removeClass('hidden-pic');
-                }
-            } );
-            return false;
-            
-            //$('#form-1').submit();
-            //$('#section-1-4').css("display", "none");
-            //$('#section-1-6').removeClass('hidden-pic');
+            $('#form-1').submit();
+            $('#section-1-4').css("display", "none");
+            $('#section-1-6').removeClass('hidden-pic');
         }
     }
     else if(id==2) {
