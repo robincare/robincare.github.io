@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -22,7 +21,7 @@
             <header class="animated fadeInDown">
                 <div class="row" id="header-content" style="display: flex;">
                     <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" >
-                        <a href="http://www.getrobincare.com/"><img src="img/logo.png" alt="Logo" id="logo-img"></a>
+                        <a href="http://www.getrobincare.com/"><img src="img/Icon - Reverse.png" alt="Logo" id="logo-img"></a>
                     </div>
                     <div class="col-xl-7 col-lg-10 col-md-10 col-sm-8 col-8" id="menu-id">
                         <div style="display: block;float: right;padding-top: 10px;">
@@ -33,7 +32,7 @@
                                 <a class="header-link" href="">EMPLOYERS</a>
                             </div>
                             <div class="menu-space">
-                                <a class="header-link-btn" href="#footer" >DOWNLOAD</a>
+                                <a class="header-link-btn" href="">DOWNLOAD</a>
                             </div>
                         </div>
                     </div>
@@ -348,7 +347,7 @@
               </div>
           </div>
       </div>
-      <footer style="padding-top: 40px;padding-bottom: 40px;" id="footer">
+      <footer style="padding-top: 40px;padding-bottom: 40px;">
           <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
                   <div style="padding-bottom: 20px;" class="wow fadeInLeft">
@@ -403,7 +402,7 @@
   <div id="mobile-menu-content" class="hidden-pic animated fadeInDownBig">
       <div class="row" style="padding: 15px 15px;">
           <div class="col-md-6 col-sm-6 col-6">
-              <a href="http://www.getrobincare.com/"><img src="img/logo.png" alt="Logo" id="logo-img"></a>
+              <a href="http://www.getrobincare.com/"><img src="img/Icon - Reverse.png" alt="Logo" id="logo-img"></a>
           </div>
           <div class="col-md-6 col-sm-6 col-6 text-right">
               <a onclick="close_menu_mobile();"><img src="img/close.png" alt="Close" style="max-width: 17px;"></a>
@@ -417,7 +416,7 @@
               <a class="header-link" href="">EMPLOYERS</a>
           </div>
           <div class="menu-space">
-              <a class="header-link-btn" href="http://www.getrobincare.com/patients#footer-mobile">DOWNLOAD</a>
+              <a class="header-link-btn" href="">DOWNLOAD</a>
           </div>
       </div>
   </div>
@@ -426,21 +425,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   </body>
 </html>
 <script type="text/javascript">
 new WOW().init();
 var slide_index = 3; //index of active slide
-
-$(document).ready(function() {
-   
-    $('#download').click(function(){
-        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-        return false;
-    });
-
-});
 
 //function to activate a slide
 function slider_fn(slide) {
