@@ -484,9 +484,21 @@ function submit_form(id) {
     if(id==1) {
         var thefield = $('#email').val();
         if(thefield.length>0) {
-            $('#form-1').submit();
-            $('#section-1-4').css("display", "none");
-            $('#section-1-6').removeClass('hidden-pic');
+            var theForm = $('#form-1');
+            $.ajax( {	//This part is using XMLHttpRequest, this cannot work Cross-domain
+                url: theForm.attr( 'action' ) ,
+                type: "POST",
+                data: theForm,
+                success: function() {
+                    $('#section-1-4').css("display", "none");
+                    $('#section-1-6').removeClass('hidden-pic');
+                }
+            } );
+            return false;
+            
+            //$('#form-1').submit();
+            //$('#section-1-4').css("display", "none");
+            //$('#section-1-6').removeClass('hidden-pic');
         }
     }
     else if(id==2) {
