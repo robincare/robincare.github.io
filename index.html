@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon shortcut" href="/favicon.png" >
+        <link rel="icon shortcut" href="favicon.png" >
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -18,6 +18,7 @@
          <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 
@@ -31,29 +32,30 @@
             <div class="form-submit-msg-container">Thank you! We've received your message and will get back to you shortly.</div>
             <div class="hero-image-container">
                 <div class="hero-overlay">
-                    <nav class="main-nav">
-                        <div class="logo-container"><img class="logo" src="img/robin-care-logo-white.png"></div>
-                        <a href="#contact-us" class="contact-btn">CONTACT</a>
-                    </nav>
-                    <h1 class="hero-description">We give cancer patients and their loved ones the help they need</h1>
+                    <div id="menu-top" class="animated fadeInDown">
+                        <div><img class="logo" src="img/Icon - Reverse.png" style="max-width: 35px;cursor: pointer;" onclick="hp_fn()"></div>
+                        <div style="margin-left: auto;margin-right: 0;"><a href="#contact-us" class="header-link-btn" style="margin-right: 0px;">CONTACT</a></div>
+                    </div>
+
+                    <h1 class="hero-description animated fadeInLeft">We give cancer patients and their loved ones the help they need</h1>
                 </div>
             </div>
             <div class="introduction-container">
-                <p class="intro-description">Robin Care offers patients and caregivers comprehensive cancer care support. Each patient has 24-7 access to a team of coaches and nurses to help them navigate the journey. Our web and mobile apps provide education, tools, and resources to empower patients every step of the way.</p>
+                <p class="intro-description wow fadeInUp">Robin Care offers patients and caregivers comprehensive cancer care support. Each patient has 24-7 access to a team of coaches and nurses to help them navigate the journey. Our web and mobile apps provide education, tools, and resources to empower patients every step of the way.</p>
             </div>
             <div class="fact-container">
                 <div class="intro-facts">
-                    <div class="intro-fact-container">
+                    <div class="intro-fact-container wow pulse">
                         <img src="img/expert-cancer-network.png" alt=“cancer support expert network” class="intro-fact-icon"/>
                         <h3 class="intro-fact-header"> BUILT BY EXPERTS</h3>
                         <p class="intro-fact-description"> Designed by oncologists, social workers, and health care industry veterans, Robin provides round-the-clock support to cancer patients.</p>
                     </div>
-                    <div class="intro-fact-container">
+                    <div class="intro-fact-container wow pulse">
                         <img src="img/cancer-support-pathways.png" alt=“cancer support pathways” class="intro-fact-icon"/>
                         <h3 class="intro-fact-header">DIAGNOSIS TO SURVIVORSHIP</h3>
                         <p class="intro-fact-description">Robin Care uses proven pathways and protocols to support patients. We bring clarity to the complex cancer journey.</p>
                     </div>
-                    <div class="intro-fact-container">
+                    <div class="intro-fact-container wow pulse">
                         <img src="img/personalized-cancer-content.png" alt=“personalized cancer education and resources” class="intro-fact-icon"/>
                         <h3 class="intro-fact-header">PERSONALIZED TO EACH PATIENT</h3>
                         <p class="intro-fact-description">The cancer experience is different for every patient. We tailor information, resources, and advice for each unique journey.</p>
@@ -61,34 +63,34 @@
                 </div>
             </div>
             <div class="quick-facts-container">
-                <h2 class="quick-facts-header">THERE ARE 1.6 MILLION NEW CASES OF CANCER EVERY YEAR</h2>
+                <h2 class="quick-facts-header wow fadeInDown">THERE ARE 1.6 MILLION NEW CASES OF CANCER EVERY YEAR</h2>
                 <div class="quick-fact-container">
-                    <div class="fact-box">
+                    <div class="fact-box wow fadeInLeft">
                         <h3 class="fact-header">LIFETIME RISK</h3>
                         <hr>
                         <p class="fact-description">Each person has a more than 40% chance of developing cancer in their lifetime</p>
                     </div>
-                    <img src="img/cancer-risk.png" alt=“risk of getting cancer” class="quick-fact-image" />
+                    <img src="img/cancer-risk.png" alt=“risk of getting cancer” class="quick-fact-image wow fadeInRight" />
                 </div>
                 <div class="quick-fact-container">
-                    <div class="fact-box">
+                    <div class="fact-box wow fadeInRight">
                         <h3 class="fact-header">ECONOMIC BURDEN</h3>
                         <hr>
                         <p class="fact-description">Cancer costs are growing fast and expected to exceed $158B by 2020</p>
                     </div>
-                    <img src="img/cancer-costs-increasing.png" alt=“cost of cancer” class="quick-fact-image" />
+                    <img src="img/cancer-costs-increasing.png" alt=“cost of cancer” class="quick-fact-image wow fadeInLeft" />
                 </div>
                 <div class="quick-fact-container">
-                    <div class="fact-box">
+                    <div class="fact-box wow fadeInLeft">
                         <h3 class="fact-header">INEFFICIENT USE</h3>
                         <hr>
                         <p class="fact-description">Less than 2% of cancer dollars are going towards improving the experience of cancer patients</p>
                     </div>
-                    <img src="img/cancer-support-investment.png" alt=“investment in cancer support” class="quick-fact-image" />
+                    <img src="img/cancer-support-investment.png" alt=“investment in cancer support” class="quick-fact-image wow fadeInRight" />
                 </div>
             </div>
             <div class="motto-container">
-                <h1 class="motto-header">We partner with employers and providers so that all patients can access the support they need</h1>
+                <h1 class="motto-header wow fadeInDown">We partner with employers and providers so that all patients can access the support they need</h1>
             </div>
             <div class="slider-container">
                 <div class="slider-head">
@@ -174,7 +176,7 @@
                     <a id="contact-us"></a><h2>CONTACT US</h2>
                     <hr>
                 </div>
-                <div class="form-container">
+                <div class="form-container wow fadeInRight">
                     <div class="contact-info">
                         <p class="contact-description">We are taking new clients on a limited basis. If you are interested in working with us, please use the form. We would love to speak with you.</p>
                         <h4 class="contact-subhead">EMAIL</h4>
@@ -215,11 +217,43 @@
             </div>
         </div>
         <footer>
-            <div class="footer-link-container"><a href="/" id="footer-logo" class="active">Robin</a></div>
+<!--             <div class="footer-link-container"><a href="/" id="footer-logo" class="active">Robin</a></div>
             <div class="footer-link-container"><span>All Rights Reserved</span></div>
             <div class="footer-link-container"><a href="privacypolicy">Privacy Policy</a></div>
-            <div class="footer-link-container"><a href="terms">Terms &amp; Conditions</a></div>
+            <div class="footer-link-container"><a href="terms">Terms &amp; Conditions</a></div> -->
+            <div id="footer-content">    
+                <div style="padding-bottom: 20px;" class="wow fadeInLeft">
+                    <img src="img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
+                </div>
+                <div style="display: flex;" class="wow fadeInUp">
+                    <div style="color: #fff;font-size: 12px;padding-right: 25px;padding-top: 0px;">
+                        All Rights Reserved
+                    </div>
+                    <div style="padding-right: 20px;">
+                        <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a>
+                    </div>
+                    <div style="padding-right: 20px;">
+                        <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <div id="footer-mobile">
+            <div>
+                  <div style="text-align: center;padding-bottom: 20px;">
+                      <img src="img/robin-care-logo-white.png" style="max-width: 200px;" alt="Logo">
+                  </div>
+                  <div style="color: #fff;font-size: 13px;text-align: center;">
+                      All Rights Reserved
+                  </div>
+                  <div style="padding-bottom: 60px;padding-top: 15px; ">
+                      <div style="text-align: center;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy" style="padding-right: 15px;">Privacy Policy</a>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+                  </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -229,6 +263,7 @@
         <script type="text/javascript" src="js/plugins.js"></script>
          <script type="text/javascript" src="js/vendor/swiper.jquery.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -238,6 +273,10 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script>
+            new WOW().init();
+            function hp_fn() { window.location.href = "http://www.getrobincare.com/"; }
         </script>
     </body>
 </html>

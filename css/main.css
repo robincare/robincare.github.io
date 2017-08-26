@@ -813,7 +813,7 @@ textarea {
 .contact-container {
   background-color: #2d404f;
   padding: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   margin-top: -1px;
   position: relative;
   z-index: 2; }
@@ -826,7 +826,7 @@ textarea {
     .contact-container {
       background-color: #fff;
       padding: 0;
-      padding-bottom: 200px; } }
+      padding-bottom: 30px; } }
 
 .contact-header {
   width: 100%;
@@ -1080,7 +1080,7 @@ footer {
   display: block;
   padding: 10px 7%;
   border-top: 2px solid #dddddd;
-  background-color: #f6f7f8;
+  background-color: #2e3f50;
   color: #bebebe;
   font-family: 'Campton-Light', "Open-Sans", sans-serif;
   font-size: 10px;
@@ -1128,14 +1128,104 @@ footer {
 
 /*# sourceMappingURL=style.css.map */
 
+a.a-link,
+a.a-link:focus,
+a.a-link:active,
+a.a-link:hover {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+#footer-content {
+    padding: 30px 7%;
+}
+a.header-link-btn {
+    background-color: #2e3f50;
+    padding: 0px 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+    border: 0px solid #000;
+    vertical-align: middle;
+}
+a.header-link-btn:focus,
+a.header-link-btn:active,
+a.header-link-btn:hover {
+    font-size: 14px;
+    color: #fff;
+    background-color: #495a6a;
+    margin-top: 0px;
+    text-decoration: none;
+}
+#menu-top {
+    display: flex;
+    width: 100%;
+    background-color: #35cdcd;
+    padding: 30px 7%;
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 500px) {
+    #footer-mobile {
+        display: block;
+        background-color: #2e3f50;
+        padding: 30px 0px;
+    }
+    footer {
+        display: none;
+    }
+    a.a-link,
+    a.a-link:focus,
+    a.a-link:active,
+    a.a-link:hover {
+        font-size: 13px;
+    }
+    #mobile-menu-content {
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #35cdcd;
+    }
+    #menu-top {
+        display: flex;
+        width: 100%;
+        background-color: #35cdcd;
+        padding: 10px 3%;
+    }
+}
+@media screen and (min-width: 500px) {
+    #footer-mobile {
+        display: none;
+    }
+    footer {
+        display: block;
+    }
+}
+@media screen and (max-width: 1023px) {
+  a.header-link-btn {
+      background-color: #2e3f50;
+      padding: 8px 30px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 0px;
+      text-decoration: none;
+      border: 0px solid #000;
+      height: 45px;
+      width: 150px;
+  }
+  a.header-link-btn:focus,
+  a.header-link-btn:active,
+  a.header-link-btn:hover {
+      font-size: 14px;
+      color: #fff;
+      background-color: #495a6a;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+}
 
 
 
