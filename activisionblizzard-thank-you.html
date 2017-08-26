@@ -13,6 +13,26 @@
     <script>
         function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
     </script>
+    <script>
+      window.onload = function() {
+          var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+          if($recaptcha) {
+              $recaptcha.setAttribute("required", "required");
+          }
+      };
+    </script>
+    <style>
+        #g-recaptcha-response {
+            display: block !important;
+            position: absolute;
+            margin: -78px 0 0 0 !important;
+            width: 302px !important;
+            height: 76px !important;
+            z-index: -999999;
+            opacity: 0;
+        }
+    </style>
 
   </head>
   <body>
@@ -56,7 +76,7 @@
                               <input type=hidden name='captcha_settings' value='{"keyname":"AB","fallback":"true","orgId":"00Df40000002Q23","ts":""}'>
                               <input type=hidden name="oid" value="00Df40000002Q23">
                               <input type=hidden name="retURL" value="http://www.getrobincare.com/activisionblizzard-thankyou.html">
-                              <input  id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Enter your email address"/>
+                              <input  id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Enter your email address" required/>
                               <div class="g-recaptcha" data-sitekey="6LcymiwUAAAAAM6_cJYrbvYX7cYi3c-lzJj45Vrl" style="padding-top: 10px;"></div>                                 
                           </div>
                           <div>
@@ -292,7 +312,7 @@
                                           <input type=hidden name='captcha_settings' value='{"keyname":"AB","fallback":"true","orgId":"00Df40000002Q23","ts":""}'>
                                           <input type=hidden name="oid" value="00Df40000002Q23">
                                           <input type=hidden name="retURL" value="http://www.getrobincare.com/activisionblizzard-thank-you.html#thankyou">
-                                          <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890"/>      
+                                          <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890" required/>      
                                       </div>
                                       <div>
                                           <input type="submit" name="submit" class="call-me-btn" value="CALL ME">
@@ -328,7 +348,7 @@
                                   <input type=hidden name='captcha_settings' value='{"keyname":"AB","fallback":"true","orgId":"00Df40000002Q23","ts":""}'>
                                   <input type=hidden name="oid" value="00Df40000002Q23">
                                   <input type=hidden name="retURL" value="http://www.getrobincare.com/activisionblizzard-thank-you.html#mobile-thankyou">
-                                  <input  id="phone2" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890"/>       
+                                  <input  id="phone2" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890" required/>       
                               </div>
                               <div style="text-align: center;padding-top: 20px;">
                                   <input type="submit" name="submit" class="call-me-btn" value="CALL ME">
