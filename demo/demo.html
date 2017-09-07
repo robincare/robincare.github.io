@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../patients.css">
+    <link rel="shortcut icon" type="../image/png" href="favicon.png"/>
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <style>
+      a{
+        color:#777;
+      }
+      .nav-pills .nav-link{
+        border-radius:0px;
+      }
+      .nav-pills .nav-link.active, .show>.nav-pills .nav-link{
+        background-color:#495A70;
+      }
+      .nav-link{
+        padding: .8rem 1rem;
+        border-bottom: 1px solid #efefef;
+      }
+    </style>
+
+  </head>
+  <body>
+  <div id="page-content">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="section-1" style="padding-bottom:0px;">
+            <header class="animated fadeInDown" style="margin-bottom:0px;">
+                <div class="row" id="header-content" style="display: flex;height:70px;">
+                    <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" >
+                        <a href="http://www.getrobincare.com/"><img src="../img/robin-care-logo-white.png" alt="Logo" width="100"></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-10 col-md-10 col-sm-8 col-8" id="menu-id">
+                        <div style="display: block;float: right;padding-top: 10px;">
+                              <div style="float:right;margin-left:10px; margin-top:-10px; width:40px; height:40px; background-color:#efefef; border:3px solid #fff; border-radius:20px;text-align:center; padding-top:8px;"> <i class="fa fa-user" style="color:#aaa" ></i> </div>
+
+                            <div class="menu-space">
+                                <a class="header-link hl-active" href="#" style="color:#fff">Welcome Beth</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-8" style="padding-top: 5px;text-align: right;" id="menu-mobile">
+                        <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+            </header>
+
+      </div>
+
+    <div class="row"  style="min-height:800px;background-color:#efefef">
+      <div class="col-sm-3">
+        <div style="padding-top:25px;padding-left:10px;">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" style="background-color:#fff">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true"><i class="fa fa-home"></i>&nbsp;&nbsp; &nbsp;Home</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true"><i class="fa fa-inbox"></i>&nbsp;&nbsp; &nbsp;My Day</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true"><i class="fa fa-calendar"></i>&nbsp;&nbsp; &nbsp;My Plan</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-comment"></i>&nbsp;&nbsp; &nbsp;Chat  <span class="badge badge-danger">1</span></a>
+          </div>
+
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" style="background-color:#fff;margin-top:15px;">
+            <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true"><i class="fa fa-star"></i>&nbsp;&nbsp; &nbsp; Favorites</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true"><i class="fa fa-newspaper-o"></i> &nbsp;&nbsp;&nbsp; Articles</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true"><i class="fa fa-calendar-o"></i> &nbsp;&nbsp;&nbsp; Appointments</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-heart"></i> &nbsp;&nbsp;&nbsp; Health Tracker</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-check"></i> &nbsp;&nbsp;&nbsp; To Do's</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-folder"></i>&nbsp;&nbsp; &nbsp; Files</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp; Notes</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-lightbulb-o"></i> &nbsp;&nbsp; &nbsp; Tips</a>
+
+          </div>
+
+          <div style="padding:25px;">
+            <a href="aramark.html">Sign out</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-9" style="padding-top:25px; padding-right:45px;text-align:center"> 
+
+
+        <div class="card center" style="width:100%;max-width:100%;">
+          <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/patients-img-1.png');background-size:cover;background-position:center center">
+          </div>
+          <div class="card-body" style="text-align:left">
+            <h2>Welcome to Robin Care</h2>
+
+            <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
+            <a href="#" class="btn btn-lg btn-info">Learn More</a>
+          </div>
+        </div>
+        <div style="height:25px;"></div>
+         <div class="card center" style="width:100%;max-width:100%;text-align:left">
+          <div style="background-color:#57d1d2;height:250px;padding:25px;background-color:#35CDCD;color:#fff">
+            <h2 style="color:#fff">Let's Chat</h2>
+            The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
+            
+            <div style="padding:20px;">
+            <a href="#" class="btn btn-lg btn-info">Chat with a Robin</a>
+            </div>
+          </div>
+        </div>
+                <div style="height:50px;"></div>
+
+      </div>
+    </div>
+
+    
+      <footer style="padding-top: 40px;padding-bottom: 40px;" id="footer">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
+                  <div style="padding-bottom: 20px;" class="wow fadeInLeft">
+                      <img src="../img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
+                  </div>
+                  <div style="display: flex;" class="wow fadeInUp">
+                      <div style="color: #fff;font-size: 11px;padding-right: 25px;padding-top: 5px;">
+                          All Rights Reserved
+                      </div>
+                      <div style="padding-right: 20px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a>
+                      </div>
+                      <div style="padding-right: 20px;">
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4 text-right wow fadeInRight">
+                  <div style="padding-bottom: 15px;"> 
+                      <a href=""><img src="../img/badge-app-store.png" style="max-width: 110px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+                  </div>
+                  <div>
+                      <a href=""><img src="../img/google_play_icon_480.png" style="max-width: 110px;" alt="Download Google Play"></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div id="footer-mobile">
+          <div>
+              <div style="text-align: center;padding-top: 80px;"> 
+                  <a href=""><img src="../img/badge-app-store.png" style="max-width: 200px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+              </div>
+              <div style="text-align: center;padding-top: 20px;padding-bottom: 80px;">
+                  <a href=""><img src="../img/google_play_icon_480.png" style="max-width: 200px;" alt="Download Google Play"></a>
+              </div>
+              <div style="text-align: center;padding-bottom: 20px;">
+                  <img src="../img/robin-care-logo-white.png" style="max-width: 200px;" alt="Logo">
+              </div>
+              <div style="color: #fff;font-size: 13px;text-align: center;">
+                  All Rights Reserved
+              </div>
+              <div style="padding-bottom: 60px;padding-top: 15px; ">
+                      <div style="text-align: center;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy" style="padding-right: 15px;">Privacy Policy</a>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="mobile-menu-content" class="hidden-pic animated fadeInDownBig">
+      <div class="row" style="padding: 15px 15px;">
+          <div class="col-md-6 col-sm-6 col-6">
+              <a href="http://www.getrobincare.com/"><img src="../img/logo.png" alt="Logo" id="logo-img"></a>
+          </div>
+          <div class="col-md-6 col-sm-6 col-6 text-right">
+              <a onclick="close_menu_mobile();"><img src="../img/close.png" alt="Close" style="max-width: 17px;"></a>
+          </div>
+      </div>
+      <div style="padding-top: 50px;">
+          <div class="menu-space">
+              <a class="header-link hl-active" href="#">PATIENTS</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link" href="">EMPLOYERS</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link-btn" href="#footer-mobile" onclick="goto_bottom();">DOWNLOAD</a>
+          </div>
+      </div>
+  </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </body>
+</html>
+
