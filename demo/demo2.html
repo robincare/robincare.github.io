@@ -4,257 +4,347 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../patients.css">
-    <link rel="shortcut icon" type="../image/png" href="favicon.png"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
+<meta name="apple-itunes-app" content="app-id=1263560802, app-argument=getrobincare.com">
     <style>
+
+    /*Global Styles ****/
       html{
         height:100%;
       }
       body{
         background-color:#efefef;
         height:100%;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color:#444;
       }
-      ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+
       a{
         color:#777;
       }
-      .nav-pills .nav-link{
-        border-radius:0px;
-      }
-      .nav-pills .nav-link.active, .show>.nav-pills .nav-link{
-        background-color:#495A70;
+
+      nav{
+        background-color:#fff;
+        border-bottom:1px solid #ddd;
       }
       .nav-link{
-        padding: .8rem 1rem;
-        border-bottom: 1px solid #efefef;
+        border-top:1px solid #f3f3f3;
+        border-radius:0px;
       }
-      footer{
+     
+
+      #main{
+        height:100%;padding-top:54px;
+      }
+
+      ::-webkit-scrollbar {
+          width: 0px;
+          background: transparent; /* make scrollbar transparent */
+      }
+
+
+      .scroll{
+        height:100%;overflow-y:scroll;
+        padding-top:25px;
+      }
+
+
+      /* Mobile styles */
+
+      #content-mobile{
+        height:100%;max-width:100%;
+      }
+
+       footer{
         background-color:#fff;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-width:100%;
+        height: 60px;
+        border-top:1px solid #ddd;
+        font-size:10px;
+        line-height: 60px;
       }
+
+      .tab-icon{
+        font-size:24px;
+        color:#aaa;
+      }
+
+      .color-teal{
+        color:#35CDCD;
+      }
+
     </style>
 
   </head>
   <body>
-  <div id="page-content" style="height:100%">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="section-1" style="padding-bottom:0px; ">
-            <header style="margin-bottom:0px; background-color: #fff">
-                <div class="row" id="header-content" style="display: flex;height:70px;">
-                    <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" >
-                        <a href="http://www.getrobincare.com/"><img src="../img/logo-color.png" alt="Logo" width="100"></a>
-                    </div>
-                    <div class="col-xl-7 col-lg-10 col-md-10 col-sm-8 col-8" id="menu-id">
-                        <div style="display: block;float: right;padding-top: 10px;">
-                              <div style="float:right;margin-left:10px; margin-top:-10px; width:40px; height:40px; background-color:#efefef; border:3px solid #fff; border-radius:20px;text-align:center; padding-top:8px;"> <i class="fa fa-user" style="color:#aaa" ></i> </div>
+  <div id="main">
 
-                            <div class="menu-space">
-                                <a class="header-link hl-active" href="#" style="color:#fff">Welcome Beth</a>
-                            </div>
+    <nav class="navbar navbar-expand-md fixed-top ">
+      <div class="container">
+      <a class="navbar-brand" href="#"><a href="http://www.getrobincare.com/"><img src="../img/logo-color.png" alt="Logo" width="100"></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Welcome Beth</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
 
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-8" style="padding-top: 5px;text-align: right;" id="menu-mobile">
-                        <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
-                    </div>
-                </div>
-            </header>
 
+<!-- Desktop Content start -->
+<div id="content-desktop" class="d-none d-md-block" style="height:100%;padding-left:25px;padding-right:25px;">
+  <div class="row" style="height:100%">
+      
+<!-- Left Panel -->
+    <div class="col-sm-3 scroll">
+      
+      <div class="card center" style="width:100%;max-width:100%;padding-top:10px;">
+        <div class="card-body">
+          <h3>My Plan</h3>
+          <hr>
+
+
+<!-- Daily Collapsables -->
+          <div id="plan1">
+            <h5>
+              <a data-toggle="collapse" href="#plan1Content" aria-controls="plan1Content">
+                Today
+              </a>
+            </h5>
+          </div>
+          <div id="plan1Content" class="collapse" aria-labelledby="plan1">
+            <div class="alert alert-primary" role="alert">Appointment</div>
+            <div class="alert alert-warning" role="alert">To Do</div>
+            <div class="alert alert-danger" role="alert">Health Tracker</div>
+          </div>
+
+
+          <div id="plan2">
+            <h5>
+              <a data-toggle="collapse" href="#plan2Content" aria-controls="plan2Content">
+                Tomorrow
+              </a>
+            </h5>
+          </div>
+          <div id="plan2Content" class="collapse" aria-labelledby="plan2">
+            <div class="alert alert-primary" role="alert">Appointment</div>
+            <div class="alert alert-warning" role="alert">To Do</div>
+            <div class="alert alert-danger" role="alert">Health Tracker</div>
+          </div>
+
+
+          <div id="plan3">
+            <h5>
+              <a data-toggle="collapse" href="#plan3Content" aria-controls="plan3Content">
+                9/7/2017
+              </a>
+            </h5>
+          </div>
+          <div id="plan3Content" class="collapse" aria-labelledby="plan3">
+            <div class="alert alert-primary" role="alert">Appointment</div>
+            <div class="alert alert-warning" role="alert">To Do</div>
+            <div class="alert alert-danger" role="alert">Health Tracker</div>
+          </div>
+
+          <div id="plan4">
+            <h5>
+              <a data-toggle="collapse" href="#plan4Content" aria-controls="plan4Content">
+                9/8/2017
+              </a>
+            </h5>
+          </div>
+          <div id="plan4Content" class="collapse" aria-labelledby="plan4">
+            <div class="alert alert-primary" role="alert">Appointment</div>
+            <div class="alert alert-warning" role="alert">To Do</div>
+            <div class="alert alert-danger" role="alert">Health Tracker</div>
+          </div>
+<!-- End Daily Collapsables -->
+
+        </div>
+
+      </div><!-- End Card -->
+
+          <div style="height:50px;"></div>
+
+    
+    </div>
+<!-- End Left Panel -->
+
+
+
+<!-- Center Panel -->
+    <div class="col-sm-6 scroll"> 
+
+      <div class="card" style="width:100%;max-width:100%;">
+        <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/patients-img-1.png');background-size:cover;background-position:center center">
+        </div>
+        <div class="card-body" style="text-align:left">
+          <h2>Welcome to Robin Care</h2>
+          <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
+          <a href="#" class="btn btn-sm btn-light">Read More</a>
+        </div>
       </div>
-<div class="container" style="height:100%">
-  <div class="row"  style="min-height:800px; height:100%;background-color:#efefef;">
-      <div class="col-sm-3" style="padding-top:25px">
- <div id="accordion" role="tablist">
-  <div class="card">
-    <div class="card-header" role="tab" id="headingOne">
-      <h5 class="mb-0">
-        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Today
-        </a>
-      </h5>
+
+      <div style="height:25px;"></div>
+
+      <div class="card" style="width:100%;max-width:100%;background-color:#35CDCD;">
+        <div style="padding:25px;color:#fff">
+          <h2 style="color:#fff">Let's Chat</h2>
+          <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
+          <p>
+          <a href="#" class="btn btn-sm btn-info">Chat with a Robin</a>
+        </div>
+      </div>
+
+       <div style="height:25px;"></div>
+
+      
+      <div class="card" style="width:100%;max-width:100%;background-color:#FF4A68;">
+        <div style="padding:25px;color:#fff">
+          <h2 style="color:#fff">Track your Health</h2>
+          <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
+          <p>
+          <a href="#" class="btn btn-sm btn-light">Track your health</a>
+        </div>
+      </div>
+
+       <div style="height:25px;"></div>
+
+      <div class="card" style="width:100%;max-width:100%;">
+        <div style="height:250px;background-color:#57d1d2;padding-top:25px;background-image:url('../img/hero-img-large.jpg');background-size:cover;background-position:center center">
+        </div>
+        <div class="card-body" style="text-align:left">
+          <h2>Getting Started</h2>
+          <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
+          <a href="#" class="btn btn-sm btn-light">Read more</a>
+        </div>
+      </div>
+
+      <div style="height:50px;"></div>
+    </div>
+<!-- End Center Panel -->
+
+<!-- Right Panel -->
+
+    <div class="col-sm-3 scroll" >
+      <div class="card center" style="width:100%;max-width:100%;padding-top:40px;">
+        <div  style="margin:auto;width:100px; height:100px; background-color:#efefef; border:3px solid #fff; border-radius:50px;text-align:center; padding-top:8px;"> 
+          <i class="fa fa-user fa-3x" style="color:#aaa;padding-top:15px" ></i>
+        </div>
+        <div class="card-body" style="text-align:center">
+          <h3>Beth</h3>
+          <a href="#" class="btn btn-sm btn-light">Settings</a>
+
+        </div>
+      <div class="nav flex-column " id="v-pills-tab" role="tablist" style="margin-top:15px;text-align:left;">
+        <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true"><i class="fa fa-star"></i>&nbsp;&nbsp; &nbsp; Favorites</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true"><i class="fa fa-newspaper-o"></i> &nbsp;&nbsp;&nbsp; Articles</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true"><i class="fa fa-calendar-o"></i> &nbsp;&nbsp;&nbsp; Appointments</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-heart"></i> &nbsp;&nbsp;&nbsp; Health Tracker</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-check"></i> &nbsp;&nbsp;&nbsp; To Do's</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-folder"></i>&nbsp;&nbsp; &nbsp; Files</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp; Notes</a>
+        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-lightbulb-o"></i> &nbsp;&nbsp; &nbsp; Tips</a>
+      </div>
+      </div>
+
+      <div style="height:50px;"></div>
+
+
     </div>
 
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        - Appointments<br>
-        - To Do<br>
-        - Health Tracker
+<!-- Right Panel -->
+
+  </div><!-- End Row-->
+</div>
+<!-- Desktop Content -->
+  
+
+<!-- Mobile Content -->
+<div id="content-mobile" class="container d-md-none" style="padding-top:25px;height:100%; overflow-y:scroll;">
+
+   <div class="card" style="width:100%;max-width:100%;">
+        <div style="height:250px;background-color:#57d1d2;padding-top:25px;background-image:url('../img/patients-img-1.png');background-size:cover;background-position:center center">
+        </div>
+        <div class="card-body" style="text-align:left">
+          <h2>Welcome to Robin Care</h2>
+          <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated...</p>
+          <a href="#" class="btn btn-sm btn-light">Read More</a>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          September 9
-        </a>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        - Appointments<br>
-        - To Do<br>
-        - Health Tracker
+
+      <div style="height:25px;"></div>
+
+      <div class="card" style="width:100%;max-width:100%;background-color:#35CDCD;">
+        <div style="padding:25px;color:#fff">
+          <h2 style="color:#fff">Let's Chat</h2>
+          <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
+          <p>
+          <a href="#" class="btn btn-sm btn-info">Chat with a Robin</a>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingThree">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          September 10
-        </a>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-       - Appointments<br>
-        - To Do<br>
-        - Health Tracker
+
+       <div style="height:25px;"></div>
+
+      
+      <div class="card" style="width:100%;max-width:100%;background-color:#FF4A68;">
+        <div style="padding:25px;color:#fff">
+          <h2 style="color:#fff">Track your Health</h2>
+          <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
+          <p>
+          <a href="#" class="btn btn-sm btn-light">Track your health</a>
+        </div>
       </div>
-    </div>
-  </div>
+  <div style="height:80px;"></div>
 </div>
 
+   <footer class="footer d-md-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-4" style="text-align:center; overflow:hidden">
+            <i class="fa fa-calendar tab-icon"></i>
+          </div>
+          <div class="col-4" style="text-align:center; overflow:hidden">
+            <i class="fa fa-inbox  tab-icon"></i>
+          </div>
+          <div class="col-4" style="text-align:center; overflow:hidden">
+            <i class="fa fa-user-circle-o  tab-icon"></i>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6" style="text-align:center;height:100%;overflow-y:scroll;padding-top:25px;"> 
-
-        <div class="card center" style="width:100%;max-width:100%;">
-          <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/patients-img-1.png');background-size:cover;background-position:center center">
-          </div>
-          <div class="card-body" style="text-align:left">
-            <h2>Welcome to Robin Care</h2>
-            <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
-            <a href="#" class="btn btn-sm btn-light">Read More</a>
-          </div>
-        </div>
-
-        <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;text-align:left">
-          <div style="background-color:#57d1d2;height:250px;padding:25px;background-color:#35CDCD;color:#fff">
-            <h2 style="color:#fff">Let's Chat</h2>
-            <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
-            <p>
-            <a href="#" class="btn btn-sm btn-info">Chat with a Robin</a>
-          </div>
-        </div>
-
-         <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;">
-          <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/hero-img-large.jpg');background-size:cover;background-position:center center">
-          </div>
-          <div class="card-body" style="text-align:left">
-            <h2>Getting Started</h2>
-            <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
-            <a href="#" class="btn btn-sm btn-light">Read more</a>
-          </div>
-        </div>
-
-        <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;text-align:left">
-          <div style="background-color:#57d1d2;height:250px;padding:25px;background-color:#FF4A68;color:#fff">
-            <h2 style="color:#fff">Track your Health</h2>
-            <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
-            </p>
-            <a href="#" class="btn btn-light">Track your health now</a>
-          </div>
-        </div>
-
-                <div style="height:25px;"></div>
+    </footer>
+<!-- End Mobile Content -->
 
 
-        <div class="card center" style="width:100%;max-width:100%;">
-          <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/patients-img-1.png');background-size:cover;background-position:center center">
-          </div>
-          <div class="card-body" style="text-align:left">
-            <h2>Welcome to Robin Care</h2>
-            <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
-            <a href="#" class="btn btn-sm btn-light">Read More</a>
-          </div>
-        </div>
-
-        <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;text-align:left">
-          <div style="background-color:#57d1d2;height:250px;padding:25px;background-color:#35CDCD;color:#fff">
-            <h2 style="color:#fff">Let's Chat</h2>
-            <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
-            <p>
-            <a href="#" class="btn btn-sm btn-info">Chat with a Robin</a>
-          </div>
-        </div>
-
-         <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;">
-          <div style="background-color:#57d1d2;height:250px;padding-top:25px;background-image:url('../img/hero-img-large.jpg');background-size:cover;background-position:center center">
-          </div>
-          <div class="card-body" style="text-align:left">
-            <h2>Getting Started</h2>
-            <p class="card-text">We built Robin Care because we know from personal experience how complex living with ancer can be. Treatment is an important part of the equation but figuring out how to live with cancer is just as confusing and complicated.  Our team is here for you anytime and anyplace with information, tools, an dhelp through our mobile app, our website, or over the phone.</p>
-            <a href="#" class="btn btn-sm btn-light">Read more</a>
-          </div>
-        </div>
-
-        <div style="height:25px;"></div>
-
-        <div class="card center" style="width:100%;max-width:100%;text-align:left">
-          <div style="background-color:#57d1d2;height:250px;padding:25px;background-color:#FF4A68;color:#fff">
-            <h2 style="color:#fff">Track your Health</h2>
-            <p class="card-text">The best way to get started is to Chat with our Robin Team.  We're here to help you gather and organize your information. The Robin team will also create a cancer plan tha twill be tailored to your needs and your life.
-            </p>
-            <a href="#" class="btn btn-light">Track your health now</a>
-          </div>
-        </div>
 
 
-        <div style="height:50px;"></div>
-      </div>
-      <div class="col-sm-3" style="padding-top:25px;">
-        <div >
-          <div class="card center" style="width:100%;max-width:100%;padding-top:40px;">
-          <div  style="margin:auto;width:100px; height:100px; background-color:#efefef; border:3px solid #fff; border-radius:50px;text-align:center; padding-top:8px;"> 
-            <i class="fa fa-user fa-3x" style="color:#aaa;padding-top:15px" ></i>
-             </div>
-          <div class="card-body" style="text-align:center">
-
-            <h3>Beth</h3>
-            <a href="#" class="btn btn-sm btn-light">Settings</a>
-          </div>
-        </div>
-
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" style="background-color:#fff;margin-top:15px;">
-            <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-expanded="true"><i class="fa fa-star"></i>&nbsp;&nbsp; &nbsp; Favorites</a>
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-expanded="true"><i class="fa fa-newspaper-o"></i> &nbsp;&nbsp;&nbsp; Articles</a>
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-expanded="true"><i class="fa fa-calendar-o"></i> &nbsp;&nbsp;&nbsp; Appointments</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-heart"></i> &nbsp;&nbsp;&nbsp; Health Tracker</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-check"></i> &nbsp;&nbsp;&nbsp; To Do's</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-folder"></i>&nbsp;&nbsp; &nbsp; Files</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp; Notes</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-expanded="true"><i class="fa fa-lightbulb-o"></i> &nbsp;&nbsp; &nbsp; Tips</a>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-</div>
+<!-- Floaty Chat -->
+  <div class="d-md-none" style="position:absolute; bottom:70px; right: 20px; width:60px; height:60px; border-radius:30px; overflow:hidden; background-color:#35CDCD;color:#fff;text-align:center;line-height:60px;    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+">
+    <i class="fa fa-comment" style="font-size:20px;"></i>
   </div>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <div class="d-none d-md-block" style="position:absolute; bottom:30px; right: 60px; width:60px; height:60px; border-radius:30px; overflow:hidden; background-color:#35CDCD;color:#fff;text-align:center;line-height:60px;    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+">
+    <i class="fa fa-comment" style="font-size:20px;"></i>
+  </div>
+<!-- End Floaty Chat -->
+
+  </div><!-- end outer container -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>
 
