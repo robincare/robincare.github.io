@@ -95,8 +95,31 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Welcome Beth</a>
+          <li class="nav-item dropdown" style="margin-right:40px;">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-bell-o" style="font-size:18px;"></i>
+              <span class="badge badge-danger">4</span>
+            </a>
+            <div class="dropdown-menu" style="width:300px;">
+              <a class="dropdown-item" href="#" style="color:#777;word-wrap: break-word; white-space: normal;"><i class="fa fa-info"></i> This is an actionable Alert Message, it can be a about many things.  This is what it looks like with a lot of text</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"  style="color:#777;word-wrap: break-word; white-space: normal;"><i class="fa fa-comment-o"></i> You have a message waiting </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"  style="color:#777;word-wrap: break-word; white-space: normal;"><i class="fa fa-heartbeat"></i> Lets Track your Health </a>
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="#"  style="color:#777;word-wrap: break-word; white-space: normal;"><i class="fa fa-user"></i> Complete your profile</a>
+            </div>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Welcome Beth</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">My Profile</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sign out</a>
+            </div>
           </li>
         </ul>
       </div>
