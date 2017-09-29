@@ -104,7 +104,7 @@ a.header-link-btn:hover {
     background-size: cover;
     background-position: center;
     padding: 0px;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
 }
 #section-1-content {
     max-width: 1200px;
