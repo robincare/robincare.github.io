@@ -1,6 +1,6 @@
 body {
     background-color: #fff;
-    font-family: Campton;
+    font-family: 'Campton-Light';
 }
 @font-face {
     font-family: Campton;
@@ -92,7 +92,7 @@ a.header-link-btn:hover {
     padding-left: 25px;
 }
 #menu-mobile {
-    display: none;åß
+    display: none;
 }
 /* end header */
 
