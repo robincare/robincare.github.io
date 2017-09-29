@@ -15,6 +15,7 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
   ga('create', 'UA-106003262-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -34,8 +35,9 @@
                             </div>
                             <div class="menu-space">
                                 <a class="header-link" href="http://www.getrobincare.com">EMPLOYERS</a>
+                            </div>
                             <div class="menu-space">
-                                <a class="header-link-btn" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>
+                            <a class="header-link-btn" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>
                             </div>
                         </div>
                     </div>
@@ -45,58 +47,72 @@
                 </div>
             </header>
           <div id="section-1-content" >
-              <div style="display: flex;" id="s1-both"> 
-                  <div style="width: 50%" id="s1-left-side" >
+              <div id="s1-both"> 
+                  <div id="s1-left-side" >
                         <div class="wow fadeInLeft">
-                          <div style="border-bottom: 2px solid #35cdcd; padding-bottom: 10px; color: #35cdcd; font-size: 18px; margin-right: 40px;">
+                          <div id="s1-l-1">
                               WATCH VIDEO
                           </div>
-                          <div style="display: flex;width: 100%;padding-right: 40px;">
-                              <div style="width: 80%;" >
-                                  <div id="section-1-1" style="padding-top: 10px;">
+                          <div id="s1-l-2">
+                              <div id="s1-l-2-a">
+                                  <div id="s1-l-2-a-1">
                                       INTRODUCING ROBIN
                                   </div>
-                                  <div id="section-1-2" >
+                                  <div id="s1-l-2-a-2">
                                       Your team of personal cancer advocates
                                   </div>
                               </div>
-                              <div style="color: #2e3f50; font-size: 50px; padding-top: 10px; text-align: right;width: 20%;">
-                                  <a onclick="show_video();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                              <div id="s1-l-2-b">
+                                  <div id="s1-play">
+                                      <a onclick="show_video();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
+                                  <div id="s1-play-mobile"> 
+                                      <a onclick="show_video_mobile();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div style="width: 50%;" id="s1-right-side" >
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header" style='background-color: #2e3f50;'>
-                                      <h4 class="modal-title" id="myModalLabel" style='color: #fff; font-size: 20px; font-weight: 500; padding: 10px 20px 6px 50px;'>We can’t wait to work with you!</h4>
-                                    </div>
+
+                  <div style="margin: 0 auto;max-width: 100%; padding-top: 20px;" id="s1-video-mobile" class="animated fadeInUp hidden-pic" >
+                      <div style="text-align: right;">
+                          <a onclick="close_video_mobile();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 35px;padding-bottom: 20px;padding-right: 15px;"></a>
+                      </div>
+                      <div id="replace-video-mobile">
+                          <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                  </div>                
+                    <div style="width: 50%;" id="s1-right-side" >
+                       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                               <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                   <div class="modal-header" style='background-color: #2e3f50;'>
+                                     <h4 class="modal-title" id="myModalLabel" style='color: #fff; font-size: 20px; font-weight: 500; padding: 10px 20px 6px 50px;'>We can’t wait to work with you!</h4>
+                                   </div>
                                     <div class="modal-body">
                                             Robin Care officially launches with Aramark on October 1st.
                                             Until then, feel free to reach out to us with
-                                            any questions at <a href='mailto:support@getrobincare.com'>support@getrobincare.com</a>.
+                                           any questions at <a href='mailto:support@getrobincare.com'>support@getrobincare.com</a>.
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-default" style='color: #fff; background-color: #35cdcd;' data-dismiss="modal">Back</button>
-                                    </div>
-                                  </div>
+                                     <button type="button" class="btn btn-default" style='color: #fff; background-color: #35cdcd;' data-dismiss="modal">Back</button>
+                                   </div>
+                                 </div>
                                 </div>
-                              </div>
+                             </div>
                       <div class="wow fadeInRight">
-                          <div style="color: #fff; font-size: 30px; font-weight: 500; background-color: #2e3f50;border-top-left-radius: 5px; border-top-right-radius: 5px;padding: 10px 20px 6px 50px;">
+                          <div id="s1-r-1">
                               GET STARTED
                           </div>
-                          <div style="background-color:rgba(255,255,255,0.6);padding: 20px 50px 20px 50px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                          <div id="s1-r-2">
                               <form method="POST" id="form-1">
-                                  <div id="section-1-4" style="padding: 50px 0px;">
+                                  <div id="s1-r-2-1">
                                       <input id="name" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Your Name" required style="margin-bottom: 30px;" />
                                       <input id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Email" required style="margin-bottom: 50px;"/>
-                                      <div style="text-align: right;">
-                                            <button type="button" class="btn btn-default" style='color: #fff; background-color: #35cdcd;' data-toggle="modal" data-target="#myModal">
-                                                    Continue
-                                                </button>           
+                                      <div id="s1-r-2-1-1">
+                                          <button type="button" class="btn btn-default" style='color: #fff; background-color: #35cdcd;' data-toggle="modal" data-target="#myModal">
+                                              Continue
+                                          </button> 
                                       </div>
                                   </div>
                               </form>
@@ -109,9 +125,10 @@
                       <a onclick="close_video();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 30px;padding-bottom: 20px;"></a>
                   </div>
                   <div id="replace-video">
-                      <iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
               </div>
+
           </div>
 
       </div>
@@ -319,7 +336,7 @@
       <div style="background-color: #2e3f50;">
           <div style="padding: 60px 0px 40px 0px;max-width: 80%;margin: auto; text-align: center;">
               <div style="font-size: 22px;font-family: CamptonBook; color: #fff; padding-bottom: 10px;">
-                  HERE'S HOW WE WORK FOR YOU
+                  HERE'S HOW ROBIN CARE WORKS FOR YOU
               </div>
               <div style="font-size: 15px;color: #fff;padding-bottom: 30px;">
                   Navigating cancer is complicated. Having the right help makes all the difference.
@@ -352,7 +369,7 @@
                               Premium
                           </div>
                           <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
-                              So you get the best care possible, we work with your benefits to bring you best-in-class resources 
+                              So you get the best care possible, we work with your benefits to bring you best-in-class resources
                           </div>
                       </div>
                   </div>
@@ -407,7 +424,7 @@
               </div>
 
               <div style="text-align: center;padding-bottom: 60px;">
-                  <a class="learn-more-btn" href="#">LEARN MORE</a>  
+                  <a class="learn-more-btn" href="http://www.getrobincare.com/blog/blog1">LEARN MORE</a>  
               </div>
 
           </div>
@@ -425,9 +442,8 @@
                           Want more information about what we offer?<br>Drop us a note!
                       </div>
                   </div>
-                  <div>
-                      <a class="s3-btn" href="mailto:support@getrobincare.com">EMAIL</a>
-                      </form>
+                  <div >
+                      <a class="s3-btn" href="mailto:support@getrobincare.com">EMAIL</a>  
                   </div>
               </div>
 
@@ -463,55 +479,54 @@
           </div>
       </div>
 
-      <div id="section" style="1200px;">
-          <div style="display: flex;">
-              <div style="min-width: 50%;background-color: #fff;padding: 50px 0px;" class="wow fadeIn">
-                  <div style="max-width: 600px; float: right;">
-                      <div style="font-size: 32px;font-family: CamptonBook; padding-bottom: 30px;color: #2e3f50;">
+      <div id="section-5">
+          <div id="section-5-1">
+              <div id="section-5-1-1" class="wow fadeIn">
+                  <div id="section-5-1-1-a">
+                      <div id="section-5-1-1-a-1">
                           YOUR CARE TEAM
                       </div>
-                      <div style="display: flex;">
-                          <div style="padding-right: 20px;">
-                              <img src="img/jessica-1.png" alt="" style="width: 70px;" class="hvr-grow">
+                      <div id="section-5-1-1-a-2">
+                          <div class="section-5-1-1-a-2-1">
+                              <img src="img/jessica-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
                           </div>
                           <div>
-                              <div style="color: #2e3f50;font-size: 25px; font-family: CamptonBook;padding-bottom: 10px; ">
+                              <div class="section-5-1-1-a-2-2-a">
                                   Jess, Senior Care Advocate
                               </div>
-                              <div style="padding-right: 20px;font-size: 17px;">
+                              <div class="section-5-1-1-a-2-2-b">
                                   "Having the unique background of being an oncology nurse and a former primary caregiver to a cancer patient, Robin Care's 
-                                  mission to see people fully and holistically — beyond their diagnosis and symptoms, and beyond what is currently possible with
-                                  the traditional medical model — immediately spoke to my passion and drive to make the cancer experience better for patients and their loved ones."
+                                  mission to see people fully and holistically -- beyond their diagnosis and symptoms, and beyond what is currently possible with
+                                  the traditional medical model -- immediately spoke to my passion and drive to make the cancer experience better for patients and their loved ones."
                               </div>
                           </div>
                       </div>
 
-                      <div style="display: flex;padding-top: 50px;">
-                          <div style="padding-right: 20px;">
-                              <img src="img/robin-1.png" alt="" style="width: 70px;" class="hvr-grow">
+                      <div id="section-5-1-1-a-3">
+                          <div class="section-5-1-1-a-2-1" >
+                              <img src="img/robin-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
                           </div>
                           <div>
-                              <div style="color: #2e3f50;font-size: 25px; font-family: CamptonBook;padding-bottom: 10px; ">
+                              <div class="section-5-1-1-a-2-2-a">
                                   Robin, Care Advocate
                               </div>
-                              <div style="padding-right: 20px;font-size: 17px;">
+                              <div class="section-5-1-1-a-2-2-b">
                                   "I’m excited to be here to support people in their cancer experience — from lending an ear to finding the right support group to helping with overwhelming insurance paperwork. Cancer is hard enough to deal with, without the burden of doing it all on your own so I’m here and happy to provide help however I can.”
                               </div>
                           </div>
                       </div>
                   </div>
               </div>
-              <div style="min-width: 50%;background-color: #495a70;" class="wow fadeInRight">
-                  <div style="max-width: 600px; float: left;padding: 50px;">
-                      <div style="text-align: center;">
-                          <img src="img/team_photo.png" alt="" style="max-width: 100%;" class="hvr-grow">
+              <div id="section-5-1-2" class="wow fadeInRight">
+                  <div id="section-5-1-2-1">
+                      <div id="section-5-1-2-1-a">
+                          <img src="img/team_photo.png" alt="" id="section-5-1-2-1-a-photo" class="hvr-grow">
                       </div>
-                      <div style="font-size: 17px; padding-top: 50px; color: #fff;">
-                          Our team of Robins are highly skilled in all dimensions of the cancer experience. Combined, we have decades of experience in nursing, psychology, social work, physical therapy, nutrition, legal, and insurance fields. Our entire Robin team has not only invested their professional lives to helping cancer patients and their families, they also have a deep personal connection to our mission through their own experiences. 
+                      <div id="section-5-1-2-1-b" >
+                          Our team of Robins are highly skilled in all dimensions of the cancer experience. Combined, we have decades of experience in nursing, psychology, social work, physical therapy, nutrition, legal, and insurance fields. Our entire Robin team has not only invested their professional lives to helping cancer patients and their families, they also have a deep personal connection to our mission through their own experiences.
                       </div>
                   </div>
-              </div>
-            
+              </div>        
           </div>
       </div>
 
@@ -524,7 +539,7 @@
                               TRUSTED RESOURCES
                           </div>
                           <div id="section-4-2">
-                             We have over 500 resources available to use in assisting our patients.  The resources cover a range of topics, anywhere from information on specific cancers diagnoses to helping locate housecleaning assistance during treatment.   While we have resources prepared, we are also available to research and locate specific resources that patients may need at any time during their cancer journey.   Our Robins stay up to date on treatment protocols and new innovations, so we can assist our patients with everything from understanding their pathology reports to finding a relaxation technique to use during treatment.
+                              We have over 500 resources available to use in assisting our patients.  The resources cover a range of topics, anywhere from information on specific cancers diagnoses to helping locate housecleaning assistance during treatment.   While we have resources prepared, we are also available to research and locate specific resources that patients may need at any time during their cancer journey.   Our Robins stay up to date on treatment protocols and new innovations, so we can assist our patients with everything from understanding their pathology reports to finding a relaxation technique to use during treatment.
                           </div>
                       </div>
                   </div>
@@ -532,109 +547,87 @@
           </div>
       </div>
 
-      <div id="section-blog" style="background-color: #fff;">
-          <div style="max-width: 1200px;padding: 100px 0px;margin: 0 auto;">
-              <div style="display: flex; padding: 0px 20px 50px 10px;">
-                  <div style="width: 50%;font-size: 33px;font-family: CamptonBook; color: #2e3f50;">
+      <div id="section-4-mobile">
+          <div id="section-4-mobile-2"></div>
+          <div id="section-4-mobile-3">
+              <div id="section-4-mobile-4">
+              <div id="mobile-thankyou"></div>
+                  <div style="max-width: 85%;margin: 0 auto;color: #2e3f50; font-size: 20px;text-align: center;font-family: CamptonBook;padding-bottom: 15px;">
+                      TRUSTED RESOURCES
+                  </div>
+                  <div style="max-width: 85%;margin: 0 auto; font-size: 16px; text-align: center;" >
+                      We have over 500 resources available to use in assisting our patients.  The resources cover a range of topics, anywhere from information on specific cancers diagnoses to helping locate housecleaning assistance during treatment.   While we have resources prepared, we are also available to research and locate specific resources that patients may need at any time during their cancer journey.   Our Robins stay up to date on treatment protocols and new innovations, so we can assist our patients with everything from understanding their pathology reports to finding a relaxation technique to use during treatment.
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="section6" style="background-color: #fff;">
+          <div id="section-6">
+              <div id="section-6-a">
+                  <div id="section-6-a-1" >
                       THE ROBIN CARE BLOG
                   </div>
-                  <div style="text-align: right;width: 50%;">
+                  <div id="section-6-a-2">
                       <a class="learn-more-link" href="http://www.getrobincare.com/blog/blog1">More from the blog ></a>
                   </div>
               </div>
               
-              <div style="display: flex;" class="wow fadeIn">
-                  <div style="width: 33%;padding: 0px 15px;">
+              <div id="section-6-b" class="wow fadeIn">
+                  <div class="section-6-b-1">
                       <div>
-                          <img src="img/blog-post-1b.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
+                          <img src="img/blog-post-1b.jpg" alt="" class="section-6-b-1-photo hvr-grow">
                       </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
+                      <div class="section-6-b-1-b">
                           September 15, 2017 by Robin Care
                       </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
+                      <div class="section-6-b-1-c">
                           360 Degree Cancer Care
                       </div>
-                      <div style="font-size: 17px;">
+                      <div class="section-6-b-1-d">
                           People who are diagnosed with cancer know that they are so much more than just their tumor. You’re an individual with thoughts, feelings, hopes, dreams, and entire ecosystems that rely on you. Why, then, do most cancer treatments primarily focus on removing the tumor?
                           <a class="learn-more-link" href="http://www.getrobincare.com/blog/blog1">Read more ></a>
                       </div>
                   </div>
 
-                  <div style="width: 33%;padding: 0px 15px;">
+                  <div class="hide-mobile section-6-b-1">
                       <div>
-                          <img src="img/blog-post-2.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
+                          <img src="img/blog-post-2.jpg" alt="" class="section-6-b-1-photo hvr-grow">
                       </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
+                      <div class="section-6-b-1-b">
                           September 22, 2017 by Robin Care
                       </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
+                      <div class="section-6-b-1-c">
                           Rules of Engagement
                       </div>
-                      <div style="font-size: 17px;">
+                      <div class="section-6-b-1-d">
                           From the time people hear the word “cancer”, both those diagnosed and their loved ones receive an overwhelming amount of information that requires quick decision making and navigating a complex healthcare system.
                           <a class="learn-more-link" href="http://www.getrobincare.com/blog/blog2">Read more ></a>
                       </div>
                   </div>
 
-                  <div style="width: 33%;padding: 0px 15px;">
+                  <div class="hide-mobile section-6-b-1">
                       <div>
-                          <img src="img/blog-post-3.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
+                          <img src="img/blog-post-3.jpg" alt="" class="section-6-b-1-photo hvr-grow">
                       </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
+                      <div class="section-6-b-1-b">
                           September 29, 2017 by Robin Care
                       </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
+                      <div class="section-6-b-1-c">
                           Social Support
                       </div>
-                      <div style="font-size: 17px;">
+                      <div class="section-6-b-1-d">
                           For cancer patients and their loved ones, social support is a major part of the cancer journey. Most people’s idea of the cancer experience involves images of family and friends rallying around a newly diagnosed loved one, and helping them down the path of recovery.
                           <a class="learn-more-link" href="http://www.getrobincare.com/blog/blog3">Read more ></a>
                       </div>
                   </div>
-
-              </div>
-
-
-          </div>
-      </div>
-
-
-
-      <div id="section-4-mobile">
-          <div id="section-4-mobile-content">
-              <div id="section-4-mc-1">
-                  Our expert nurses, therapists, and coaches help you synthesize information, make the right decision, and access the resources you need. From financial counseling to clinical trials, we're available to talk or text 24 hours a day, 7 days a week.
-              </div>
-          </div>
-          <div id="section-4-mobile-2"></div>
-          <div id="section-4-mobile-3">
-              <div id="section-4-mobile-4">
-              <div id="mobile-thankyou"></div>
-                  <div style="max-width: 60%;margin: 0 auto;color: #fff; font-size: 22px;text-align: center;">
-                      Enter your phone number to have an expert call you:
-                  </div>
-                  <div>
-                      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="form-3">
-                          <div>
-                              <div style="margin: 0 auto; max-width: 300px;padding-top: 30px;">
-                                  <input type=hidden name="oid" value="00Df40000002Q23">
-                                  <input type=hidden name="retURL" value="http://www.getrobincare.com/activisionblizzard-thank-you.html#mobile-thankyou">
-                                  <input type="hidden" id="lead_source" name="lead_source" value="Website" />
-                                  <input type="hidden" id="company" name="company" value="Activision Blizzard" />
-                                  <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890" required/>       
-                              </div>
-                              <div style="text-align: center;padding-top: 20px;">
-                                  <input type="submit" name="submit" class="call-me-btn" value="CALL ME" style="width: 300px;">
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-              <div id="section-4-mobile-5" class="hidden-pic">
-                  Thanks!<br> A Robin Care expert will be in touch shortly.
               </div>
           </div>
       </div>
+
+
+
+
       <footer >
           <div class="row" style="padding-top: 40px;padding-bottom: 40px;"  id="footer-id">
               <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
@@ -659,7 +652,7 @@
                   </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4 text-right wow fadeInRight">
-                  <a name="download"></a> 
+                  <a name="download"></a>
                   <div style="padding-bottom: 15px;"> 
                       <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 110px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
                   </div>
@@ -680,7 +673,7 @@
               <div style="padding-bottom: 0px;padding-top: 15px; ">
                       <div style="text-align: center;padding-top: 30px;">
                           <a class="a-link" href="http://www.getrobincare.com/aramark">Members</a><br>
-                          <a class="a-link" href="http://www.getrobincare.com">Employers</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/">Employers</a><br>
                           <a class="a-link" href="#" data-toggle="modal" data-target="#myModal">Sign In</a>
                       </div>
                       <div style="text-align: center;padding-top: 30px;">
@@ -689,7 +682,7 @@
                       </div>
               </div>
               <div style="text-align: center;padding-top: 50px;">
-                  <a name="download"></a> 
+                  <a name="download"></a>
                   <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 130px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
               </div>
               <div style="text-align: center;padding-top: 20px;padding-bottom: 50px;">
@@ -715,7 +708,7 @@
               <a class="header-link" href="http://www.getrobincare.com">EMPLOYERS</a>
           </div>
           <div class="menu-space">
-              <a class="header-link-btn" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>
+          <a class="header-link-btn" href="#" data-toggle="modal" data-target="#myModal">SIGN IN</a>
           </div>
       </div>
   </div>
@@ -741,54 +734,97 @@ function slider_fn(slide) {
         clearInterval(time);
         time = setInterval(call_slider_fn, 7000);
     } 
+
     if(slide_index != slide_number) { //if the slide is different to the current one
         $('#slider-phone-1,#slider-phone-2,#slider-phone-3,#slider-phone-4,#slider-phone-5').addClass('hidden-pic');
         $('#slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5,#slide-content-1-active,#slide-content-2-active,#slide-content-3-active,#slide-content-4-active,#slide-content-5-active').addClass('hidden-pic');
         $('#slider-phone-'+slide_number).removeClass('hidden-pic');
         $('#slide-content-'+slide_number+'-active, #slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5').removeClass('hidden-pic');
         $('#slide-content-'+slide_number).addClass('hidden-pic');
+
         slide_index = slide_number;
         $('#slider-circle-1,#slider-circle-2,#slider-circle-3,#slider-circle-4,#slider-circle-5').removeClass('circle-active');
         $('#slider-circle-'+slide_number).addClass('circle-active');
     }
+
 }
 function call_slider_fn() {
     slider_fn(0);
 }
 var time = setInterval(call_slider_fn, 7000);
 slider_fn(1);
+
 function show_video() {
     $('#s1-left-side').removeClass('animated fadeInLeft');
     $('#s1-right-side').removeClass('animated fadeInRight');
     $('#s1-left-side').addClass('animated fadeOutLeft');
     $('#s1-right-side').addClass('animated fadeOutRight');
+
     $('#s1-both').css('max-height', '10px');
+
     $('#s1-video').removeClass('animated zoomOut');
     $('#s1-video').addClass('animated fadeInUp');
     $('#s1-video').removeClass('hidden-pic');
 }
+function show_video_mobile() {
+    // $('#s1-left-side').removeClass('animated fadeInLeft');
+    // $('#s1-right-side').removeClass('animated fadeInRight');
+    // $('#s1-left-side').addClass('animated fadeOutLeft');
+    // $('#s1-right-side').addClass('animated fadeOutRight');
+
+    $('#s1-left-side').removeClass('animated fadeInDown');
+    $('#s1-left-side').addClass('animated fadeOutUp');
+    $('#s1-left-side').addClass('hidden-pic');
+
+    // $('#s1-video-mobile').removeClass('animated zoomOut');
+    // $('#s1-video-mobile').addClass('animated fadeInUp');
+    $('#s1-video-mobile').removeClass('hidden-pic');
+}
+
+
 function close_video() {
     $('#s1-video').addClass('animated zoomOut');
     $('#s1-video').addClass('hidden-pic');
+
     $('#s1-both').css('max-height', '100%');
+
     $('#s1-left-side').removeClass('animated fadeOutLeft');
     $('#s1-right-side').removeClass('animated fadeOutRight');
     $('#s1-left-side').addClass('animated fadeInLeft');
     $('#s1-right-side').addClass('animated fadeInRight');
+
     $('#replace-video').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
+function close_video_mobile() {
+    //$('#s1-video-mobile').addClass('animated fadeDown');
+    $('#s1-video-mobile').addClass('hidden-pic');
+
+    //$('#s1-both').css('max-height', '100%');
+
+    // $('#s1-left-side').removeClass('animated fadeOutLeft');
+    // $('#s1-right-side').removeClass('animated fadeOutRight');
+    // $('#s1-left-side').addClass('animated fadeInLeft');
+    // $('#s1-right-side').addClass('animated fadeInRight');
+    $('#s1-left-side').removeClass('animated fadeOutUp');
+    $('#s1-left-side').removeClass('hidden-pic');
+    $('#s1-left-side').addClass('animated fadeInDown');
+
+    $('#replace-video-mobile').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+}
+
 function menu_mobile() {
   $('body').css("background-color","#2e3f50");
     $('#page-content').addClass('hidden-pic');
     $('#mobile-menu-content').removeClass('hidden-pic');
 }
 function close_menu_mobile() {
-    $('body').css("background-color","#2e3f50");
+    $('body').css("background-color","#fff");
     $('#page-content').removeClass('hidden-pic');
     $('#mobile-menu-content').addClass('hidden-pic');
 }
 function download_mobile() {
     close_menu_mobile();
+
     location.href = "#footer-mobile";
 }
 </script>
