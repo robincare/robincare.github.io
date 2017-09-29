@@ -50,38 +50,53 @@
                 </div>
             </header>
           <div id="section-1-content" >
-              <div style="display: flex;" id="s1-both"> 
-                  <div style="width: 50%" id="s1-left-side" >
+              <div id="s1-both"> 
+                  <div id="s1-left-side" >
                         <div class="wow fadeInLeft">
-                          <div style="border-bottom: 2px solid #35cdcd; padding-bottom: 10px; color: #35cdcd; font-size: 18px; margin-right: 40px;">
+                          <div id="s1-l-1">
                               WATCH VIDEO
                           </div>
-                          <div style="display: flex;width: 100%;padding-right: 40px;">
-                              <div style="width: 80%;" >
-                                  <div id="section-1-1" style="padding-top: 10px;">
+                          <div id="s1-l-2">
+                              <div id="s1-l-2-a">
+                                  <div id="s1-l-2-a-1">
                                       INTRODUCING ROBIN 
                                   </div>
-                                  <div id="section-1-2" >
+                                  <div id="s1-l-2-a-2">
                                       Your personal cancer champion
                                   </div>
                               </div>
-                              <div style="color: #2e3f50; font-size: 50px; padding-top: 10px; text-align: right;width: 20%;">
-                                  <a onclick="show_video();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                              <div id="s1-l-2-b">
+                                  <div id="s1-play">
+                                      <a onclick="show_video();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
+                                  <div id="s1-play-mobile"> 
+                                      <a onclick="show_video_mobile();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
                               </div>
                           </div>
                       </div>
                   </div>
-                  <div style="width: 50%;" id="s1-right-side" >
+
+                  <div style="margin: 0 auto;max-width: 100%; padding-top: 20px;" id="s1-video-mobile" class="animated fadeInUp hidden-pic" >
+                      <div style="text-align: right;">
+                          <a onclick="close_video_mobile();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 35px;padding-bottom: 20px;padding-right: 15px;"></a>
+                      </div>
+                      <div id="replace-video-mobile">
+                          <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                  </div>
+
+                  <div id="s1-right-side" >
                       <div class="wow fadeInRight">
-                          <div style="color: #fff; font-size: 30px; font-weight: 500; background-color: #2e3f50;border-top-left-radius: 5px; border-top-right-radius: 5px;padding: 10px 20px 6px 50px;">
+                          <div id="s1-r-1">
                               GET STARTED
                           </div>
-                          <div style="background-color:rgba(255,255,255,0.6);padding: 20px 50px 20px 50px;border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+                          <div id="s1-r-2">
                               <form method="POST" id="form-1">
-                                  <div id="section-1-4" style="padding: 50px 0px;">
+                                  <div id="s1-r-2-1">
                                       <input id="name" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Your Name" required style="margin-bottom: 30px;" />
                                       <input id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Email" required style="margin-bottom: 50px;"/>
-                                      <div style="text-align: right;">
+                                      <div id="s1-r-2-1-1">
                                           <input type="submit" name="submit" class="sign-up-btn" value="CONTINUE">
                                       </div>
                                   </div>
@@ -95,9 +110,10 @@
                       <a onclick="close_video();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 30px;padding-bottom: 20px;"></a>
                   </div>
                   <div id="replace-video">
-                      <iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
               </div>
+
           </div>
 
       </div>
@@ -412,7 +428,7 @@
                       </div>
                   </div>
                   <div >
-                      <a class="s3-btn" href="mailto:support@getrobincare.com">EMAIL</a>  
+                      <a class="s3-btn" href="#">EMAIL</a>  
                   </div>
               </div>
 
@@ -426,7 +442,7 @@
                       </div>
                   </div>
                   <div >
-                      <a class="s3-btn" href="tel:8556976246">CALL</a>  
+                      <a class="s3-btn" href="#">CALL</a>  
                   </div>
               </div>
 
@@ -440,7 +456,7 @@
                       </div>
                   </div>
                   <div >
-                      <a class="s3-btn" href="#download">DOWNLOAD</a>  
+                      <a class="s3-btn" href="#">DOWNLOAD</a>  
                   </div>
               </div>
 
@@ -448,22 +464,22 @@
           </div>
       </div>
 
-      <div id="section" style="1200px;">
-          <div style="display: flex;">
-              <div style="min-width: 50%;background-color: #fff;padding: 50px 0px;" class="wow fadeIn">
-                  <div style="max-width: 600px; float: right;">
-                      <div style="font-size: 32px;font-family: CamptonBook; padding-bottom: 30px;color: #2e3f50;">
+      <div id="section-5">
+          <div id="section-5-1">
+              <div id="section-5-1-1" class="wow fadeIn">
+                  <div id="section-5-1-1-a">
+                      <div id="section-5-1-1-a-1">
                           YOUR CARE TEAM
                       </div>
-                      <div style="display: flex;">
-                          <div style="padding-right: 20px;">
-                              <img src="img/jessica-1.png" alt="" style="width: 70px;" class="hvr-grow">
+                      <div id="section-5-1-1-a-2">
+                          <div class="section-5-1-1-a-2-1">
+                              <img src="img/jessica-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
                           </div>
                           <div>
-                              <div style="color: #2e3f50;font-size: 25px; font-family: CamptonBook;padding-bottom: 10px; ">
+                              <div class="section-5-1-1-a-2-2-a">
                                   Jess, Senior Care Advocate
                               </div>
-                              <div style="padding-right: 20px;font-size: 17px;">
+                              <div class="section-5-1-1-a-2-2-b">
                                   "Having the unique background of being an oncology nurse and a former primary caregiver to a cancer patient, Robin Care's 
                                   mission to see people fully and holistically- beyond their diagnosis and symptoms, and beyond what is currently possible with
                                   the traditional medical model- immediately spoke to my passion and drive to make the cancer experience better for patients and their loved."
@@ -471,15 +487,15 @@
                           </div>
                       </div>
 
-                      <div style="display: flex;padding-top: 50px;">
-                          <div style="padding-right: 20px;">
-                              <img src="img/robin-1.png" alt="" style="width: 70px;" class="hvr-grow">
+                      <div id="section-5-1-1-a-3">
+                          <div class="section-5-1-1-a-2-1" >
+                              <img src="img/robin-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
                           </div>
                           <div>
-                              <div style="color: #2e3f50;font-size: 25px; font-family: CamptonBook;padding-bottom: 10px; ">
+                              <div class="section-5-1-1-a-2-2-a">
                                   Robin, Care Advocate
                               </div>
-                              <div style="padding-right: 20px;font-size: 17px;">
+                              <div class="section-5-1-1-a-2-2-b">
                                   "I am excited to be here to support others with their needs from being here to lend an ear whether it is about cancer or 
                                   just a time when one needs to talk, vent or cry, helping find a ride to an appointment, finding the right support group,
                                   helping with the insurance company and overwhelming paperwork to providing information on whatever the need is at the time.
@@ -489,16 +505,19 @@
                       </div>
                   </div>
               </div>
-              <div style="min-width: 50%;background-color: #495a70;" class="wow fadeInRight">
-                  <div style="max-width: 600px; float: left;padding: 50px;">
-                      <div style="text-align: center;">
-                          <img src="img/team_photo.png" alt="" style="max-width: 100%;" class="hvr-grow">
+              <div id="section-5-1-2" class="wow fadeInRight">
+                  <div id="section-5-1-2-1">
+                      <div id="section-5-1-2-1-a">
+                          <img src="img/team_photo.png" alt="" id="section-5-1-2-1-a-photo" class="hvr-grow">
                       </div>
-                      <div style="font-size: 17px; padding-top: 50px; color: #fff;">
+                      <div id="section-5-1-2-1-b" >
                           Our team of Robins are highly skilled in all dimensions of the cancer experience. Combined, the team have decades of experience in
                           more than 7 fields. We have expertise from the domains of nursing, psychology, social work, physical therapy, nutrition, legal and
                           insurance areas. For all of the Robin team, not only have they invested their professional lives to helping cancer patients and their
                           families, they also have a deep personal connection to our mission through their own experiences.
+                      </div>
+                      <div id="section-5-1-2-1-c">
+                          <a href="#" class="learn-more-link">Learn more about your care team ></a>
                       </div>
                   </div>
               </div>
@@ -528,112 +547,98 @@
           </div>
       </div>
 
-      <div id="section-blog" style="background-color: #fff;">
-          <div style="max-width: 1200px;padding: 100px 0px;margin: 0 auto;">
-              <div style="display: flex; padding: 0px 20px 50px 10px;">
-                  <div style="width: 50%;font-size: 33px;font-family: CamptonBook; color: #2e3f50;">
-                      THE ROBIN CARE BLOG
-                  </div>
-                  <div style="text-align: right;width: 50%;">
-                      <a class="learn-more-link" href="#">More from the blog ></a>
-                  </div>
-              </div>
-              
-              <div style="display: flex;" class="wow fadeIn">
-                  <div style="width: 33%;padding: 0px 15px;">
-                      <div>
-                          <img src="../img/blog-post-1a.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
-                      </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
-                          September 19, 2017 by Robin Care
-                      </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
-                          11 Tips for Coping with a Cancer Diagnosis
-                      </div>
-                      <div style="font-size: 17px;">
-                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
-                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
-                          <a class="learn-more-link" href="#">Read more ></a>
-                      </div>
-                  </div>
-
-                  <div style="width: 33%;padding: 0px 15px;">
-                      <div>
-                          <img src="img/blog-post-2.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
-                      </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
-                          September 19, 2017 by Robin Care
-                      </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
-                          11 Tips for Coping with a Cancer Diagnosis
-                      </div>
-                      <div style="font-size: 17px;">
-                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
-                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
-                          <a class="learn-more-link" href="#">Read more ></a>
-                      </div>
-                  </div>
-
-                  <div style="width: 33%;padding: 0px 15px;">
-                      <div>
-                          <img src="img/blog-post-3.jpg" alt="" style="width: 100%; border-radius: 3px;" class="hvr-grow">
-                      </div>
-                      <div style="color: #9b9b9b; font-size: 13px;padding: 30px 0px 15px 0px;">
-                          September 19, 2017 by Robin Care
-                      </div>
-                      <div style="border-top: 2px solid #2e3f50; padding: 20px 0px 20px 0px; font-size: 28px; font-family: CamptonBook; ">
-                          11 Tips for Coping with a Cancer Diagnosis
-                      </div>
-                      <div style="font-size: 17px;">
-                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
-                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
-                          <a class="learn-more-link" href="#">Read more ></a>
-                      </div>
-                  </div>
-
-              </div>
-
-
-          </div>
-      </div>
-
-
-
       <div id="section-4-mobile">
-          <div id="section-4-mobile-content">
-              <div id="section-4-mc-1">
-                  Our expert nurses, therapists, and coaches help you synthesize information, make the right decision, and access the resources you need. From financial counseling to clinical trials, we're available to talk or text 24 hours a day, 7 days a week.
-              </div>
-          </div>
           <div id="section-4-mobile-2"></div>
           <div id="section-4-mobile-3">
               <div id="section-4-mobile-4">
               <div id="mobile-thankyou"></div>
-                  <div style="max-width: 60%;margin: 0 auto;color: #fff; font-size: 22px;text-align: center;">
-                      Enter your phone number to have an expert call you:
+                  <div style="max-width: 85%;margin: 0 auto;color: #2e3f50; font-size: 20px;text-align: center;font-family: CamptonBook;padding-bottom: 15px;">
+                      TRUSTED RESOURCES
                   </div>
-                  <div>
-                      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="form-3">
-                          <div>
-                              <div style="margin: 0 auto; max-width: 300px;padding-top: 30px;">
-                                  <input type=hidden name="oid" value="00Df40000002Q23">
-                                  <input type=hidden name="retURL" value="http://www.getrobincare.com/activisionblizzard-thank-you.html#mobile-thankyou">
-                                  <input type="hidden" id="lead_source" name="lead_source" value="Website" />
-                                  <input type="hidden" id="company" name="company" value="Activision Blizzard" />
-                                  <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control call-me-input" placeholder="123-456-7890" required/>       
-                              </div>
-                              <div style="text-align: center;padding-top: 20px;">
-                                  <input type="submit" name="submit" class="call-me-btn" value="CALL ME" style="width: 300px;">
-                              </div>
-                          </div>
-                      </form>
+                  <div style="max-width: 85%;margin: 0 auto; font-size: 16px; text-align: center;" >
+                      The Robin team has over 500 resources available at the tips of their fingers to use in assisting our patients. They stay up to
+                      date and current on treatment protocols, new innovations, and evidence based practice so they can assist patients from everything
+                      to understanding their pathology reports or treatment decisions to finding a relaxation
                   </div>
               </div>
-              <div id="section-4-mobile-5" class="hidden-pic">
-                  Thanks!<br> A Robin Care expert will be in touch shortly.
+              <div style="padding-top: 50px; text-align: center;">
+                  <a class="learn-more-btn" href="#">LEARN MORE</a>  
               </div>
           </div>
       </div>
+
+      <div id="section6" style="background-color: #fff;">
+          <div id="section-6">
+              <div id="section-6-a">
+                  <div id="section-6-a-1" >
+                      THE ROBIN CARE BLOG
+                  </div>
+                  <div id="section-6-a-2">
+                      <a class="learn-more-link" href="#">More from the blog ></a>
+                  </div>
+              </div>
+              
+              <div id="section-6-b" class="wow fadeIn">
+                  <div class="section-6-b-1">
+                      <div>
+                          <img src="img/Blog-photo.png" alt="" class="section-6-b-1-photo hvr-grow">
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 19, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                          11 Tips for Coping with a Cancer Diagnosis
+                      </div>
+                      <div class="section-6-b-1-d">
+                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
+                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
+                          <a class="learn-more-link" href="#">Read more ></a>
+                      </div>
+                  </div>
+
+                  <div class="hide-mobile section-6-b-1">
+                      <div>
+                          <img src="img/Blog-photo.png" alt="" class="section-6-b-1-photo hvr-grow">
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 19, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                          11 Tips for Coping with a Cancer Diagnosis
+                      </div>
+                      <div class="section-6-b-1-d">
+                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
+                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
+                          <a class="learn-more-link" href="#">Read more ></a>
+                      </div>
+                  </div>
+
+                  <div class="hide-mobile section-6-b-1">
+                      <div>
+                          <img src="img/Blog-photo.png" alt="" class="section-6-b-1-photo hvr-grow">
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 19, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                          11 Tips for Coping with a Cancer Diagnosis
+                      </div>
+                      <div class="section-6-b-1-d">
+                          Learning that you have cancer is a difficult experience. After your cancer diagnosis, you may feel anxious, afraid or overwhelmed
+                          and wonder how you can cope during the days ahead. Here are 11 suggestions for coping with a cancer diagnosis. 
+                          <a class="learn-more-link" href="#">Read more ></a>
+                      </div>
+                  </div>
+
+              </div>
+
+
+          </div>
+      </div>
+
+
+
+
       <footer >
           <div class="row" style="padding-top: 40px;padding-bottom: 40px;"  id="footer-id">
               <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
@@ -688,7 +693,6 @@
                           <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
                       </div>
               </div>
-              <a name="download"></a>
               <div style="text-align: center;padding-top: 50px;"> 
                   <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 130px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
               </div>
@@ -776,6 +780,22 @@ function show_video() {
     $('#s1-video').addClass('animated fadeInUp');
     $('#s1-video').removeClass('hidden-pic');
 }
+function show_video_mobile() {
+    // $('#s1-left-side').removeClass('animated fadeInLeft');
+    // $('#s1-right-side').removeClass('animated fadeInRight');
+    // $('#s1-left-side').addClass('animated fadeOutLeft');
+    // $('#s1-right-side').addClass('animated fadeOutRight');
+
+    $('#s1-left-side').removeClass('animated fadeInDown');
+    $('#s1-left-side').addClass('animated fadeOutUp');
+    $('#s1-left-side').addClass('hidden-pic');
+
+    // $('#s1-video-mobile').removeClass('animated zoomOut');
+    // $('#s1-video-mobile').addClass('animated fadeInUp');
+    $('#s1-video-mobile').removeClass('hidden-pic');
+}
+
+
 function close_video() {
     $('#s1-video').addClass('animated zoomOut');
     $('#s1-video').addClass('hidden-pic');
@@ -789,6 +809,22 @@ function close_video() {
 
     $('#replace-video').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
+function close_video_mobile() {
+    //$('#s1-video-mobile').addClass('animated fadeDown');
+    $('#s1-video-mobile').addClass('hidden-pic');
+
+    //$('#s1-both').css('max-height', '100%');
+
+    // $('#s1-left-side').removeClass('animated fadeOutLeft');
+    // $('#s1-right-side').removeClass('animated fadeOutRight');
+    // $('#s1-left-side').addClass('animated fadeInLeft');
+    // $('#s1-right-side').addClass('animated fadeInRight');
+    $('#s1-left-side').removeClass('animated fadeOutUp');
+    $('#s1-left-side').removeClass('hidden-pic');
+    $('#s1-left-side').addClass('animated fadeInDown');
+
+    $('#replace-video-mobile').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+}
 
 function menu_mobile() {
   $('body').css("background-color","#2e3f50");
@@ -796,7 +832,7 @@ function menu_mobile() {
     $('#mobile-menu-content').removeClass('hidden-pic');
 }
 function close_menu_mobile() {
-    $('body').css("background-color","#2e3f50");
+    $('body').css("background-color","#fff");
     $('#page-content').removeClass('hidden-pic');
     $('#mobile-menu-content').addClass('hidden-pic');
 }
