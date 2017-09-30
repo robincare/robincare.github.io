@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet">
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  </head>
+  <body>
+  <div id="page-content">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="section-1">
+            <header class="animated fadeInDown">
+                <div class="row" id="header-content" style="display: flex;">
+                    <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" style="margin:0px;padding: 0px;">
+                        <a href="http://www.getrobincare.com/"><img src="../img/robin-care-logo-white.png" alt="Logo" id="logo-img" ></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-10 col-md-10 col-sm-8 col-8" id="menu-id" style="margin:0px;padding: 0px;">
+                        <div style="display: block;float: right;padding-top: 20px;">
+                            <div class="menu-space">
+                                <a class="header-link" href="http://www.getrobincare.com/aramark">MEMBERS</a>
+                            </div>
+                            <div class="menu-space">
+                                <a class="header-link" href="http://www.getrobincare.com">EMPLOYERS</a>
+                            <div class="menu-space">
+                                <a class="header-link-btn" href="#">SIGN IN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-8" style="padding-top: 5px;text-align: right;" id="menu-mobile">
+                        <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+            </header>
+        
+        <div style="background-color:#fff;padding:25px;">
+        <div class="container" style="padding-top:25px;">
+          <div class="row justify-content-md-center">
+            <div class="col-md-10 col">
+                <div style="font-size:11px;padding-bottom:20px; color:#ddd">
+                <a href="#" style="color:#ddd">Blog </a> \ Rules of Engagement
+
+              </div>
+              <h2>
+                 Rules of Engagement: How to Handle Cancer Care
+
+              </h2>
+              <div style="color:#999;font-size:12px;margin-bottom:15px;">September 22, 2017 by Robin Care</div>
+              <img src="../img/blog-post-2.jpg" style="max-width:100%;width:100%;padding-bottom:20px;">
+<p>
+From the time people hear the word “cancer”, both those diagnosed and their loved ones receive an overwhelming amount of information that requires quick decision making and navigating a complex healthcare system.
+</p>
+
+<p>
+This constant barrage of information creates anxiety as people move from one urgent decision to the next without stopping to think about the bigger picture or how to negotiate each step along an unknown journey.
+</p>
+
+<p>
+If this sounds like you, there is a solution! It begins by taking a step back to think about how a cancer diagnosis will affect your life, or the life of your loved one, and prioritizing what’s really important.
+</p>
+
+<p>
+You can then set the ‘rules of engagement’ for how you approach new information, which gives you more control over how you’ll deal with uncertainty, now and in the future. In fact, once you develop a system, you can easily fall back on it again and again to reduce your anxiety and make decisions more confidently.
+                </p>
+                
+                <p>
+                    This framework can be as rigid or as flexible as you like, and you can always modify it according to your most pressing needs. This means you may need to experiment to see what works best for you. There are no right or wrong answers - only those that feel right on a personal level.
+                </p>
+                
+                <p>
+                    So how do you start defining your own rules of engagement?
+                </p>
+                
+                <p>
+                    Start by considering who, what, why, where, and how. For example, what will you need to know to make an intelligent decision? And how much information is necessary to get a complete picture?
+                </p>
+                
+                <p>
+                    Some people are natural information seekers; the more they know about a particular topic, the better they feel about making decisions. Others are easily overwhelmed by an influx of information, which increases their anxiety, and decreases their ability to take action.
+                </p>
+                
+                <p>
+                    Understanding your own relationship to information will help you determine how much to seek and consume on any given day and allows you to feel more in control and better able to make sound decisions.
+                </p>
+                
+                <p>
+                    Think about what you want to know most about your own diagnosis and treatment, or that of a loved one.  Are you concerned about how side effects might affect your quality of life? Or are you simply determined to reduce the risk of recurrence?
+                </p>
+                
+                <p>
+                    These are just two examples of what might be most important to you, which you can then communicate to your care team.
+                </p>
+
+<hr style="margin-top:35px;">
+
+
+<h5 style="margin-top:25px;">Related Articles</h5>
+
+<div class="row" style="padding-top:25px">
+  <div class="col-sm-4">
+    <a href="http://www.getrobincare.com/blog/blog1"><img src="../img/blog-post-1b.jpg" style="max-width:100%;padding-bottom:20px;"></a>
+    <h5>360 Degree Cancer Care</h5>
+  </div>
+  <div class="col-sm-4">
+    <a href="http://www.getrobincare.com/blog/blog3"><img src="../img/blog-post-3.jpg" style="max-width:100%;padding-bottom:20px;"></a>
+    <h5>Social Support During Cancer</h5>
+  </div>
+</div>
+
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <footer >
+          <div class="row" style="padding-top: 40px;padding-bottom: 40px;"  id="footer-id">
+              <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
+                  <div style="display: flex;" class="wow fadeInUp">
+                      <div>                          
+                          <div style="padding-bottom: 10px;" class="wow fadeInLeft">
+                              <img src="../img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
+                          </div>
+                          <div style="color: #fff;font-size: 13px;padding-right: 25px;padding-top: 5px;">
+                              All Rights Reserved
+                          </div>
+                      </div>
+                      <div style="padding-left: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/aramark">Members</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com">Employers</a><br>
+                          <a class="a-link" href="#">Sign In</a>
+                      </div>
+                      <div style="padding-left: 70px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4 text-right wow fadeInRight">
+                  <div style="padding-bottom: 15px;"> 
+                      <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="../img/badge-app-store.png" style="max-width: 110px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+                  </div>
+                  <div>
+                      <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="../img/google_play_icon_480.png" style="max-width: 110px;" alt="Download Google Play"></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div id="footer-mobile">
+          <div style="background-color: #2e3f50;padding: 40px 0px 30px 0px;">
+              <div style="text-align: center;padding-bottom: 20px;">
+                  <img src="../img/robin-care-logo-white.png" style="max-width: 140px;" alt="Logo">
+              </div>
+              <div style="color: #fff;font-size: 13px;text-align: center;padding-top: 10px;">
+                  All Rights Reserved
+              </div>
+              <div style="padding-bottom: 0px;padding-top: 15px; ">
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/aramark">Members</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com">Employers</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/">Sign In</a>
+                      </div>
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+              </div>
+              <div style="text-align: center;padding-top: 50px;"> 
+                  <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="../img/badge-app-store.png" style="max-width: 130px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+              </div>
+              <div style="text-align: center;padding-top: 20px;padding-bottom: 50px;">
+                  <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="../img/google_play_icon_480.png" style="max-width: 130px;" alt="Download Google Play"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="mobile-menu-content" class="hidden-pic animated fadeInDownBig">
+      <div class="row" style="padding: 15px 15px 15px 25px;">
+          <div class="col-md-6 col-sm-6 col-6">
+              <a href="http://www.getrobincare.com/"><img src="../img/robin-care-logo-white.png" alt="Logo" id="logo-img"></a>
+          </div>
+          <div class="col-md-6 col-sm-6 col-6 text-right">
+              <a onclick="close_menu_mobile();"><img src="../img/close.png" alt="Close" style="max-width: 17px;"></a>
+          </div>
+      </div>
+      <div style="padding-top: 50px;">
+          <div class="menu-space">
+              <a class="header-link" href="http://www.getrobincare.com/aramark">MEMBERS</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link" href="http://www.getrobincare.com">EMPLOYERS</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link-btn" href="#">SIGN IN</a>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
