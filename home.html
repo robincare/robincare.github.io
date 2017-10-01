@@ -15,7 +15,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-106003262-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -448,7 +447,7 @@
                       THE ROBIN CARE BLOG
                   </div>
                   <div id="section-6-a-2">
-                      <a class="learn-more-link" href="http://www.getrobincare.com/blog">More from the blog ></a>
+                      <a class="learn-more-link" href="#">More from the blog ></a>
                   </div>
               </div>
               
@@ -466,7 +465,7 @@
                       <div class="section-6-b-1-d">
                           People who are diagnosed with cancer know that they are so much more than just their tumor. You’re an individual with thoughts, 
                           feelings, hopes, dreams, and entire ecosystems that rely on you. Why, then, do most cancer treatments primarily focus on removing the tumor?
-                          <a class="learn-more-link" href="http://www.getrobincare.com/360-degree-cancer-care">Read more ></a>
+                          <a class="learn-more-link" href="#">Read more ></a>
                       </div>
                   </div>
 
@@ -483,7 +482,7 @@
                       <div class="section-6-b-1-d">
                           From the time people hear the word “cancer”, both those diagnosed and their loved ones receive an overwhelming amount of information 
                           that requires quick decision making and navigating a complex healthcare system. 
-                          <a class="learn-more-link" href="http://www.getrobincare.com/rules-of-engagement">Read more ></a>
+                          <a class="learn-more-link" href="#">Read more ></a>
                       </div>
                   </div>
 
@@ -500,7 +499,7 @@
                       <div class="section-6-b-1-d">
                           For cancer patients and their loved ones, social support is a major part of the cancer journey. Most people’s idea of the cancer 
                           experience involves images of family and friends rallying around a newly diagnosed loved one, and helping them down the path of recovery. 
-                          <a class="learn-more-link" href="http://www.getrobincare.com/social-support">Read more ></a>
+                          <a class="learn-more-link" href="#">Read more ></a>
                       </div>
                   </div>
 
@@ -531,7 +530,6 @@
                       <div style="padding-left: 70px;">
                           <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
                           <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
-                          <a class="a-link" href="mailto:hello@getrobincare.com">hello@getrobincare.com</a>
                       </div>
                   </div>
               </div>
@@ -563,7 +561,6 @@
                       <div style="text-align: center;padding-top: 30px;">
                           <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
                           <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
-                          <a class="a-link" href="mailto:hello@getrobincare.com">hello@getrobincare.com</a>
                       </div>
               </div>
               <div style="text-align: center;padding-top: 50px;"> 
@@ -621,20 +618,17 @@ function slider_fn(slide) {
         clearInterval(time);
         time = setInterval(call_slider_fn, 7000);
     } 
-
     if(slide_index != slide_number) { //if the slide is different to the current one
         $('#slider-phone-1,#slider-phone-2,#slider-phone-3,#slider-phone-4,#slider-phone-5').addClass('hidden-pic');
         $('#slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5,#slide-content-1-active,#slide-content-2-active,#slide-content-3-active,#slide-content-4-active,#slide-content-5-active').addClass('hidden-pic');
         $('#slider-phone-'+slide_number).removeClass('hidden-pic');
         $('#slide-content-'+slide_number+'-active, #slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5').removeClass('hidden-pic');
         $('#slide-content-'+slide_number).addClass('hidden-pic');
-
         slide_index = slide_number;
         $('#slider-circle-1,#slider-circle-2,#slider-circle-3,#slider-circle-4,#slider-circle-5').removeClass('circle-active');
         $('#slider-circle-'+slide_number).addClass('circle-active');
     }
 }
-
 // function play_pic() {
 //     $('#s7-1-b-1').html('<iframe src="https://player.vimeo.com/video/208142076" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="true"></iframe>');
 // }
@@ -643,7 +637,6 @@ function call_slider_fn() {
 }
 var time = setInterval(call_slider_fn, 7000);
 slider_fn(1);
-
 function menu_mobile() {
   $('body').css("background-color","#35cdcd");
     $('#page-content').addClass('hidden-pic');
@@ -656,7 +649,6 @@ function close_menu_mobile() {
 }
 function download_mobile() {
     close_menu_mobile();
-
     location.href = "#footer-mobile";
 }
 </script>
