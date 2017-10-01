@@ -72,6 +72,27 @@ a.back-link-btn:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.back-link-btn {
+    background-color: #35cdcd;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px;
+}
+.back-link-btn:focus,
+.back-link-btn:active,
+.back-link-btn:hover {
+    font-size: 13px;
+    color: #fff;
+    background-color: #01BAB7;
+    margin-top: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
 #m-a {
     background-color: #2e3f50;
     color: #fff;
@@ -1858,6 +1879,27 @@ a.back-link-btn {
 a.back-link-btn:focus,
 a.back-link-btn:active,
 a.back-link-btn:hover {
+    font-size: 13px;
+    color: #fff;
+    background-color: #01BAB7;
+    margin-top: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.back-link-btn {
+    background-color: #35cdcd;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px;
+}
+.back-link-btn:focus,
+.back-link-btn:active,
+.back-link-btn:hover {
     font-size: 13px;
     color: #fff;
     background-color: #01BAB7;

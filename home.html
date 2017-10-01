@@ -663,8 +663,8 @@
                               <strong>Phone</strong>: (650) 800-3195
                           </div>
                           <div id="m-b-5-b">
-                           <!--    <input type="submit" name="SUBMIT" class="back-link-btn"> -->
-                              <a class="back-link-btn" onclick="submit_form_a();" style="color:#fff;">SUBMIT</a>
+                              <input type="submit" name="SUBMIT" class="back-link-btn">
+                          <!--     <a class="back-link-btn" onclick="submit_form_a();" style="color:#fff;">SUBMIT</a> -->
                           </div>
                       </div>
                       </form>
@@ -766,6 +766,7 @@
 </html>
 <script type="text/javascript">
 new WOW().init();
+
 var slide_index = 5; //index of active slide
 //function to activate a slide
 function slider_fn(slide) {
@@ -817,12 +818,15 @@ function submit_form_a() {
         //     }
         // });
 
-        $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
-            method: "POST",
-            data: {message: "hello!"},
-            dataType: "json"
-        });
+    //     $.ajax({
+    //         url: "https://formspree.io/@gmail.com", 
+    //         method: "POST",
+    //         data: {message: "hello!"},
+    //         dataType: "json",
+    //             accepts: {
+    //     text: "application/json"
+    // }
+    //     });
 
 
     }
