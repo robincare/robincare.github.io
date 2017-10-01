@@ -92,6 +92,7 @@ a.back-link-btn:hover {
     margin-top: 0px;
     text-decoration: none;
     cursor: pointer;
+    border: 0px;
 }
 #m-a {
     background-color: #2e3f50;
