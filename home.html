@@ -634,6 +634,7 @@
                       <div id="m-b-2">
                           <div id="m-b-2-1"></div>
                       </div>
+                      <form action="https://formspree.io/hello@getrobincare.com" method="POST">
                       <div id="m-b-3">
                           <div id="m-b-3-1" >
                               <div id="m-b-3-1-a">
@@ -662,10 +663,11 @@
                               <strong>Phone</strong>: (650) 800-3195
                           </div>
                           <div id="m-b-5-b">
-                              <!-- <input type="submit" name="SUBMIT"> -->
+                           <!--    <input type="submit" name="SUBMIT" class="back-link-btn"> -->
                               <a class="back-link-btn" onclick="submit_form_a();" style="color:#fff;">SUBMIT</a>
                           </div>
                       </div>
+                      </form>
 
                   </div>
 
@@ -711,7 +713,7 @@
                       <div id="m-b-4-s">
                           <div id="m-b-2-1"></div>
                       </div>
-                      <form action="https://formspree.io/limban.claudiu@gmail.com" method="POST">
+                      <form action="https://formspree.io/hello@getrobincare.com" method="POST">
                       <div id="m-b-3">
                           <div id="m-b-3-1" >
                               <div id="m-b-3-1-a">
@@ -729,7 +731,7 @@
                           <div id="m-b-5-a">
                           </div>
                           <div id="m-b-5-b">
-                              <input type="submit" value="SUBMIT">
+                              <input type="submit" value="SUBMIT" class="back-link-btn">
                               <!-- <a class="back-link-btn" onclick="submit_form_b();" style="color:#fff;">SUBMIT</a> -->
                           </div>
                       </div>
@@ -814,6 +816,13 @@ function submit_form_a() {
         //         //
         //     }
         // });
+
+        $.ajax({
+            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            method: "POST",
+            data: {message: "hello!"},
+            dataType: "json"
+        });
 
 
     }
