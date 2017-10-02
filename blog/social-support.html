@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="../test2.css">
+    <link rel="stylesheet" type="text/css" href="../index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet">
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
@@ -114,19 +114,16 @@ Consider the following four categories of social support to better understand wh
     <a href="http://www.getrobincare.com/blog/360-degree-cancer-care"><img src="../img/blog-post-1b.jpg" style="max-width:100%;padding-bottom:20px;"></a>
     <h5>360 Degree Cancer Care</h5>
   </div>
-  <div class="col-sm-4">
+    <div class="col-sm-4">
     <a href="http://www.getrobincare.com/blog/social-support"><img src="../img/blog-post-2.jpg" style="max-width:100%;padding-bottom:20px;"></a>
     <h5>Rules of Engagement</h5>
-  </div>
-</div>
-
-
+    </div>
+                </div>
+              </div>
             </div>
-            
+            </div>
           </div>
-        </div>
-      </div>
-      
+          
       <footer >
           <div class="row" style="padding-top: 40px;padding-bottom: 40px;"  id="footer-id">
               <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
@@ -221,60 +218,3 @@ Consider the following four categories of social support to better understand wh
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </body>
 </html>
-<script type="text/javascript">
-new WOW().init();
-var slide_index = 5; //index of active slide
-//function to activate a slide
-function slider_fn(slide) {
-    var slide_number;
-    if(slide==0) { //if the value is 0, it'll calculate the index of next slide
-        if(slide_index==5) { slide_number = 1; }
-        else { slide_number = slide_index+1; }
-    }
-    else { //if the user click on controllers to change the slide
-        slide_number = slide;
-        clearInterval(time);
-        time = setInterval(call_slider_fn, 7000);
-    } 
-    if(slide_index != slide_number) { //if the slide is different to the current one
-        $('#slider-phone-1,#slider-phone-2,#slider-phone-3,#slider-phone-4,#slider-phone-5').addClass('hidden-pic');
-        $('#slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5,#slide-content-1-active,#slide-content-2-active,#slide-content-3-active,#slide-content-4-active,#slide-content-5-active').addClass('hidden-pic');
-        $('#slider-phone-'+slide_number).removeClass('hidden-pic');
-        $('#slide-content-'+slide_number+'-active, #slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5').removeClass('hidden-pic');
-        $('#slide-content-'+slide_number).addClass('hidden-pic');
-        slide_index = slide_number;
-        $('#slider-circle-1,#slider-circle-2,#slider-circle-3,#slider-circle-4,#slider-circle-5').removeClass('circle-active');
-        $('#slider-circle-'+slide_number).addClass('circle-active');
-    }
-}
-   
-function open_modal_a() {
-    $('#myModala').modal('show');
-}
-function open_modal_b() {
-    $('#myModalb').modal('show');
-}
-function submit_form_a() {
-    var name = $('#name').val().length;
-    var email = $('#email').val().length;
-    var message = $('#message').val().length;
-    if(name>0 && email>0 && message>0) {
-        $('#modal-a-first').addClass('hidden-pic');
-        $('#modal-a-second').removeClass('hidden-pic');
-}
-}
-    function menu_mobile() {
-  $('body').css("background-color","#35cdcd");
-    $('#page-content').addClass('hidden-pic');
-    $('#mobile-menu-content').removeClass('hidden-pic');
-}
-function close_menu_mobile() {
-    $('body').css("background-color","#fff");
-    $('#page-content').removeClass('hidden-pic');
-    $('#mobile-menu-content').addClass('hidden-pic');
-}
-function download_mobile() {
-    close_menu_mobile();
-    location.href = "#footer-mobile";
-}
-</script>
