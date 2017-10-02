@@ -742,8 +742,6 @@ footer {
 #footer-id {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 3%;
-    width: 100%;
 }
 a.a-link,
 a.a-link:focus,
@@ -755,7 +753,6 @@ a.a-link:hover {
     margin-top: 0px;
     text-decoration: none;
 }
-
 #footer-mobile {
     display: none;
 }
