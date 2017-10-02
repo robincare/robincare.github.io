@@ -754,8 +754,6 @@ a.a-link:hover {
     padding-top: 0px;
     margin-top: 0px;
     text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 #footer-mobile {
