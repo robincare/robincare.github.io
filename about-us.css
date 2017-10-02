@@ -256,6 +256,16 @@ a.header-link-btn:hover {
     text-decoration: underline;
     color: #fff;
 }
+.s3-2-s:focus,
+.s3-2-s:active,
+.s3-2-s:hover {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
 /* end section-3 */
 
 /*  footer  */
