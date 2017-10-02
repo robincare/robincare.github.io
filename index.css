@@ -755,6 +755,10 @@ a.a-link:hover {
     margin-top: 0px;
     text-decoration: none;
 }
+a.a-link-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
 #footer-mobile {
     display: none;
 }
