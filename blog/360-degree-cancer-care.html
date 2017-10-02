@@ -291,4 +291,20 @@ Such a model doesn’t exist quite yet but we’ve already seen research that ha
   </div>
   </body>
 </html>
+      <script type="text/javascript">
+          function menu_mobile() {
+  $('body').css("background-color","#35cdcd");
+    $('#page-content').addClass('hidden-pic');
+    $('#mobile-menu-content').removeClass('hidden-pic');
+}
+function close_menu_mobile() {
+    $('body').css("background-color","#fff");
+    $('#page-content').removeClass('hidden-pic');
+    $('#mobile-menu-content').addClass('hidden-pic');
+}
+function download_mobile() {
+    close_menu_mobile();
+    location.href = "#footer-mobile";
+}
+</script>
 
