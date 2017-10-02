@@ -398,7 +398,7 @@
               </div>
 
               <div style="text-align: center;padding-bottom: 60px;">
-                  <a class="learn-more-btn" data-toggle="modal" data-target="#myModala" style="color:#fff;">SIGN UP</a>  
+                  <a class="learn-more-btn" data-toggle="modal" data-target="#myModala" onclick="open_modal_a();" style="color:#fff;">SIGN UP</a>  
               </div>
 
           </div>
@@ -798,6 +798,9 @@ function slider_fn(slide) {
     }
 }
    
+function open_modal_a() {
+    $('#myModala').modal('show');
+}
 function open_modal_b() {
     $('#myModalb').modal('show');
 }
