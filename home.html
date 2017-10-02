@@ -454,7 +454,7 @@
                   </div>
               </div>
               <div style="padding-top: 50px; text-align: center;">
-                  <a class="learn-more-btn" data-toggle="modal" data-target="#myModalb" style="color:#fff;">LEARN MORE</a>  
+                  <a class="learn-more-btn" data-toggle="modal" data-target="#myModalb" onclick="open_modal_b();" style="color:#fff;">LEARN MORE</a>  
               </div>
           </div>
       </div>
@@ -796,6 +796,10 @@ function slider_fn(slide) {
         $('#slider-circle-1,#slider-circle-2,#slider-circle-3,#slider-circle-4,#slider-circle-5').removeClass('circle-active');
         $('#slider-circle-'+slide_number).addClass('circle-active');
     }
+}
+   
+function open_modal_b() {
+    $('#myModalb').modal('show');
 }
 
 function submit_form_a() {
