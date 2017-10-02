@@ -759,6 +759,15 @@ a.a-link-nowrap {
     white-space: nowrap;
     overflow: hidden;
 }
+a.a-link-nowrap:focus,
+a.a-link-nowrap:active,
+a.a-link-nowrap:hover {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+
 #footer-mobile {
     display: none;
 }
