@@ -29,20 +29,305 @@
           ga('create', 'UA-106005788-1', 'auto');
           ga('send', 'pageview');
         </script>
+<style>
+.hidden-pic {
+    display: none;
+}
+/* header */
+header {
+    background-color: #35cdcd;
+    margin-bottom: 0px;
+}
+#header-content {
+    padding: 20px 3%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+#logo-img {
+    max-width: 150px;
+}
+a.header-link {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link:focus,
+a.header-link:active,
+a.header-link:hover {
+    font-size: 13px;
+    color: #e2e2e2;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.hl-active {
+    color: #e2e2e2;
+}
+a.header-link-btn {
+    background-color: #2e3f50;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link-btn:focus,
+a.header-link-btn:active,
+a.header-link-btn:hover {
+    font-size: 13px;
+    color: #fff;
+    background-color: #49616e;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.menu-space {
+    display: inline-block;
+    padding-left: 25px;
+}
+#menu-mobile {
+    display: none;
+}
+#hd-a {
+    width: 30%;
+}
+#hd-b {
+    width: 70%;
+}
+#hd-c {
+    width: 70%;
+    display: none;
+}
+#fd-a {
+    width: 60%;
+}
+#fd-b {
+    width: 40%;
+    text-align: right;
+}
+#footer-id {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px 3%;
+}
+/* end header */
+/*  footer  */
+footer {
+    background-color: #2e3f50;
+}
+#footer-id {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a.a-link,
+a.a-link:focus,
+a.a-link:active,
+a.a-link:hover {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+#footer-mobile {
+    display: none;
+}
+/*  end footer  */
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+#menu-id {
+    display: none;
+}
+#header-content {
+    padding: 10px 0px 10px 25px;
+}
+#logo-img {
+    max-width: 100px;
+}
+#menu-mobile {
+    display: initial;
+}
+header {
+    margin-bottom: 0px;
+}
+.menu-space {
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.hide-mobile {
+  display: none;
+}
+footer {
+    display: none;
+}
+#footer-mobile {
+    display: initial;
+}
+#hd-b {
+    display: none;
+}
+#hd-c {
+    display: initial;
+    padding-right: 20px;
+}
+
+
+}
+
+@media screen and (max-width: 500px) {
+#menu-id {
+    display: none;
+}
+#header-content {
+    padding: 10px 0px 10px 25px;
+}
+#logo-img {
+    max-width: 70px;
+    padding-top: 5px;
+}
+#menu-mobile {
+    display: initial;
+}
+header {
+    margin-bottom: 0px;
+}
+.hide-mobile {
+    display: none;
+}
+/* end section-6 */
+
+footer {
+  display: none;
+}
+#footer-mobile {
+    display: initial;
+}
+a.a-link,
+a.a-link:focus,
+a.a-link:active,
+a.a-link:hover {
+    font-size: 13px;
+
+}
+#mobile-menu-content {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #35cdcd;
+}
+a.header-link {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link:focus,
+a.header-link:active,
+a.header-link:hover {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.hl-active {
+    color: #fff;
+}
+a.header-link-btn {
+    background-color: #2e3f50;
+    padding: 15px 50px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link-btn:focus,
+a.header-link-btn:active,
+a.header-link-btn:hover {
+    font-size: 14px;
+    color: #fff;
+    background-color: #2e3f50;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.menu-space {
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#hd-b {
+    display: none;
+}
+#hd-c {
+    display: initial;
+    padding-right: 20px;
+}
+#hm-0 {
+    display: flex;
+    width: 100%;
+    padding: 15px 15px 15px 25px;
+}
+#hm-a {
+    width: 50%;
+}
+#hm-b {
+    width: 50%;
+    text-align: right;
+}
+
+}
+
+</style>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<div id="page-content">
+    <header class="">
+        <div id="header-content" style="display: flex;">
+            <div id="hd-a" >
+                <a href="http://www.getrobincare.com/"><img src="img/robin-care-logo-white.png" alt="Logo" id="logo-img" ></a>
+            </div>
+            <div id="hd-b" id="menu-id">
+                <div style="display: block;float: right;padding-top: 20px;">
+                    <div class="menu-space">
+                        <a class="header-link" href="#">PARTNER WITH US</a>
+                    </div>
+                    <div class="menu-space">
+                        <a class="header-link" href="http://www.getrobincare.com">BLOG</a>
+                    </div>
+                    <div class="menu-space">
+                        <a class="header-link" href="http://www.getrobincare.com/about-us">ABOUT US</a>
+                    </div>
+                    <div class="menu-space">
+                        <a class="header-link-btn" href="http://login.getrobincare.com/#signin">SIGN IN</a>
+                    </div>
+                </div>
+            </div>
+            <div id="hd-c" style="padding-top: 5px;text-align: right;" id="menu-mobile">
+                <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+    </header>
 
         <div class="main-container">
             <div class="form-submit-msg-container">Thank you! We've received your message and will get back to you shortly.</div>
             <div class="hero-image-container">
-                <div class="hero-overlay">
-                    <div id="menu-top" class="animated fadeInDown">
+                <div class="hero-overlay" >
+     <!--                <div id="menu-top" class="animated fadeInDown">
                         <div><img class="logo" src="img/Icon - Reverse.png" style="max-width: 35px;cursor: pointer;" onclick="hp_fn()"></div>
                         <div style="margin-left: auto;margin-right: 0;"><a href="#contact-us" class="header-link-btn" style="margin-right: 0px;">CONTACT</a></div>
-                    </div>
+                    </div> -->
 
                     <h1 class="hero-description animated fadeInLeft">We give cancer patients and their loved ones the help they need</h1>
                 </div>
@@ -171,13 +456,13 @@
                     </div>
                     </div>
                 </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
             </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-        </div>
             <div class="contact-container">
                 <div class="contact-header">
                     <a id="contact-us"></a><h2>CONTACT US</h2>
@@ -223,11 +508,11 @@
                 </div>
             </div>
         </div>
-        <footer>
-<!--             <div class="footer-link-container"><a href="/" id="footer-logo" class="active">Robin</a></div>
+<!--         <footer>
+          <div class="footer-link-container"><a href="/" id="footer-logo" class="active">Robin</a></div>
             <div class="footer-link-container"><span>All Rights Reserved</span></div>
             <div class="footer-link-container"><a href="privacypolicy">Privacy Policy</a></div>
-            <div class="footer-link-container"><a href="terms">Terms &amp; Conditions</a></div> -->
+            <div class="footer-link-container"><a href="terms">Terms &amp; Conditions</a></div>
             <div id="footer-content">    
                 <div style="padding-bottom: 20px;" class="wow fadeInLeft">
                     <img src="img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
@@ -244,8 +529,8 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <div id="footer-mobile">
+        </footer> -->
+<!--         <div id="footer-mobile">
             <div>
                   <div style="text-align: center;padding-bottom: 20px;">
                       <img src="img/robin-care-logo-white.png" style="max-width: 200px;" alt="Logo">
@@ -260,7 +545,94 @@
                       </div>
                   </div>
             </div>
-        </div>
+        </div> -->
+          <footer>
+          <div  id="footer-id">
+              <div id="fd-a">
+                  <div style="display: flex;" class="wow fadeInUp">
+                      <div>                          
+                          <div style="padding-bottom: 10px;" class="wow fadeInLeft">
+                              <img src="img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
+                          </div>
+                          <div style="color: #fff;font-size: 13px;padding-right: 25px;padding-top: 5px;">
+                              All Rights Reserved
+                          </div>
+                      </div>
+                      <div style="padding-left: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Members</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Robin Care Blog</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Our Team</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Sign In</a>
+                      </div>
+                      <div style="padding-left: 70px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+              <div id="fd-b" class="wow fadeInRight">
+                  <div style="padding-bottom: 15px;"> 
+                      <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 110px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+                  </div>
+                  <div>
+                      <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="img/google_play_icon_480.png" style="max-width: 110px;" alt="Download Google Play"></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div id="footer-mobile">
+          <div style="background-color: #2e3f50;padding: 40px 0px 30px 0px;">
+              <div style="text-align: center;padding-bottom: 20px;">
+                  <img src="img/robin-care-logo-white.png" style="max-width: 140px;" alt="Logo">
+              </div>
+              <div style="color: #fff;font-size: 13px;text-align: center;padding-top: 10px;">
+                  All Rights Reserved
+              </div>
+              <div style="padding-bottom: 0px;padding-top: 15px; ">
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/">Members</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/">Robin Care Blog</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/">Our Team</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/">Sign In</a>
+                      </div>
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+              </div>
+              <div style="text-align: center;padding-top: 50px;"> 
+                  <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 130px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+              </div>
+              <div style="text-align: center;padding-top: 20px;padding-bottom: 50px;">
+                  <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="img/google_play_icon_480.png" style="max-width: 130px;" alt="Download Google Play"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="mobile-menu-content" class="hidden-pic animated fadeInDownBig" style="width: 100%;">
+      <div id="hm-0" >
+          <div id="hm-a">
+              <a href="http://www.getrobincare.com/"><img src="img/robin-care-logo-white.png" alt="Logo" id="logo-img"></a>
+          </div>
+          <div id="hm-b">
+              <a onclick="close_menu_mobile();"><img src="img/close.png" alt="Close" style="max-width: 17px;"></a>
+          </div>
+      </div>
+      <div style="padding-top: 50px;">
+          <div class="menu-space">
+              <a class="header-link" href="#">PARTNER WITH US</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link" href="">BLOG</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link" href="http://www.getrobincare.com/about-us">ABOUT US</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link-btn" href="http://login.getrobincare.com/#signin">SIGN IN</a>
+          </div>
+      </div>
+  </div>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -284,6 +656,18 @@
         <script>
             new WOW().init();
             function hp_fn() { window.location.href = "http://www.getrobincare.com/"; }
+
+            function menu_mobile() {
+              $('body').css("background-color","#35cdcd");
+                $('#page-content').addClass('hidden-pic');
+                $('#mobile-menu-content').removeClass('hidden-pic');
+            }
+            function close_menu_mobile() {
+                $('body').css("background-color","#fff");
+                $('#page-content').removeClass('hidden-pic');
+                $('#mobile-menu-content').addClass('hidden-pic');
+            }
+
         </script>
     </body>
 </html>
