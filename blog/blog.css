@@ -50,6 +50,9 @@ header {
 #logo-img {
     max-width: 250px;
 }
+#menu-mobile {
+    display: initial;
+}
 a.header-link {
     font-size: 13px;
     color: #fff;
