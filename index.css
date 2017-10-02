@@ -742,6 +742,8 @@ footer {
 #footer-id {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0px 3%;
+    width: 100%;
 }
 a.a-link,
 a.a-link:focus,
