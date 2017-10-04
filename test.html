@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="customer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
         <script>
@@ -63,6 +64,7 @@
                 </div>
             </header>
           <div id="section-1-content" >
+              <div id="s1-both-top">
               <div id="s1-both"> 
                   <div id="s1-left-side" >
                         <div class="wow fadeInLeft">
@@ -89,7 +91,7 @@
                           </div>
                       </div>
                   </div>
-
+                  </div>
                   <div style="margin: 0 auto;max-width: 100%; padding-top: 20px;" id="s1-video-mobile" class="animated fadeInUp hidden-pic" >
                       <div style="text-align: right;">
                           <a onclick="close_video_mobile();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 35px;padding-bottom: 20px;padding-right: 15px;"></a>
@@ -131,7 +133,7 @@
       <div id="section-2">
           <div id="section-2-first">
           <div id="section-2-1">
-              <div class="align-self-center" style="padding-right: 50px;">
+              <div class="align-self-center" style="padding-right: 50px;" id="section-2-dots">
                   <div class="slider-controllers">
                       <a onclick="slider_fn(1);"><span id="slider-circle-1" class="slider-circle"><i class="fa fa-circle" aria-hidden="true"></i></span><a>
                   </div>
@@ -755,20 +757,15 @@ function show_video() {
     $('#s1-left-side').addClass('animated fadeOutLeft');
     $('#s1-right-side').addClass('animated fadeOutRight');
 
-    $('#s1-both').css('max-height', '10px');
+    $('#s1-both-top').css('display', 'none');
 
     $('#s1-video').removeClass('animated zoomOut');
     $('#s1-video').addClass('animated fadeInUp');
     $('#s1-video').removeClass('hidden-pic');
 }
 function show_video_mobile() {
-    // $('#s1-left-side').removeClass('animated fadeInLeft');
-    // $('#s1-right-side').removeClass('animated fadeInRight');
-    // $('#s1-left-side').addClass('animated fadeOutLeft');
-    // $('#s1-right-side').addClass('animated fadeOutRight');
-
-    $('#s1-left-side').removeClass('animated fadeInDown');
-    $('#s1-left-side').addClass('animated fadeOutUp');
+    $('#s1-left-side').removeClass('animated fadeInUp');
+    $('#s1-left-side').addClass('animated fadeOutDown');
     $('#s1-left-side').addClass('hidden-pic');
 
     // $('#s1-video-mobile').removeClass('animated zoomOut');
@@ -780,31 +777,25 @@ function show_video_mobile() {
 function close_video() {
     $('#s1-video').addClass('animated zoomOut');
     $('#s1-video').addClass('hidden-pic');
-
-    $('#s1-both').css('max-height', '100%');
+    
+    $('#s1-both-top').css('display', 'initial');
 
     $('#s1-left-side').removeClass('animated fadeOutLeft');
     $('#s1-right-side').removeClass('animated fadeOutRight');
     $('#s1-left-side').addClass('animated fadeInLeft');
     $('#s1-right-side').addClass('animated fadeInRight');
 
-    $('#replace-video').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    $('#replace-video').html('<iframe src="https://player.vimeo.com/video/208142076" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
 function close_video_mobile() {
-    //$('#s1-video-mobile').addClass('animated fadeDown');
+    $('#s1-video-mobile').addClass('hidden-pic');
     $('#s1-video-mobile').addClass('hidden-pic');
 
-    //$('#s1-both').css('max-height', '100%');
-
-    // $('#s1-left-side').removeClass('animated fadeOutLeft');
-    // $('#s1-right-side').removeClass('animated fadeOutRight');
-    // $('#s1-left-side').addClass('animated fadeInLeft');
-    // $('#s1-right-side').addClass('animated fadeInRight');
-    $('#s1-left-side').removeClass('animated fadeOutUp');
+    $('#s1-left-side').removeClass('animated fadeOutDown');
     $('#s1-left-side').removeClass('hidden-pic');
-    $('#s1-left-side').addClass('animated fadeInDown');
-
-    $('#replace-video-mobile').html('<iframe src="https://player.vimeo.com/video/208142076" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    $('#s1-left-side').addClass('animated fadeInUp');
+    
+    $('#replace-video-mobile').html('<iframe src="https://player.vimeo.com/video/208142076" width="100%" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
 
 function menu_mobile() {
