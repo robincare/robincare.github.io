@@ -224,10 +224,11 @@ a.header-link-btn:hover {
     width: 80%;
 }
 #s1-l-2-a-1 {
-    font-size: 35px;
+    font-size: 29px;
     font-family: CamptonBook; 
     color: #2e3f50;
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 #s1-l-2-a-2 {
     font-size: 18px;
@@ -675,6 +676,10 @@ a.a-link:hover {
 }
 #section-1 {
     background-position: top center;
+}
+#s1-l-2-a-1 {
+    font-size: 25px;
+    padding-bottom: 5px;
 }
 #section-4-1 {
     padding-right: 30px;
