@@ -397,45 +397,88 @@ a.header-link-btn:hover {
 /* section-3 */
 
 #section-3 {
-    background-color: #f8f8f8; 
-    padding: 100px 0px;
+    background-color: #2e3f50; 
+    padding: 60px 0px;
+    width: 100%;
 }
 #section-3-1 {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#section-3-0-a {
+    font-size: 25px;
+    font-family: CamptonBook;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+}
+#section-3-0-b {
+    display: flex;
+    padding-bottom: 50px;
     width: 100%;
-    padding: 0px 3%;
+}
+.section-3-0-b-1 {
+    min-width: 33%;
+    max-width: 33%;
+}
+.section-3-icon-div {
+    text-align: center;
+}
+.section-3-icon {
+    height: 45px;
+}
+.section-3-0-b-2 {
+    color: #35cdcd;
+    font-family: CamptonBook;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.section-3-0-b-3 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.section-3-1-aa {
+    display: flex;
 }
 .section-3-1-a {
     width: 33%;
     text-align: center;
+    background-color: #f8f8f8;
+    margin: 15px;
+    border-radius: 3px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
-.section-3-1-a-1 {
-    padding-bottom: 30px;
-    min-height: 100px;
-}
-.section-3-icon {
-    max-width: 60px;
+.section-3-icon-2 {
+    max-height: 12px;
+    padding-right: 5px;
 }
 .section-3-1-a-2 {
     font-size: 22px;
     max-width: 300px;
     margin: 0 auto;
-    min-height: 150px;
+    min-height: 130px;
+    color: #222222;
 }
 .s3-btn {
     text-transform: uppercase;
     background-color: #35CDCD;
     color: #fff;
     border-width: 0px;
-    font-size: 14px;
-    padding: 12px 50px;
+    font-size: 12px;
+    padding: 12px 30px;
+    min-width: 00px !important;
     border-radius: 3px;
 }
 .s3-btn:hover,
 .s3-btn:focus {
-    background-color: #30b8b8;
+    background-color: #35CDCD;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -531,7 +574,7 @@ a.header-link-btn:hover {
 }
 #section-5-1-2 {
     min-width: 50%;
-    background-color: #495a70;
+    background-color: #243444;
 }
 #section-5-1-2-1 {
     max-width: 600px; 
@@ -649,33 +692,82 @@ footer {
 }
 
 @media screen and (min-width: 750px) and (max-width: 900px) {
+/* section-3 */
+
 #section-3 {
-    background-color: #f8f8f8; 
-    padding: 100px 0px;
+    background-color: #2e3f50; 
+    padding: 60px 20px;
+    width: 100%;
 }
 #section-3-1 {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
-    padding: 0px 3%;
 }
-.section-3-1-a {
-    width: 33%;
+
+#section-3-0-a {
+    font-size: 23px;
+    font-family: CamptonBook;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#section-3-0-b {
+    display: initial;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.section-3-0-b-1 {
+    min-width: 100%;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+.section-3-icon-div {
     text-align: center;
 }
-.section-3-1-a-1 {
-    padding-bottom: 30px;
-    min-height: 70px;
-}
 .section-3-icon {
-    max-width: 40px;
+    height: 50px;
+}
+.section-3-0-b-2 {
+    color: #35cdcd;
+    font-family: CamptonBook;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.section-3-0-b-3 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.section-3-1-aa {
+    display: initial;
+    padding: 0px 0px;
+}
+.section-3-1-a {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0px;
+    border-radius: 3px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.section-3-icon-2 {
+    max-height: 15px;
+    padding-right: 5px;
 }
 .section-3-1-a-2 {
     font-size: 18px;
-    max-width: 300px;
+    max-width: 80%;
     margin: 0 auto;
-    min-height: 100px;
+    min-height: 115px;
+    color: #222222;
 }
 .s3-btn {
     text-transform: uppercase;
@@ -683,17 +775,17 @@ footer {
     color: #fff;
     border-width: 0px;
     font-size: 14px;
-    padding: 12px 30px;
+    padding: 20px 50px;
+    width: 70% !important;
     border-radius: 3px;
 }
 .s3-btn:hover,
 .s3-btn:focus {
-    background-color: #30b8b8;
+    background-color: #35CDCD;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
 }
-
 /* section-4 */
 #section-4-content {
     width: 100%;
@@ -770,7 +862,7 @@ footer {
 }
 #section-5-1-2 {
     min-width: 100%;
-    background-color: #495a70;
+    padding-bottom: 50px;
 }
 #section-5-1-2-1 {
     max-width: 100%; 
@@ -837,33 +929,82 @@ footer {
     padding-bottom: 40px;
 }
 /* end section-4 */
+/* section-3 */
+
 #section-3 {
-    background-color: #f8f8f8; 
-    padding: 100px 0px;
+    background-color: #2e3f50; 
+    padding: 60px 20px;
+    width: 100%;
 }
 #section-3-1 {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
-    padding: 0px 3%;
 }
-.section-3-1-a {
-    width: 33%;
+
+#section-3-0-a {
+    font-size: 23px;
+    font-family: CamptonBook;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#section-3-0-b {
+    display: initial;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.section-3-0-b-1 {
+    min-width: 100%;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+.section-3-icon-div {
     text-align: center;
 }
-.section-3-1-a-1 {
-    padding-bottom: 30px;
-    min-height: 70px;
-}
 .section-3-icon {
-    max-width: 40px;
+    height: 50px;
 }
-.section-3-1-a-2 {
-    font-size: 16px;
+.section-3-0-b-2 {
+    color: #35cdcd;
+    font-family: CamptonBook;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.section-3-0-b-3 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
     max-width: 250px;
     margin: 0 auto;
-    min-height: 140px;
+    padding-top: 15px;
+}
+.section-3-1-aa {
+    display: initial;
+    padding: 0px 0px;
+}
+.section-3-1-a {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0px;
+    border-radius: 3px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.section-3-icon-2 {
+    max-height: 15px;
+    padding-right: 5px;
+}
+.section-3-1-a-2 {
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 115px;
+    color: #222222;
 }
 .s3-btn {
     text-transform: uppercase;
@@ -871,12 +1012,13 @@ footer {
     color: #fff;
     border-width: 0px;
     font-size: 14px;
-    padding: 12px 30px;
+    padding: 20px 50px;
+    width: 70% !important;
     border-radius: 3px;
 }
 .s3-btn:hover,
 .s3-btn:focus {
-    background-color: #30b8b8;
+    background-color: #35CDCD;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -1083,7 +1225,7 @@ footer {
 }
 #section-5-1-2 {
     min-width: 100%;
-    background-color: #495a70;
+    padding-bottom: 50px;
 }
 #section-5-1-2-1 {
     max-width: 100%; 
@@ -1267,34 +1409,102 @@ header {
     padding-bottom: 50px;
     background-color: #2e3f50 !important;
 }
+/* section-3 */
+
 #section-3 {
-    padding: 60px 0px;
+    background-color: #2e3f50; 
+    padding: 60px 20px;
+    width: 100%;
 }
 #section-3-1 {
-    max-width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.section-3-1-a-1 {
-    padding-bottom: 0px;
-    min-height: 50px;
+
+#section-3-0-a {
+    font-size: 23px;
+    font-family: CamptonBook;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#section-3-0-b {
+    display: initial;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.section-3-0-b-1 {
+    min-width: 100%;
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+.section-3-icon-div {
+    text-align: center;
 }
 .section-3-icon {
-    max-width: 30px;
+    height: 50px;
+}
+.section-3-0-b-2 {
+    color: #35cdcd;
+    font-family: CamptonBook;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.section-3-0-b-3 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.section-3-1-aa {
+    display: initial;
+    padding: 0px 0px;
+}
+.section-3-1-a {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0px;
+    border-radius: 3px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.section-3-icon-2 {
+    max-height: 15px;
+    padding-right: 5px;
 }
 .section-3-1-a-2 {
-    font-size: 12px;
-    min-height: 80px;
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 115px;
+    color: #222222;
 }
 .s3-btn {
-    background-color: #f8f8f8;
-    color: #35CDCD;
-    font-size: 12px;
-    padding: 2px 10px;
+    text-transform: uppercase;
+    background-color: #35CDCD;
+    color: #fff;
+    border-width: 0px;
+    font-size: 14px;
+    padding: 20px 50px;
+    width: 70% !important;
+    border-radius: 3px;
 }
 .s3-btn:hover,
 .s3-btn:focus {
-    color: #30b8b8;
-    background-color: #f8f8f8;
+    background-color: #35CDCD;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
+/* end section-3 */
+
 #section-4 {
     display: none;
 }
@@ -1397,7 +1607,7 @@ header {
 }
 #section-5-1-2 {
     min-width: 100%;
-    background-color: #495a70;
+    background-color: #243444;
 }
 #section-5-1-2-1 {
     max-width: 100%; 
@@ -1416,6 +1626,7 @@ header {
     color: #fff;
     padding-left: 8%;
     padding-right: 8%;
+    padding-bottom: 50px;
 }
 #section-5-1-2-1-c {
     padding-top: 15px;
