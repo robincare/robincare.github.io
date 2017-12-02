@@ -182,7 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       Direct-to-Patient Pilot Program
                   </div>
                   <div id="s3-1-b-2">
-                      <form action="https://formspree.io/limban.claudiu@gmail.com" method="POST">
+                    
                           <div id="s3-1-b-22">
                               <div id="s3-1-b-2-a">
                                   <input type="text" name="name" id="name" placeholder="Your Name"><br>
@@ -199,7 +199,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           <div id="s3-1-b-33">
                               <a  onclick="submit_form_a();" class="back-link-btn" style="color: #fff;">SUBMIT</a>
                           </div>
-                      </form>
+                   
                   </div>
 
               </div>
@@ -372,7 +372,7 @@ function submit_form_a() {
         var diagnosis = $('#ddate').val();
 
         $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            url: "https://formspree.io/clau.mailg@gmail.com", 
             method: "POST",
             data: {Name: name, Email: email, BirthYear: birth, CancerType: type, CancerStage: stage, DiagnosisDate: diagnosis},
             dataType: "json"
