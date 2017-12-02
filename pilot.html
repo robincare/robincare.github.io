@@ -353,7 +353,7 @@ new WOW().init();
 function open_modal_b() {
     $('#myModalb').modal('show');
 }
-open_modal_b();
+$('#myModalb').modal('show');
 function submit_form_a() {
     var name = $('#name').val().length;
     var email = $('#email').val().length;
@@ -374,7 +374,7 @@ function submit_form_a() {
         $.ajax({
             url: "https://formspree.io/limban.claudiu@gmail.com", 
             method: "POST",
-            data: {Name: name, Email: email, Birth Year: birth, Cancer Type: type, Cancer Stage: stage, Diagnosis Date: diagnosis},
+            data: {Name: name, Email: email, BirthYear: birth, CancerType: type, CancerStage: stage, DiagnosisDate: diagnosis},
             dataType: "json"
         });
         open_modal_b();
