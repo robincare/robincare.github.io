@@ -190,14 +190,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                   <input type="text" name="birth" id="birth" placeholder="Birth Year"><br>
                               </div>
                               <div id="s3-1-b-2-b">
-                                  <input type="text" name="cancer-type" placeholder="Cancer Type"><br>
-                                  <input type="text" name="cancer-stage" placeholder="Cancer Stage (if known)"><br>
-                                  <input type="text" name="diagnosis date" placeholder="Diagnosis Date"><br>
+                                  <input type="text" name="cancer-type" id="ctype" placeholder="Cancer Type"><br>
+                                  <input type="text" name="cancer-stage" id="cstage" placeholder="Cancer Stage (if known)"><br>
+                                  <input type="text" name="diagnosis date" id="ddate" placeholder="Diagnosis Date"><br>
                               </div>
                           </div>
+                          <div id="display-error" style="color: #bc0523;font-weight: bold;padding-bottom: 30px;"></div>
                           <div id="s3-1-b-33">
-                              <!-- <input type="submit" value="SUBMIT"> -->
-                              <a onclick="submit_form_a();">SUBMIT</a>
+                              <a  onclick="submit_form_a();" class="back-link-btn" style="color: #fff;">SUBMIT</a>
                           </div>
                       </form>
                   </div>
@@ -323,13 +323,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div id="m-b-1">
                       <div id="m-b-1-1"></div>
                   </div>
-                  <div id="m-b-2">
-                      <div id="m-b-2-a">
+                  <div id="m-b-3">
+                      <div id="m-b-3-a">
                           <strong>Questions?</strong> Call us anytime for any questions about care or signing up.<br>
                           1 855 MY ROBIN
                       </div>
-                      <div id="m-b-2-b">
-                          <a class="back-link-btn">DONE</a>
+                      <div id="m-b-3-b">
+                          <a class="back-link-btn" data-dismiss="modal" aria-label="Close" style="color: #fff;">DONE</a>
                       </div>
 
                   </div>
@@ -358,42 +358,34 @@ function submit_form_a() {
     var name = $('#name').val().length;
     var email = $('#email').val().length;
     var birth = $('#birth').val().length;
+    var type = $('#ctype').val().length;
+    var stage = $('#cstage').val().length;
+    var diagnosis = $('#ddate').val().length;
 
-    if(name>0 && email>0 && birth>0) {
+    $('#display-error').html('');
+    if(name>0 && email>0 && birth>0 && type>0 && stage>0 && diagnosis>0) {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var birth = $('#birth').val();
+        var type = $('#ctype').val();
+        var stage = $('#cstage').val();
+        var diagnosis = $('#ddate').val();
 
-         var name = $('#name').val();
-         var email = $('#email').val();
-         var birth = $('#birth').val();
-
-         $.ajax({
-              url: "https://formspree.io/limban.claudiu@gmail.com", 
-              method: "POST",
-              data: {name: name, email: email, birth: birth},
-              dataType: "json"
-          });
-
-        // var data = { name: name, email: email, message: message };
-
-        // $.ajax({
-        //     type: "POST",
-        //     url: "email.php",
-        //     data: data,
-        //     success: function(){
-        //         //
-        //     }
-        // });
-
-    //     $.ajax({
-    //         url: "https://formspree.io/@gmail.com", 
-    //         method: "POST",
-    //         data: {message: "hello!"},
-    //         dataType: "json",
-    //             accepts: {
-    //     text: "application/json"
-    // }
-    //     });
-
-
+        $.ajax({
+            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            method: "POST",
+            data: {Name: name, Email: email, BirthYear: birth, CancerType: type, CancerStage: stage, DiagnosisDate: diagnosis},
+            dataType: "json"
+        });
+        open_modal_b();
+    }
+    else {
+        if(name==0) { $('#display-error').append('The Name field is empty!<br>'); }
+        if(email==0) { $('#display-error').append('The Email field is empty!<br>'); }
+        if(birth==0) { $('#display-error').append('The Birth Year field is empty!<br>'); }
+        if(type==0) { $('#display-error').append('The Cancer Type field is empty!<br>'); }
+        if(stage==0) { $('#display-error').append('The Cancer Stage field is empty!<br>'); }
+        if(diagnosis==0) { $('#display-error').append('The Diagnosis Date field is empty!<br>'); }
     }
 }
 
