@@ -378,6 +378,7 @@ function submit_form_a() {
             dataType: "json"
         });
         open_modal_b();
+        var name = $('#name,#email,#birth,#ctype,#cstage,#ddate').val();
     }
     else {
         if(name==0) { $('#display-error').append('The Name field is empty!<br>'); }
