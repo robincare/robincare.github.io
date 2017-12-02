@@ -185,9 +185,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <form action="https://formspree.io/limban.claudiu@gmail.com" method="POST">
                           <div id="s3-1-b-22">
                               <div id="s3-1-b-2-a">
-                                  <input type="text" name="name" placeholder="Your Name"><br>
-                                  <input type="email" name="_replyto" placeholder="Email Address"><br>
-                                  <input type="text" name="birth" placeholder="Birth Year"><br>
+                                  <input type="text" name="name" id="name" placeholder="Your Name"><br>
+                                  <input type="email" name="email" id="email" placeholder="Email Address"><br>
+                                  <input type="text" name="birth" id="birth" placeholder="Birth Year"><br>
                               </div>
                               <div id="s3-1-b-2-b">
                                   <input type="text" name="cancer-type" placeholder="Cancer Type"><br>
@@ -196,7 +196,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               </div>
                           </div>
                           <div id="s3-1-b-33">
-                              <input type="submit" value="SUBMIT">
+                              <!-- <input type="submit" value="SUBMIT"> -->
+                              <a onclick="submit_form_a();">SUBMIT</a>
                           </div>
                       </form>
                   </div>
@@ -356,15 +357,20 @@ function open_modal_b() {
 function submit_form_a() {
     var name = $('#name').val().length;
     var email = $('#email').val().length;
-    var message = $('#message').val().length;
+    var birth = $('#birth').val().length;
 
-    if(name>0 && email>0 && message>0) {
-        $('#modal-a-first').addClass('hidden-pic');
-        $('#modal-a-second').removeClass('hidden-pic');
+    if(name>0 && email>0 && birth>0) {
 
-        // var name = $('#name').val();
-        // var email = $('#email').val();
-        // var message = $('#message').val();
+         var name = $('#name').val();
+         var email = $('#email').val();
+         var birth = $('#birth').val();
+
+         $.ajax({
+              url: "https://formspree.io/limban.claudiu@gmail.com", 
+              method: "POST",
+              data: {name: name, email: email, birth: birth},
+              dataType: "json"
+          });
 
         // var data = { name: name, email: email, message: message };
 
