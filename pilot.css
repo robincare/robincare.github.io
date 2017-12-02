@@ -124,28 +124,29 @@ a.back-link-btn:hover {
     display: flex;
     padding-bottom: 100px;
 }
-#m-b-1 {
+#m-b-0-1 {
     max-width: 100%;
     padding-bottom: 20px;
 }
 #m-b-1-photo {
     max-width: 60px;
 }
-#m-b-2 {
+#m-b-0-2 {
     font-family: CamptonBook;
     font-size: 22px;
     color: #222;
     padding-left: 30px;
     
 }
-#m-b-1-1 {
+#m-b-2 {
+    display: initial;
+}
+#m-b-2-1 {
     background-color: #dbdbdb;
     height: 2px;
     width: 100%;
 }
-#m-b-2 {
-    display: flex;
-}
+
 #m-b-3 {
     display: flex;
 }
@@ -154,9 +155,10 @@ a.back-link-btn:hover {
     font-family: Campton;
     font-size: 12px;
     padding-right: 20px;
+    padding-top: 20px;
 }
 #m-b-3-b {
-
+    padding-top: 30px;
 }
 
 
@@ -1131,6 +1133,50 @@ input {
     padding-bottom: 50px;
 }
 /* end section-3 */
+#m-b-0 {
+    display: initial;
+    padding-bottom: 100px;
+}
+#m-b-0-1 {
+    max-width: 60px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+#m-b-1-photo {
+    max-width: 60px;
+}
+#m-b-0-2 {
+    font-family: CamptonBook;
+    font-size: 18px;
+    color: #222;
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+#m-b-2 {
+    display: initial;
+}
+#m-b-2-1 {
+    background-color: #dbdbdb;
+    height: 2px;
+    width: 100%;
+}
 
+#m-b-3 {
+    display: initial;
+}
+#m-b-3-a {
+    color: #989898;
+    font-family: Campton;
+    font-size: 12px;
+    padding-right: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+#m-b-3-b {
+    padding-top: 30px;
+    text-align: center;
+}
 
 }
