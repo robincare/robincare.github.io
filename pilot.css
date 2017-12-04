@@ -263,6 +263,9 @@ a.header-link-btn:hover {
     color: #353637;
     max-width: 400px;
 }
+#s1-4 {
+    padding-top: 40px;
+}
 /* end section-1 */
 
 /* section-2 */
@@ -501,6 +504,10 @@ footer {
     text-align: center;
     padding-top: 10px;
 }
+#s1-4 {
+    padding-top: 40px;
+    text-align: center;
+}
 /* end section-1 */
 /* section-2 */
 #section-2 {
@@ -669,6 +676,10 @@ input {
     text-align: center;
     padding-top: 10px;
 }
+#s1-4 {
+    padding-top: 40px;
+    text-align: center;
+}
 /* end section-1 */
 /* section-2 */
 #section-2 {
@@ -815,6 +826,10 @@ footer {
     max-width: 100%;
     text-align: center;
     padding-top: 10px;
+}
+#s1-4 {
+    padding-top: 40px;
+    text-align: center;
 }
 /* end section-1 */
 /* section-2 */
@@ -1048,6 +1063,10 @@ a.back-link-btn:hover {
     max-width: 100%;
     text-align: center;
     padding-top: 10px;
+}
+#s1-4 {
+    padding-top: 40px;
+    text-align: center;
 }
 /* end section-1 */
 /* section-2 */
