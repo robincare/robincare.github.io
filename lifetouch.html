@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="customer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-552SP46');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-552SP46"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="page-content">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="section-1">
+            <header class="animated fadeInDown">
+                <div class="row" id="header-content" style="display: flex;">
+                    <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" style="margin:0px;padding-top: 15px;">
+                        <a href="http://www.getrobincare.com/lifetouch"><img src="img/lifetouch.png" alt="Logo" id="logo-img" ></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-10 col-md-10 col-sm-8 col-8" id="menu-id" style="margin:0px;padding-bottom: 15px;">
+                        <div style="display: block;float: right;padding-top: 20px;">
+                         <div class="menu-space">
+                                <a class="header-link" href="http://www.getrobincare.com/blog">BLOG</a>
+                            </div>
+                            <div class="menu-space">
+                                <a class="header-link" href="http://www.getrobincare.com/about-us">ABOUT US</a>
+                            </div>
+                            <div class="menu-space">
+                            <a class="header-link-btn" href="http://login.getrobincare.com/#signin">SIGN IN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-8" style="padding-top: 5px;text-align: right;" id="menu-mobile">
+                        <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+            </header>
+          <div id="section-1-content" >
+              <div id="s1-both-top">
+              <div id="s1-both"> 
+                  <div id="s1-left-side" >
+                        <div class="wow fadeInLeft">
+                          <div id="s1-l-1">
+                              WATCH VIDEO
+                          </div>
+                          <div id="s1-l-2">
+                              <div id="s1-l-2-a">
+                                  <div id="s1-l-2-a-1">
+                                      INTRODUCING ROBIN CARE
+                                  </div>
+                                  <div id="s1-l-2-a-2">
+                                      Your team of personal cancer advocates
+                                  </div>
+                              </div>
+                              <div id="s1-l-2-b">
+                                  <div id="s1-play">
+                                      <a onclick="show_video();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
+                                  <div id="s1-play-mobile"> 
+                                      <a onclick="show_video_mobile();" class="hvr-grow" ><i id="show-video" class="fa fa-play" aria-hidden="true"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div style="margin: 0 auto;max-width: 100%; padding-top: 20px;" id="s1-video-mobile" class="animated fadeInUp hidden-pic" >
+                      <div style="text-align: right;">
+                          <a onclick="close_video_mobile();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 35px;padding-bottom: 20px;padding-right: 15px;"></a>
+                      </div>
+                      <div id="replace-video-mobile">
+                          <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                  </div>
+
+                  <div id="s1-right-side" >
+                      <div class="wow fadeInRight">
+                          <div id="s1-r-1">
+                              GET STARTED
+                          </div>
+                          <div id="s1-r-2">
+                              <form method="GET" action="https://getrobincare.secure.force.com/#signup" id="form-1">
+                                  <div id="s1-r-2-1">
+                                      <input id="name" maxlength="80" name="name" size="22" type="text" class="form-control sign-up-input" placeholder="Your Name" required style="margin-bottom: 30px;" />
+                                      <input id="email" maxlength="80" name="email" size="22" type="text" class="form-control sign-up-input" placeholder="Email" required style="margin-bottom: 50px;"/>
+                                      <div id="s1-r-2-1-1"><input class="sign-up-btn" type="submit" value="CONTINUE"></div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div style="margin: 0 auto;max-width: 960px;" id="s1-video" class="animated fadeInUp hidden-pic" >
+                  <div style="text-align: right;">
+                      <a onclick="close_video();" class="hvr-grow"><img src="img/video-close.png" alt="" style="width: 30px;padding-bottom: 20px;"></a>
+                  </div>
+                  <div id="replace-video">
+                      <iframe src="https://player.vimeo.com/video/208142076" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div id="section-3">
+          <div id="section-3-1">
+              <div id="section-3-0">
+                  <div id="section-3-0-a" class="wow fadeInUp">
+                      HOW DOES ROBIN CARE HELP?
+                  </div>
+                  <div id="section-3-0-b" class="wow fadeInRight">
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_emotional_support@3x.png" alt="" class="section-3-icon">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Emotional Support
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Counseling, Support Groups, Mindfulness/Meditation
+                          </div>
+                      </div>
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_day_to_day@3x.png" alt="" class="section-3-icon">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Day-to-Day Support
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Meals, Child Care, Transport, Errands/Tasks
+                          </div>
+                      </div>
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_medical@3x.png" alt="" class="section-3-icon">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Medical
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Care Coordination, Symptom Management, Appointment Prep
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="section-3-0-b" class="wow fadeInLeft">
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_finances@3x.png" alt="" class="section-3-icon ">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Finances
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Benefits, Pharma Co-Pay Programs, Non-Profit Financial Resources
+                          </div>
+                      </div>
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_legal@3x.png" alt="" class="section-3-icon">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Legal
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Advance Directives, Power of Attorney, Will
+                          </div>
+                      </div>
+                      <div class="section-3-0-b-1 hvr-grow">
+                          <div class="section-3-icon-div">
+                              <img src="img/icon_personal_care@3x.png" alt="" class="section-3-icon">
+                          </div>
+                          <div class="section-3-0-b-2">
+                              Personal Care
+                          </div>
+                          <div class="section-3-0-b-3">
+                              Comfort Kits, Wigs and Prostheses, Integrated Care
+                          </div>
+                      </div>
+                  </div>
+         
+                  <div class="section-3-1-aa wow fadeInUp">
+                      <div class="section-3-1-a hvr-grow">
+                          <div class="section-3-1-a-2">
+                              Want more information about what we offer? <br>Drop us a note!
+                          </div>
+                          <div>
+                              <a class="s3-btn" href="mailto:support@getrobincare.com"><img src="img/customer-s3-icon-4.png" class="section-3-icon-2"> EMAIL</a>  
+                          </div>
+                      </div>
+
+                      <div class="section-3-1-a hvr-grow">
+                          <div class="section-3-1-a-2">
+                              Call to speak with a <br>care advocate. <br>We're here, 24/7.
+                          </div>
+                          <div>
+                              <a class="s3-btn" href="tel:8556976246"><img src="img/customer-s3-icon-5.png" class="section-3-icon-2"> CALL</a>  
+                          </div>
+                      </div>
+
+                      <div class="section-3-1-a hvr-grow">
+                          <div class="section-3-1-a-2">
+                              Ready to get started? Download the app and create your account.
+                          </div>
+                          <div>
+                              <a class="s3-btn" href="http://www.getrobincare.com/customer.html#apps"><img src="img/customer-s3-icon-6.png" class="section-3-icon-2"> DOWNLOAD</a>  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <div id="section-5">
+          <div id="section-5-1">
+              <div id="section-5-1-1" class="wow fadeIn">
+                  <div id="section-5-1-1-a">
+                      <div id="section-5-1-1-a-1">
+                          YOUR CARE TEAM
+                      </div>
+                      <div id="section-5-1-1-a-2">
+                          <div class="section-5-1-1-a-2-1">
+                              <img src="img/jessica-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
+                          </div>
+                          <div>
+                              <div class="section-5-1-1-a-2-2-a">
+                                  Jess, Senior Care Advocate
+                              </div>
+                              <div class="section-5-1-1-a-2-2-b">
+                                  "Having the unique background of being an oncology nurse and a former primary caregiver to a cancer patient, Robin Care's 
+                                  mission to see people fully and holistically -- beyond their diagnosis and symptoms, and beyond what is currently possible with
+                                  the traditional medical model -- immediately spoke to my passion and drive to make the cancer experience better for patients and their loved ones."
+                              </div>
+                          </div>
+                      </div>
+
+                      <div id="section-5-1-1-a-3">
+                          <div class="section-5-1-1-a-2-1" >
+                              <img src="img/robin-1.png" alt="" class="section-5-1-1-a-photo" class="hvr-grow">
+                          </div>
+                          <div>
+                              <div class="section-5-1-1-a-2-2-a">
+                                  Robin, Care Advocate
+                              </div>
+                              <div class="section-5-1-1-a-2-2-b">
+                                  "I’m excited to be here to support people in their cancer experience — from lending an ear to finding the right support group to helping with overwhelming insurance paperwork. Cancer is hard enough to deal with, without the burden of doing it all on your own so I’m here and happy to provide help however I can."
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="section-5-1-2" class="wow fadeInRight">
+                  <div id="section-5-1-2-1">
+                      <div id="section-5-1-2-1-a">
+                          <img src="img/team_photo.png" alt="" id="section-5-1-2-1-a-photo" class="hvr-grow">
+                      </div>
+                      <div id="section-5-1-2-1-b" >
+                          Our team of care advocates are highly skilled in all dimensions of the cancer experience. Combined, we have decades of experience in nursing, psychology, social work, physical therapy, nutrition, legal, and insurance fields. Our entire Robin team has not only invested their professional lives to helping cancer patients and their families, they also have a deep personal connection to our mission through their own experiences.
+                      </div>
+                  </div>
+              </div>
+            
+          </div>
+      </div>
+
+      <div id="section-2">
+          <div id="section-2-first">
+          <div id="section-2-1">
+              <div class="align-self-center" style="padding-right: 50px;" id="section-2-dots">
+                  <div class="slider-controllers">
+                      <a onclick="slider_fn(1);"><span id="slider-circle-1" class="slider-circle"><i class="fa fa-circle" aria-hidden="true"></i></span><a>
+                  </div>
+                  <div class="slider-controllers">
+                      <a onclick="slider_fn(2);"><span id="slider-circle-2" class="slider-circle "><i class="fa fa-circle" aria-hidden="true"></i></span><a>
+                  </div>
+                  <div class="slider-controllers">
+                      <a onclick="slider_fn(3);"><span id="slider-circle-3" class="slider-circle "><i class="fa fa-circle" aria-hidden="true"></i></span><a>
+                  </div>
+                  <div class="slider-controllers">
+                      <a onclick="slider_fn(4);"><span id="slider-circle-4" class="slider-circle "><i class="fa fa-circle" aria-hidden="true"></i></span><a>
+                  </div>
+                  <div class="slider-controllers">
+                      <a onclick="slider_fn(5);"><span id="slider-circle-5" class="slider-circle "><i class="fa fa-circle" aria-hidden="true"></i></span><a>
+                  </div>
+              </div>
+              <div style="padding-right: 50px;" id="slider-phone">
+                  <div id="slider-phone-1" class=""><img src="img/phone-1.png" alt="Phone Display" class="animated fadeIn" style="width: 320px;"></div>
+                  <div id="slider-phone-2" class="hidden-pic"><img src="img/phone-2.png" alt="Phone Display" class="animated fadeIn" style="width: 320px;"></div>
+                  <div id="slider-phone-3" class="hidden-pic"><img src="img/phone-3.png" alt="Phone Display" class="animated fadeIn" style="width: 320px;"></div>
+                  <div id="slider-phone-4" class="hidden-pic"><img src="img/phone-4.png" alt="Phone Display" class="animated fadeIn" style="width: 320px;"></div>
+                  <div id="slider-phone-5" class="hidden-pic"><img src="img/phone-5.png" alt="Phone Display" class="animated fadeIn" style="width: 320px;"></div>
+              </div>
+          </div>
+
+          <div id="section-2-2">
+              <div style="font-size: 30px;font-family: CamptonBook; color: #fff;">
+                  HERE'S HOW ROBIN CARE WORKS FOR YOU
+              </div>
+              <div style="font-size: 18px;color: #fff;padding-bottom: 30px;padding-top: 10px;">
+                  Navigating cancer is complicated. Having the right help makes all the difference.
+              </div>
+
+              <div class="sl-space" id="slide-content-1">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-1.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title"> 
+                             Comprehensive 
+                          </div>
+                          <div class="slider-text">
+                              From diagnosis to survivorship, we help bring clarity to your complex cancer journey
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="animated flipInX hidden-pic sl-space" id="slide-content-1-active">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px; padding-top: 10px;">
+                          <img src="img/customer-icon-1-active.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active"> 
+                             Comprehensive 
+                          </div>
+                          <div class="slider-text-active">
+                              From diagnosis to survivorship, we help bring clarity to your complex cancer journey
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="sl-space" id="slide-content-2">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-2.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title"> 
+                              Premium
+                          </div>
+                          <div class="slider-text">
+                              So you get the best care possible, we work with your benefits to bring you best-in-class resources
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="animated flipInX hidden-pic sl-space" id="slide-content-2-active">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-2-active.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active"> 
+                              Premium
+                          </div>
+                          <div class="slider-text-active">
+                              So you get the best care possible, we work with your benefits to bring you best-in-class resources
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="sl-space" id="slide-content-3">
+                  <div style="display: flex;" >
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-3.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title"> 
+                              Accessible
+                          </div>
+                          <div class="slider-text">
+                              We offer 24/7 access to experts, so you can text or call whenever you need help
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="animated flipInX hidden-pic sl-space" id="slide-content-3-active">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-3-active.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active"> 
+                              Accessible
+                          </div>
+                          <div class="slider-text-active">
+                              We offer 24/7 access to experts, so you can text or call whenever you need help
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="sl-space" id="slide-content-4">
+                  <div style="display: flex;" >
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-4.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title"> 
+                              Covered by Lifetouch
+                          </div>
+                          <div class="slider-text">
+                              Talk to us as much as you need. The cost of the Robin Care progam is fully paid for by Lifetouch
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="animated flipInX hidden-pic sl-space" id="slide-content-4-active">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-4-active.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active"> 
+                              Covered by Lifetouch
+                          </div>
+                          <div class="slider-text-active">
+                              Talk to us as much as you need. The cost of the Robin Care progam is fully paid for by Lifetouch
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="sl-space" id="slide-content-5">
+                  <div style="display: flex;" >
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-5.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title"> 
+                              Discreet
+                          </div>
+                          <div class="slider-text">
+                              We keep your information private and secure. Anything you share with us, stays with us
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="animated flipInX hidden-pic sl-space" id="slide-content-5-active">
+                  <div style="display: flex;">
+                      <div style="padding-right: 30px;padding-top: 10px;">
+                          <img src="img/customer-icon-5-active.png" alt="" style="max-width: 65px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active"> 
+                              Discreet
+                          </div>
+                          <div class="slider-text-active">
+                              We keep your information private and secure. Anything you share with us, stays with us
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div style="padding-top: 30px;">
+                  <a class="learn-more-btn" href="http://www.getrobincare.com/blog">LEARN MORE</a>  
+              </div>   
+
+          </div>
+          </div>
+      </div>
+      <div id="section-2-mobile" >
+      <div style="background-color: #2e3f50;">
+          <div style="padding: 60px 0px 40px 0px;max-width: 80%;margin: auto; text-align: center;">
+              <div style="font-size: 22px;font-family: CamptonBook; color: #fff; padding-bottom: 10px;">
+                  HERE'S HOW ROBIN CARE WORKS FOR YOU
+              </div>
+              <div style="font-size: 15px;color: #fff;padding-bottom: 30px;">
+                  Navigating cancer is complicated. Having the right help makes all the difference.
+              </div>
+          </div>
+          <div>
+              <div>
+                  <div style="text-align: center;">
+                      <div >
+                          <img src="img/customer-icon-1-active.png" alt="" style="max-width: 70px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active" style="padding-top: 20px;padding-bottom: 0px;"> 
+                              Comprehensive
+                          </div>
+                          <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
+                              From diagnosis to survivorship, we help bring clarity to your complex cancer journey
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <div style="text-align: center;">
+                      <div >
+                          <img src="img/customer-icon-2-active.png" alt="" style="max-width: 70px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active" style="padding-top: 20px;padding-bottom: 0px;"> 
+                              Premium
+                          </div>
+                          <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
+                              So you get the best care possible, we work with your benefits to bring you best-in-class resources
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <div style="text-align: center;">
+                      <div >
+                          <img src="img/customer-icon-3-active.png" alt="" style="max-width: 70px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active" style="padding-top: 20px;padding-bottom: 0px;"> 
+                              Accessible
+                          </div>
+                          <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
+                              We offer 24/7 access to experts, so you can text or call whenever you need help
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <div style="text-align: center;">
+                      <div >
+                          <img src="img/customer-icon-4-active.png" alt="" style="max-width: 70px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active" style="padding-top: 20px;padding-bottom: 0px;"> 
+                              Covered Benefit
+                          </div>
+                          <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
+                              Talk to us as much (or as little) as you need. There is no additional cost for BCBSMN members
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                  <div style="text-align: center;padding-bottom: 20px;">
+                      <div >
+                          <img src="img/customer-icon-5-active.png" alt="" style="max-width: 70px;">
+                      </div>
+                      <div>
+                          <div class="slider-title-active" style="padding-top: 20px;padding-bottom: 0px;"> 
+                              Discreet
+                          </div>
+                          <div class="slider-text-active" style="text-align: center;margin: 0 auto;max-width: 80%;padding-bottom: 40px;padding-top: 10px;">
+                              We keep your information private and secure. Anything you share with us, stays with us
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div style="text-align: center;padding-bottom: 60px;">
+                  <a class="learn-more-btn" href="http://www.getrobincare.com/blog">LEARN MORE</a>  
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="section-4">
+          <div id="section-4-content">
+              <div id="section-4-1" class="wow fadeInRight">
+                  <div id="section-4-b">
+                      <div id="section-4-bb" >
+                          <div id="section-4-b-1">
+                              TRUSTED RESOURCES
+                          </div>
+                          <div id="section-4-2">
+                              We have over 500 resources available to use in assisting our patients.  The resources cover a range of topics, anywhere from information on specific cancers diagnoses to helping locate housecleaning assistance during treatment.   While we have resources prepared, we are also available to research and locate specific resources that patients may need at any time during their cancer journey.   Our Robins stay up to date on treatment protocols and new innovations, so we can assist our patients with everything from understanding their pathology reports to finding a relaxation technique to use during treatment.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="section-4-mobile">
+          <div id="section-4-mobile-2"></div>
+          <div id="section-4-mobile-3">
+              <div id="section-4-mobile-4">
+              <div id="mobile-thankyou"></div>
+                  <div style="max-width: 85%;margin: 0 auto;color: #2e3f50; font-size: 20px;text-align: center;font-family: CamptonBook;padding-bottom: 15px;">
+                      TRUSTED RESOURCES
+                  </div>
+                  <div style="max-width: 85%;margin: 0 auto; font-size: 16px; text-align: center;" >
+                      We have over 500 resources available to use in assisting our patients.  The resources cover a range of topics, anywhere from information on specific cancers diagnoses to helping locate housecleaning assistance during treatment.   While we have resources prepared, we are also available to research and locate specific resources that patients may need at any time during their cancer journey.   Our Robins stay up to date on treatment protocols and new innovations, so we can assist our patients with everything from understanding their pathology reports to finding a relaxation technique to use during treatment.
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="section6" style="background-color: #fff;">
+          <div id="section-6">
+              <div id="section-6-a">
+                  <div id="section-6-a-1" >
+                      THE ROBIN CARE BLOG
+                  </div>
+                  <div id="section-6-a-2">
+                      <a class="learn-more-link" href="http://www.getrobincare.com/blog">More from the blog ></a>
+                  </div>
+              </div>
+              
+              <div id="section-6-b" class="wow fadeIn">
+                  <div class="section-6-b-1">
+                      <div>
+                          <a href="http://www.getrobincare.com/blog/360-degree-cancer-care"><img src="img/blog-post-1b.jpg" alt="" class="section-6-b-1-photo hvr-grow"></a>
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 15, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                          360 Degree Cancer Care
+                      </div>
+                      <div class="section-6-b-1-d">
+                          People who are diagnosed with cancer know that they are so much more than just their tumor. You’re an individual with thoughts, feelings, hopes, dreams, and entire ecosystems that rely on you. Why, then, do most cancer treatments primarily focus on removing the tumor?
+                          <a class="learn-more-link" href="http://www.getrobincare.com/blog/360-degree-cancer-care">Read more ></a>
+                      </div>
+                  </div>
+
+                  <div class="hide-mobile section-6-b-1">
+                      <div>
+                          <a href="http://www.getrobincare.com/blog/rules-of-engagement"><img src="img/blog-post-2.jpg" alt="" class="section-6-b-1-photo hvr-grow"></a>
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 22, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                         Rules of Engagement: How to Handle Cancer Care
+                      </div>
+                      <div class="section-6-b-1-d">
+                          From the time people hear the word “cancer”, both those diagnosed and their loved ones receive an overwhelming amount of information that requires quick decision making and navigating a complex healthcare system.
+                          <a class="learn-more-link" href="http://www.getrobincare.com/blog/rules-of-engagement">Read more ></a>
+                      </div>
+                  </div>
+
+                  <div class="hide-mobile section-6-b-1">
+                      <div>
+                          <a href="http://www.getrobincare.com/blog/social-support"><img src="img/blog-post-3.jpg" alt="" class="section-6-b-1-photo hvr-grow"></a>
+                      </div>
+                      <div class="section-6-b-1-b">
+                          September 29, 2017 by Robin Care
+                      </div>
+                      <div class="section-6-b-1-c">
+                          Social Support During Cancer
+                      </div>
+                      <div class="section-6-b-1-d">
+                          For cancer patients and their loved ones, social support is a major part of the cancer journey. Most people’s idea of the cancer experience involves images of family and friends rallying around a newly diagnosed loved one, and helping them down the path of recovery.
+                          <a class="learn-more-link" href="http://www.getrobincare.com/blog/social-support">Read more ></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <footer >
+          <div class="row" style="padding-top: 40px;padding-bottom: 40px;"  id="footer-id">
+              <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-8">
+                  <div style="display: flex;" class="wow fadeInUp">
+                      <div>                          
+                          <div style="padding-bottom: 10px;" class="wow fadeInLeft">
+                              <img src="img/robin-care-logo-white.png" style="max-width: 120px;" alt="Logo">
+                          </div>
+                          <div style="color: #fff;font-size: 13px;padding-right: 25px;padding-top: 5px;">
+                              All Rights Reserved
+                          </div>
+                      </div>
+                      <div style="padding-left: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/blog">Blog</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/about-us">About Us</a><br>
+                          <a class="a-link" href="http://login.getrobincare.com/#signin">Sign In</a>
+                      </div>
+                      <div style="padding-left: 70px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-4 text-right wow fadeInRight">
+                  <div style="padding-bottom: 15px;"> 
+                      <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 110px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+                  </div>
+                  <div>
+                      <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="img/google_play_icon_480.png" style="max-width: 110px;" alt="Download Google Play"></a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <div id="footer-mobile">
+          <div style="background-color: #2e3f50;padding: 40px 0px 30px 0px;">
+              <div style="text-align: center;padding-bottom: 20px;">
+                  <img src="img/robin-care-logo-white.png" style="max-width: 140px;" alt="Logo">
+              </div>
+              <div style="color: #fff;font-size: 13px;text-align: center;padding-top: 10px;">
+                  All Rights Reserved
+              </div>
+              <div style="padding-bottom: 0px;padding-top: 15px; ">
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/blog">Blog</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/about-us">About Us</a><br>
+                          <a class="a-link" href="http://login.getrobincare.com/#signin">Sign In</a>
+                      </div>
+                      <div style="text-align: center;padding-top: 30px;">
+                          <a class="a-link" href="http://www.getrobincare.com/privacypolicy">Privacy Policy</a><br>
+                          <a class="a-link" href="http://www.getrobincare.com/terms">Terms & Conditions</a>
+                      </div>
+              </div>
+              <div style="text-align: center;padding-top: 50px;"> 
+                  <a href="https://itunes.apple.com/us/app/robin-care/id1266145699?mt=8"><img src="img/badge-app-store.png" style="max-width: 130px;border: 1px solid #a3a3a3;border-radius: 5px;" alt="Download App Store"></a>
+              </div>
+              <div style="text-align: center;padding-top: 20px;padding-bottom: 50px;">
+                  <a href="https://play.google.com/store/apps/details?id=com.robinmobile"><img src="img/google_play_icon_480.png" style="max-width: 130px;" alt="Download Google Play"></a>
+              </div>
+          </div>
+      </div>
+      <div id="apps"></div>
+  </div>
+  <div id="mobile-menu-content" class="hidden-pic animated fadeInDownBig">
+      <div class="row" style="padding: 15px 15px 15px 25px;">
+          <div class="col-md-6 col-sm-6 col-6">
+              <a href="http://www.getrobincare.com/"><img src="img/robin-care-logo-white.png" alt="Logo" id="logo-img"></a>
+          </div>
+          <div class="col-md-6 col-sm-6 col-6 text-right">
+              <a onclick="close_menu_mobile();"><img src="img/close.png" alt="Close" style="max-width: 17px;"></a>
+          </div>
+      </div>
+      <div style="padding-top: 50px;">
+          <div class="menu-space">
+              <a class="header-link" href="http://www.getrobincare.com/blog">BLOG</a>
+          </div>
+          <div class="menu-space">
+              <a class="header-link" href="http://www.getrobincare.com/about-us">About Us</a>
+          </div>
+          <div class="menu-space">
+          <a class="header-link-btn" href="http://login.getrobincare.com/#signin">SIGN IN</a> 
+          </div>
+      </div>
+  </div>
+
+    <div class="modal fade" id="myModalinv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modalul" role="document">
+          <div class="modal-content">
+             <div id="m-a">
+                  <div id="m-a-1">
+                      We can't wait to work with you!
+                  </div>
+              </div>
+              <div id="m-b" class="modal-body">
+                  <div id="m-b-1">
+                      Robin Care officially launches with Activision on August 30th.
+                  </div>
+                  <div id="m-b-2">
+                      <div id="m-b-2-1"></div>
+                  </div>
+                  <div id="m-b-3">
+                      Until then, feel free to reach out to us with any questions at <span style="color: #35cdcd;">support@getrobincare.com</span>.
+                  </div>
+                  <div id="m-b-4">
+                      <img id="m-b-4-1" src="img/phone icon.png" alt="">
+                  </div>
+                  <div id="m-b-5"></div>
+                  <div id="m-b-6">
+                      <a href="#" class="back-link-btn" data-dismiss="modal" aria-label="Close"> &#60; Back </a>
+                  </div>
+                
+              </div>
+          </div>
+      </div>
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </body>
+</html>
+<script type="text/javascript">
+new WOW().init();
+var slide_index = 5; //index of active slide
+//function to activate a slide
+function slider_fn(slide) {
+    var slide_number;
+    if(slide==0) { //if the value is 0, it'll calculate the index of next slide
+        if(slide_index==5) { slide_number = 1; }
+        else { slide_number = slide_index+1; }
+    }
+    else { //if the user click on controllers to change the slide
+        slide_number = slide;
+        clearInterval(time);
+        time = setInterval(call_slider_fn, 7000);
+    } 
+
+    if(slide_index != slide_number) { //if the slide is different to the current one
+        $('#slider-phone-1,#slider-phone-2,#slider-phone-3,#slider-phone-4,#slider-phone-5').addClass('hidden-pic');
+        $('#slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5,#slide-content-1-active,#slide-content-2-active,#slide-content-3-active,#slide-content-4-active,#slide-content-5-active').addClass('hidden-pic');
+        $('#slider-phone-'+slide_number).removeClass('hidden-pic');
+        $('#slide-content-'+slide_number+'-active, #slide-content-1,#slide-content-2,#slide-content-3,#slide-content-4,#slide-content-5').removeClass('hidden-pic');
+        $('#slide-content-'+slide_number).addClass('hidden-pic');
+
+        slide_index = slide_number;
+        $('#slider-circle-1,#slider-circle-2,#slider-circle-3,#slider-circle-4,#slider-circle-5').removeClass('circle-active');
+        $('#slider-circle-'+slide_number).addClass('circle-active');
+    }
+
+}
+function call_slider_fn() {
+    slider_fn(0);
+}
+var time = setInterval(call_slider_fn, 7000);
+slider_fn(1);
+
+function show_video() {
+    $('#s1-left-side').removeClass('animated fadeInLeft');
+    $('#s1-right-side').removeClass('animated fadeInRight');
+    $('#s1-left-side').addClass('animated fadeOutLeft');
+    $('#s1-right-side').addClass('animated fadeOutRight');
+
+    $('#s1-both-top').css('display', 'none');
+
+    $('#s1-video').removeClass('animated zoomOut');
+    $('#s1-video').addClass('animated fadeInUp');
+    $('#s1-video').removeClass('hidden-pic');
+}
+function show_video_mobile() {
+    $('#s1-left-side').removeClass('animated fadeInUp');
+    $('#s1-left-side').addClass('animated fadeOutDown');
+    $('#s1-left-side').addClass('hidden-pic');
+    $('#s1-video-mobile').removeClass('hidden-pic');
+}
+function close_video() {
+    $('#s1-video').addClass('animated zoomOut');
+    $('#s1-video').addClass('hidden-pic');
+
+    $('#s1-both-top').css('display', 'initial');
+
+    $('#s1-left-side').removeClass('animated fadeOutLeft');
+    $('#s1-right-side').removeClass('animated fadeOutRight');
+    $('#s1-left-side').addClass('animated fadeInLeft');
+    $('#s1-right-side').addClass('animated fadeInRight');
+
+    $('#replace-video').html('<iframe src="https://player.vimeo.com/video/208142076" width="100%" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+}
+function close_video_mobile() {
+    $('#s1-video-mobile').addClass('hidden-pic');
+    $('#s1-left-side').removeClass('animated fadeOutDown');
+    $('#s1-left-side').removeClass('hidden-pic');
+    $('#s1-left-side').addClass('animated fadeInUp');
+
+    $('#replace-video-mobile').html('<iframe src="https://player.vimeo.com/video/208142076" width="100%" height="200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+}
+
+function menu_mobile() {
+  $('body').css("background-color","#2e3f50");
+    $('#page-content').addClass('hidden-pic');
+    $('#mobile-menu-content').removeClass('hidden-pic');
+}
+function close_menu_mobile() {
+    $('body').css("background-color","#fff");
+    $('#page-content').removeClass('hidden-pic');
+    $('#mobile-menu-content').addClass('hidden-pic');
+}
+function download_mobile() {
+    close_menu_mobile();
+
+    location.href = "#footer-mobile";
+}
+</script>
