@@ -66,6 +66,8 @@
             </div>
         </div>
 
+        <div id="page-content2">
+
         <div id="s2">
             <div id="s2-title" class="wow bounce">
                 We're ready when you are
@@ -90,8 +92,45 @@
             <div id="s3-line" class="wow fadeInUp">
                 <div id="s3-line-div"></div>
             </div>
-            <div id="s3-button" class="wow fadeInUp">
+            <div id="s3-button" class="wow fadeInUp mobile-modal-off">
                 <a data-toggle="modal" data-target="#myModal" class="header-link-btn" style="color: #fff;">TEXT ME A LINK</a>
+            </div>
+            <div id="s3-button" class="wow fadeInUp mobile-modal-on">
+                <a onclick="mobile_modal();" class="header-link-btn" style="color: #fff;">TEXT ME A LINK</a>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="mobile-modal-div" class="hidden-pic" >
+            <header>
+                <div class="row" id="header-content" style="display: flex;">
+                    <div class="col-xl-5 col-lg-2 col-md-2 col-sm-4 col-4" style="margin:0px;padding: 0px;">
+                        <a href="http://www.getrobincare.com/"><img src="img/aramark logo.png" alt="Logo" id="logo-img" ></a>
+                    </div>
+                    <div class="col-sm-8 col-8" style="padding-top: 18px;text-align: right;" id="menu-mobile">
+                        <a onclick="menu_mobile();"><span style="color: #fff;font-size: 23px;"><i class="fa fa-bars" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+            </header>
+            <div id="mobile-modal-div-content">
+                <div id="mmodal-title">
+                    REQUEST A LINK
+                </div>
+                <div id="mmodal-line">
+                    <div id="mmodal-line-design"></div>
+                </div>
+                <div id="mmodal-field">
+                    <input type="text" class="form-control formul" placeholder="(123) 555-5555" />
+                </div>
+                <div id="mmodal-row">
+                    <div id="mmodal-col-1">
+                        <a onclick="mobile_modal();">&#x276E; Back</a>
+                    </div>
+                    <div id="mmodal-col-2" >
+                        <a class="back-link-btn" style="color: #fff;"> SUBMIT </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -229,6 +268,22 @@ function download_mobile() {
     close_menu_mobile();
 
     location.href = "#footer-mobile";
+}
+
+var mmodal = 1;
+function mobile_modal() {
+    if(mmodal==1) {
+        mmodal = 0;
+        $('#page-content2').addClass('hidden-pic');
+        $('#s1').addClass('hidden-pic');
+        $('#mobile-modal-div').removeClass('hidden-pic');
+    } 
+    else if(mmodal==0) {
+        mmodal = 1;
+        $('#page-content2').removeClass('hidden-pic');
+        $('#s1').removeClass('hidden-pic');
+        $('#mobile-modal-div').addClass('hidden-pic');
+    }
 }
 
 </script>
