@@ -206,6 +206,19 @@ a.back-link-btn:hover {
     width: 100%;
     padding: 70px 0px 50px 0px;
 }
+.modal-social-links,
+.modal-social-links:active,
+.modal-social-links:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.mobile-modal-on {
+    display: none;
+}
+.mobile-modal-off {
+    display: initial;
+}
 
 
 .embed-container { 
@@ -225,6 +238,7 @@ a.back-link-btn:hover {
     width: 100%; 
     height: 100%; 
 }
+
 
 /* header */
 header {
@@ -659,6 +673,15 @@ input[type='checkbox']#checkbox-f2+label {
     width: 20px;
     border-radius: 3px;
 }
+input[type='checkbox']#checkbox-f2-m+label {
+    border: 1px solid #818181;
+    background: transparent;
+    background-position: center;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+}
 input[type="checkbox"] {
     display: none;
 }
@@ -671,8 +694,13 @@ input[type='checkbox']#checkbox-f2:checked+label {
     background: transparent url(http://katheermizal.info/works/working-with-checkbox/assets/images/tick-icon-transparent.png) no-repeat;
     background-size: 20px 20px;
 }
+input[type='checkbox']#checkbox-f2-m:checked+label {
+    background: transparent url(http://katheermizal.info/works/working-with-checkbox/assets/images/tick-icon-transparent.png) no-repeat;
+    background-size: 20px 20px;
+}
 #form-error,
-#form-error2 {
+#form-error2,
+#form-error2-m {
     color: rgb(173, 8, 8);
     font-family: CamptonBook;
 }
@@ -2397,6 +2425,57 @@ input[type='checkbox']#checkbox-f:checked+label {
 header {
     margin-bottom: 0px;
 }
+
+.mobile-modal-off {
+    display: none;
+}
+.mobile-modal-on {
+    display: initial;
+}
+#mobile-modal-div-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+#mmodal-title {
+    font-size: 13px;
+}
+#mmodal-line {
+    padding: 5px 0 20px 0;
+}
+#mmodal-line-design {
+    background-color: #35CDCD;
+    width: 100%;
+    height: 2px;
+}
+#mmodal-line-design-2 {
+    background-color: rgb(182, 182, 182);
+    width: 100%;
+    height: 2px;
+}
+.formul {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+#mmodal-field {
+    padding: 10px 0 0 0;
+}
+#mmodal-row {
+    padding: 20px 0 40px 0;
+    display: flex;
+}
+#mmodal-col-1 {
+    width: 50%;
+}
+#mmodal-col-2 {
+    width: 50%;
+    text-align: right;
+}
+#mobile-modal-div-thank-you {
+    padding: 40px 5%;
+}
+
+
 /*section-1*/
 #section-1 {
     background-image: none;
