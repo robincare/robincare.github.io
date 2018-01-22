@@ -102,6 +102,25 @@ a.back-link-btn:hover {
     cursor: pointer;
     border: 0px;
 }
+.modal-social-links,
+.modal-social-links:active,
+.modal-social-links:hover {
+    color: #000;
+    text-decoration: none;
+}
+#form-error,
+#form-error2,
+#form-error-m,
+#form-error2-m {
+    color: rgb(173, 8, 8);
+    font-family: CamptonBook;
+}
+.mobile-modal-on {
+    display: none;
+}
+.mobile-modal-off {
+    display: block;
+}
 #m-a {
     background-color: #2e3f50;
     color: #fff;
@@ -288,7 +307,7 @@ a.header-link-btn:hover {
     background-image: url(img/header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     background-attachment: fixed;
     padding: 0px;
     padding-bottom: 200px;
@@ -1510,6 +1529,58 @@ footer {
 header {
     margin-bottom: 0px;
 }
+
+.mobile-modal-off {
+    display: none;
+}
+.mobile-modal-on {
+    display: block;
+}
+#mobile-modal-a-div-content,
+#mobile-modal-b-div-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+#mmodal-title {
+    font-size: 13px;
+}
+#mmodal-line {
+    padding: 5px 0 20px 0;
+}
+#mmodal-line-design {
+    background-color: #35CDCD;
+    width: 100%;
+    height: 2px;
+}
+#mmodal-line-design-2 {
+    background-color: rgb(182, 182, 182);
+    width: 100%;
+    height: 2px;
+}
+.formul {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+#mmodal-field {
+    padding: 10px 0 0 0;
+}
+#mmodal-row {
+    padding: 20px 0 40px 0;
+    display: flex;
+}
+#mmodal-col-1 {
+    width: 50%;
+}
+#mmodal-col-2 {
+    width: 50%;
+    text-align: right;
+}
+#mobile-modal-a-div-thank-you,
+#mobile-modal-b-div-thank-you {
+    padding: 40px 5%;
+}
+
 /*section-1*/
 #section-1 {
     background-image: none;

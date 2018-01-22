@@ -217,7 +217,7 @@ a.back-link-btn:hover {
     display: none;
 }
 .mobile-modal-off {
-    display: initial;
+    display: block;
 }
 
 
@@ -2430,7 +2430,7 @@ header {
     display: none;
 }
 .mobile-modal-on {
-    display: initial;
+    display: block;
 }
 #mobile-modal-div-content {
     max-width: 90%;
