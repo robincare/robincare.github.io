@@ -1,0 +1,254 @@
+.hidden-pic {
+    display: none;
+}
+/* header */
+header {
+    background-color: #35cdcd;
+    margin-bottom: 0px;
+}
+#header-content {
+    padding: 20px 3%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+#logo-img {
+    max-width: 150px;
+}
+a.header-link {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link:focus,
+a.header-link:active,
+a.header-link:hover {
+    font-size: 13px;
+    color: #e2e2e2;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.hl-active {
+    color: #e2e2e2;
+}
+a.header-link-btn {
+    background-color: #2e3f50;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: none;
+}
+a.header-link-btn:focus,
+a.header-link-btn:active,
+a.header-link-btn:hover {
+    font-size: 13px;
+    color: #fff;
+    background-color: #49616e;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.menu-space {
+    display: inline-block;
+    padding-left: 25px;
+}
+#menu-mobile {
+    display: none;
+}
+#hd-a {
+    width: 30%;
+}
+#hd-b {
+    width: 70%;
+}
+#hd-c {
+    width: 70%;
+    display: none;
+}
+#fd-a {
+    width: 60%;
+}
+#fd-b {
+    width: 40%;
+    text-align: right;
+}
+#footer-id {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px 3%;
+}
+/* end header */
+#raffle-dialog {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 101;
+    background: #2d404f;
+}
+#hide-dialog {
+  color: #fff;
+  float: right;
+}
+#company-error {
+  position: absolute;
+  top: 66px;
+  color: red;
+  border: none !important;
+}
+/*  footer  */
+footer {
+    background-color: #2e3f50;
+}
+#footer-id {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a.a-link,
+a.a-link:focus,
+a.a-link:active,
+a.a-link:hover {
+    font-size: 13px;
+    color: #fff;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+#footer-mobile {
+    display: none;
+}
+/*  end footer  */
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  #menu-id {
+      display: none;
+  }
+  #header-content {
+      padding: 10px 0px 10px 25px;
+  }
+  #logo-img {
+      max-width: 100px;
+  }
+
+  header {
+      margin-bottom: 0px;
+  }
+  .menu-space {
+      display: block;
+      padding-left: 0px;
+      text-align: center;
+      padding-bottom: 50px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  footer {
+      display: none;
+  }
+  #footer-mobile {
+      display: initial;
+  }
+}
+@media screen and (max-width: 500px) {
+  #menu-id {
+      display: none;
+  }
+  #header-content {
+      padding: 10px 0px 10px 25px;
+  }
+  #logo-img {
+      max-width: 70px;
+      padding-top: 5px;
+  }
+  #menu-mobile {
+      display: initial;
+  }
+  header {
+      margin-bottom: 0px;
+  }
+  .hide-mobile {
+      display: none;
+  }
+  /* end section-6 */
+  footer {
+    display: none;
+  }
+  #footer-mobile {
+      display: initial;
+  }
+  a.a-link,
+  a.a-link:focus,
+  a.a-link:active,
+  a.a-link:hover {
+      font-size: 13px;
+  }
+  #mobile-menu-content {
+      min-width: 100%;
+      min-height: 100%;
+      background-color: #35cdcd;
+  }
+  a.header-link {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  a.header-link:focus,
+  a.header-link:active,
+  a.header-link:hover {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  a.hl-active {
+      color: #fff;
+  }
+  a.header-link-btn {
+      background-color: #2e3f50;
+      padding: 15px 20px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 0px;
+      text-decoration: none;
+      margin: 0 10px;
+  }
+  a.header-link-btn:focus,
+  a.header-link-btn:active,
+  a.header-link-btn:hover {
+      font-size: 14px;
+      color: #fff;
+      background-color: #2e3f50;
+      margin-top: 0px;
+      text-decoration: none;
+  }
+  .menu-space {
+      display: block;
+      padding-left: 0px;
+      text-align: center;
+      padding-bottom: 50px;
+  }
+  #hm-0 {
+      display: flex;
+      width: 100%;
+      padding: 15px 15px 15px 25px;
+  }
+  #hm-a {
+      width: 50%;
+  }
+  #hm-b {
+      width: 50%;
+      text-align: right;
+  }
+}
