@@ -1069,6 +1069,9 @@ function submit_modala_m_a() {
     var company = $('#company-m').val();
     var hr_name = $('#hr-name-m').val();
     var hr_email = $('#hr-email-m').val();
+    console.log(company);
+    console.log(hr_name);
+    console.log(hr_email);
 
     $('#form-error-m').html('');
     if(company.length==0 || hr_name.length==0 || hr_email.length==0) {
@@ -1078,7 +1081,7 @@ function submit_modala_m_a() {
     }
     else {
         $.ajax({
-            url: "https://formspree.io/hello@getrobincare.com", 
+            url: "https://formspree.io/limban.claudiu@gmail.com", 
             method: "POST",
             data: {company: company ,HRName: hr_name, HREmail: hr_email},
             dataType: "json"
