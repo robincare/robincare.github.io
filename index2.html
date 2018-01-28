@@ -1046,9 +1046,6 @@ function submit_form_a() {
     var company = $('#company').val();
     var hr_name = $('#hr-name').val();
     var hr_email = $('#hr-email').val();
-    console.log(company);
-    console.log(hr_name);
-    console.log(hr_email);
 
     $('#form-error').html('');
     if(company.length==0 || hr_name.length==0 || hr_email.length==0) {
@@ -1058,9 +1055,9 @@ function submit_form_a() {
     }
     else {
         $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {company: company ,HRName: hr_name, HREmail: hr_email},
+            data: {Company: company ,HRName: hr_name, HREmail: hr_email},
             dataType: "json"
         });
         $('#modal-a-first').addClass('hidden-pic');
@@ -1084,9 +1081,9 @@ function submit_modala_m_a() {
     }
     else {
         $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {company: company ,HRName: hr_name, HREmail: hr_email},
+            data: {Company: company ,HRName: hr_name, HREmail: hr_email},
             dataType: "json"
         });
         $('#mobile-modal-a-div-content').addClass('hidden-pic');
@@ -1104,12 +1101,10 @@ function submit_form_b() {
         if(a_email.length==0) { $('#form-error2').append('The email field is required!<br>'); }
     }
     else {
-            console.log(a_name);
-    console.log(a_email);
         $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {NameField: a_name ,EmailField: a_email},
+            data: {SignUp_Name: a_name ,SignUp_Email: a_email},
             dataType: "json"
         });
         $('#modal-b-first').addClass('hidden-pic');
@@ -1117,19 +1112,19 @@ function submit_form_b() {
     }
 }
 function submit_modala_m_b() {
-    var name = $('#name2-m').val();
-    var email = $('#email2-m').val();
+    var a_name = $('#name2-m').val();
+    var a_email = $('#email2-m').val();
 
     $('#form-error2-m').html('');
-    if(name.length==0 || email.length==0) {
-        if(name.length==0) { $('#form-error2-m').append('The name field is required!<br>'); }
-        if(email.length==0) { $('#form-error2-m').append('The email field is required!<br>'); }
+    if(a_name.length==0 || a_email.length==0) {
+        if(a_name.length==0) { $('#form-error2-m').append('The name field is required!<br>'); }
+        if(a_email.length==0) { $('#form-error2-m').append('The email field is required!<br>'); }
     }
     else {
         $.ajax({
             url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {name: name ,email: email},
+            data: {SignUp_Name: a_name ,SignUp_Email: a_email},
             dataType: "json"
         });
         $('#mobile-modal-b-div-content').addClass('hidden-pic');
