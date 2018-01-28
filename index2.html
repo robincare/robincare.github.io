@@ -1109,7 +1109,7 @@ function submit_form_b() {
         $.ajax({
             url: "https://formspree.io/limban.claudiu@gmail.com", 
             method: "POST",
-            data: {name: a_name ,email: a_email},
+            data: {NameField: a_name ,EmailField: a_email},
             dataType: "json"
         });
         $('#modal-b-first').addClass('hidden-pic');
