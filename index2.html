@@ -1095,21 +1095,21 @@ function submit_modala_m_a() {
     }
 }
 function submit_form_b() {
-    var name = $('#name2').val();
-    var email = $('#email2').val();
-    console.log(name);
-    console.log(email);
+    var a_name = $('#name2').val();
+    var a_email = $('#email2').val();
+    console.log(a_name);
+    console.log(a_email);
 
     $('#form-error2').html('');
-    if(name.length==0 || email.length==0) {
-        if(name.length==0) { $('#form-error2').append('The name field is required!<br>'); }
-        if(email.length==0) { $('#form-error2').append('The email field is required!<br>'); }
+    if(a_name.length==0 || a_email.length==0) {
+        if(a_name.length==0) { $('#form-error2').append('The name field is required!<br>'); }
+        if(a_email.length==0) { $('#form-error2').append('The email field is required!<br>'); }
     }
     else {
         $.ajax({
             url: "https://formspree.io/limban.claudiu@gmail.com", 
             method: "POST",
-            data: {name: name ,email: email},
+            data: {name: a_name ,email: a_email},
             dataType: "json"
         });
         $('#modal-b-first').addClass('hidden-pic');
