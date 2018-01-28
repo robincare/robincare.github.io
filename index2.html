@@ -1091,6 +1091,8 @@ function submit_modala_m_a() {
 function submit_form_b() {
     var name = $('#name2').val();
     var email = $('#email2').val();
+    console.log(name);
+    console.log(email);
 
     $('#form-error2').html('');
     if(name.length==0 || email.length==0) {
@@ -1099,7 +1101,7 @@ function submit_form_b() {
     }
     else {
         $.ajax({
-            url: "https://formspree.io/hello@getrobincare.com", 
+            url: "https://formspree.io/limban.claudiu@gmail.com", 
             method: "POST",
             data: {name: name ,email: email},
             dataType: "json"
