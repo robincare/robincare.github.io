@@ -177,7 +177,7 @@ a.header-link-btn:hover {
     font-family: Campton;
     background-image: url(img/download-header.png);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: top center;
     padding: 0px;
     height: 700px;
