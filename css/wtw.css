@@ -6,6 +6,9 @@ header {
     background-color: #35cdcd;
     margin-bottom: 0px;
 }
+.slider-header {
+  text-transform: uppercase;
+}
 #header-content {
     padding: 20px 3%;
     max-width: 1200px;
@@ -99,7 +102,7 @@ a.header-link-btn:hover {
   color: #fff;
   float: right;
 }
-#company-error {
+#first_name-error, #last_name-error, #phone-error, #company-error {
   position: absolute;
   top: 66px;
   color: red;

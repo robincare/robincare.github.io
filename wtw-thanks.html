@@ -56,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="main-container">
             <div class="slider-container">
                 <div class="slider-head">
-                    <h2 class="slider-header">We partner with people touched by cancer to improve quality of life and lower healthcare costs</h2>
+                    <h2 class="slider-header">Thank You!</h2>
                     <hr>
                     <p class="slider-description">Use the slider to see how much Robin can save your organization</p>
                 </div>
@@ -89,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <hr>
               </div>
               <div class="form-container wow">
-                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="wtw-contact-form">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                   <input type="hidden" name="oid" value="00Df40000002Q23">
                   <input type="hidden" name="retURL" value="http://www.getrobincare.com/wtw-thanks">
                   <input type="hidden" id="lead_source" name="lead_source" value="wtw">
@@ -247,18 +247,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // Form Validation
             $("#wtw-contact-form").validate({
               rules: {
-                first_name: "required",
-                last_name: "required",
-                phone: "required",
-                company: "required",
-                email: "required email"
+                Name: "required",
+                Company: "required",
+                Email: "required email"
                   },
               messages: {
-                first_name: "Enter your First Name",
-                last_name: "Enter your Last Name",
-                phone: "Phone number is required",
-                company: "Company is required",
-                email: {
+                Name: "Enter your Full Name",
+                Company: "Company is required",
+                Email: {
                   required: "Enter your Email",
                   email: "Please enter a valid email address."
                 }
