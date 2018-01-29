@@ -784,23 +784,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 new WOW().init();
 
 function submit_contact() {
-    var name = $('#your-name').val();
-    var email = $('#email-address').val();
-    var message = $('#text-message').val();
+    var b_name = $('#your-name').val();
+    var b_email = $('#email-address').val();
+    var b_message = $('#text-message').val();
     if($('#checkbox-f').is(':checked')) { var updates = 1; }
     else { var updates = 0; }
 
     $('#form-error').html('');
-    if(name.length==0 || email.lenght==0 || message==0) {
-        if(name.length==0) { $('#form-error').append('The name field is required!<br>'); }
-        if(email.length==0) { $('#form-error').append('The email field is required!<br>'); }
-        if(message.length==0) { $('#form-error').append('The message field is required!<br>'); }
+    if(b_name.length==0 || b_email.lenght==0 || b_message==0) {
+        if(b_name.length==0) { $('#form-error').append('The name field is required!<br>'); }
+        if(b_email.length==0) { $('#form-error').append('The email field is required!<br>'); }
+        if(b_message.length==0) { $('#form-error').append('The message field is required!<br>'); }
     }
     else {
         $.ajax({
             url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {name: name, email: email, message: message},
+            data: {Contact_Name: b_name, Contact_Email: b_email, Contact_Message: b_message},
             dataType: "json"
         });
         $('#s-4th-form-content-first').addClass('hidden-pic');
@@ -824,7 +824,7 @@ function submit_modala() {
     }
     else {
         $.ajax({
-            url: "https://formspree.io/limban.claudiu@gmail.com", 
+            url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
             data: {Demo_Organization: a_organization ,Demo_Name: a_name, Demo_Title: a_title, Demo_Email: a_email, Demo_Message: a_message},
             dataType: "json"
@@ -834,25 +834,25 @@ function submit_modala() {
     }
 }
 function submit_modala_m() {
-    var organization = $('#organization-m').val();
-    var name = $('#name-m').val();
-    var title = $('#title-m').val();
-    var email = $('#email-m').val();
-    var message = $('#message-m').val();
+    var a_organization = $('#organization-m').val();
+    var a_name = $('#name-m').val();
+    var a_title = $('#title-m').val();
+    var a_email = $('#email-m').val();
+    var a_message = $('#message-m').val();
     if($('#checkbox-f2-m').is(':checked')) { var updates = 1; }
     else { var updates = 0; }
 
     $('#form-error2-m').html('');
-    if(name.length==0 || email.lenght==0 || message==0) {
-        if(name.length==0) { $('#form-error2-m').append('The name field is required!<br>'); }
-        if(email.length==0) { $('#form-error2-m').append('The email field is required!<br>'); }
-        if(message.length==0) { $('#form-error2-m').append('The message field is required!<br>'); }
+    if(a_name.length==0 || a_email.lenght==0 || a_message==0) {
+        if(a_name.length==0) { $('#form-error2-m').append('The name field is required!<br>'); }
+        if(a_email.length==0) { $('#form-error2-m').append('The email field is required!<br>'); }
+        if(a_message.length==0) { $('#form-error2-m').append('The message field is required!<br>'); }
     }
     else {
         $.ajax({
             url: "https://formspree.io/hello@getrobincare.com", 
             method: "POST",
-            data: {organization: organization ,name: name, title:title, email: email, message: message},
+            data: {Demo_Organization: a_organization ,Demo_Name: a_name, Demo_Title: a_title, Demo_Email: a_email, Demo_Message: a_message},
             dataType: "json"
         });
         $('#mobile-modal-div-content').addClass('hidden-pic');
