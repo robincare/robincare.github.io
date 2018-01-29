@@ -8,6 +8,11 @@ header {
 }
 .slider-header {
   text-transform: uppercase;
+  max-width: 600px;
+  font-size: 24px;
+}
+.slider-description {
+  font-size: 18px;
 }
 #header-content {
     padding: 20px 3%;
@@ -102,11 +107,12 @@ a.header-link-btn:hover {
   color: #fff;
   float: right;
 }
-#first_name-error, #last_name-error, #phone-error, #company-error {
+#first_name-error, #last_name-error, #phone-error, #email-error, #company-error {
   position: absolute;
   top: 66px;
   color: red;
   border: none !important;
+  margin-top: 10px;
 }
 /*  footer  */
 footer {
@@ -254,4 +260,33 @@ a.a-link:hover {
       width: 50%;
       text-align: right;
   }
+}
+.slider-main-container {
+  margin-bottom: 30px;
+}
+a.header-link-btn {
+  font-size: 24px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#wtw-contact-form {
+  width: auto;
+}
+#wtw-contact-form label {
+  font-size: 20px;
+}
+#wtw-contact-form input {
+  font-size: 18px;
+}
+#wtw-contact-form button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: none;
+  border: none;
+}
+#wtw-contact-form .update-description {
+  font-size: 16px;
 }
