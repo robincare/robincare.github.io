@@ -1,0 +1,37 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#section-1 {
+  padding: 200px 0 100px 0;
+}
+#section-7 {
+  max-width: none;
+  width: 100%;
+  background-color: #495a70;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+#s7-1 {
+  max-width: 900px;
+  padding: 100px 0px;
+  margin: 0 auto;
+}
+#s7-1-a {
+  width: auto;
+}
+#s7-1-b {
+  width: 30%;
+  margin-right: 40px;
+}
+.section-6-b-1-d {
+    margin-top: 20px;
+}
+#section-2.light {
+  background: #495a70;
+}
+.quote-container {
+  width: auto;
+}
